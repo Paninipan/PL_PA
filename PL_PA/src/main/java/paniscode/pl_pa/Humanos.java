@@ -17,8 +17,8 @@ public class Humanos extends Thread{
     private Exterior exterior;
 
     private int comida;
-    private final boolean muerto;
-    private final boolean atacado;
+    private boolean muerto;
+    private boolean atacado;
 
     /**
      *
@@ -34,8 +34,14 @@ public class Humanos extends Thread{
         this.muerto = false;
         this.atacado = false;
     }
-    
 
+    public String getIdH() {
+        return IdH;
+    }
+    
+    public void Atacado(){this.atacado = true;}
+    
+    public void Muerto(){this.atacado = true;}
     public void setComida(int comida) {
         this.comida = comida;
     }
@@ -53,7 +59,7 @@ public class Humanos extends Thread{
                 refugio.ir_tunel(tunel = random.nextInt(1,4),this.IdH);
                 MX.print("El humano "+this.IdH+" va por el tunel" + tunel);
 
-                exterior.ir_zona(tunel, this.IdH);
+                exterior.entrar_zona(tunel, this.IdH);
                 this.setComida(2);
                 exterior.aguantar(this.IdH);
 
