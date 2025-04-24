@@ -1,57 +1,88 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package paniscode.pl_pa;
+
+import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author alvaro
  */
 public class Humanos extends Thread{
-    
-    private String Id;
+    private Random random = new Random();
+    private String IdH;
     private Refugio refugio;
+    
+    private Exterior exterior;
+
     private int comida;
+    private final boolean muerto;
+    private final boolean atacado;
 
-    public Humanos(String Id, Refugio refugio, int comida) {
-        this.Id = Id;
+    /**
+     *
+     * @param IdH
+     * @param refugio
+     * @param exterior
+     */
+    public Humanos(String IdH, Refugio refugio, Exterior exterior) {
+        this.IdH = IdH;
         this.refugio = refugio;
-        this.comida = comida;
+        this.exterior = exterior;
+        this.comida = 0;
+        this.muerto = false;
+        this.atacado = false;
     }
     
-    
-    public int getComida() {
-        return comida;
-    }
 
-   
     public void setComida(int comida) {
         this.comida = comida;
     }
 
-    
-    public Refugio getRefugio() {
-        return refugio;
-    }
+    @Override
+    public void run() {
+        try {
+            
+            while(!this.muerto){
+                refugio.ir_zona_común(IdH);
+                MX.print("El humano "+this.IdH+" va a zona común");
+                
 
-    
-    public void setRefugio(Refugio refugio) {
-        this.refugio = refugio;
-    }
+                int tunel;
+                refugio.ir_tunel(tunel = random.nextInt(1,4));
+                MX.print("El humano "+this.IdH+" va por el tunel" + tunel);
 
-    
-    public String getId() {
-        return Id;
-    }
+                exterior.ir_zona(tunel);
+                this.setComida(2);
+                exterior.aguantar(this.IdH);
 
-    /**
-     * Set the value of Id
-     *
-     * @param Id new value of Id
-     */
-    public void setId(String Id) {
-        this.Id = Id;
-    }
+                if(!this.muerto){
+                    exterior.ir_tunel(tunel);
+                    MX.print("El humano "+this.IdH+" regresa por el tunel" + tunel);
 
+                    if(this.atacado){
+                        this.setComida(0); 
+                    }
+                    else{}
+                    refugio.depositar_comida(this.comida);
+                    MX.print("El humano "+this.IdH+" a dejado " + this.comida+" piezas de comida");
+
+                    MX.print("El humano "+this.IdH+" va a descansar");
+                    refugio.ir_zona_descanso(IdH);
+
+                    MX.print("El humano "+this.IdH+" va a comer");
+                    refugio.ir_comedor(IdH);
+
+                    if(this.atacado){
+                        MX.print("El humano "+this.IdH+" va a recuperarse de las heridas anteriores");
+                        refugio.ir_recuperarse(IdH);
+                        }
+                    else{}
+                }
+                else{}
+            }          
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Humanos.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }
