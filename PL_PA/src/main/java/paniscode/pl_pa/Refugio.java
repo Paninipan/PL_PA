@@ -7,6 +7,7 @@ package paniscode.pl_pa;
 
 import static java.lang.Thread.sleep;
 import java.util.Random;
+import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -31,7 +32,7 @@ public class Refugio{
     
     
 
-    public Refugio(Tunel tunel1, Tunel tunel2, Tunel tunel3, Tunel tunel4, int reservas_comida) {
+    public Refugio(Tunel tunel1, Tunel tunel2, Tunel tunel3, Tunel tunel4) {
         this.tunel1 = tunel1;
         this.tunel2 = tunel2;
         this.tunel3 = tunel3;
@@ -43,12 +44,12 @@ public class Refugio{
         sleep(1000 * random.nextInt(1,2));
     }
 
-    public void ir_tunel(int tunel) {
+    public void ir_tunel(int tunel, String IdH) throws InterruptedException, BrokenBarrierException {
         switch(tunel){
-            case 1 -> tunel1.salir();
-            case 2 -> tunel2.salir();
-            case 3 -> tunel3.salir();
-            case 4 -> tunel4.salir();
+            case 1 -> tunel1.salir_refugio(IdH);
+            case 2 -> tunel2.salir_refugio(IdH);
+            case 3 -> tunel3.salir_refugio(IdH);
+            case 4 -> tunel4.salir_refugio(IdH);
         }
     }
 
@@ -89,7 +90,7 @@ public class Refugio{
 
     public void ir_recuperarse(String IdH) throws InterruptedException {
         sleep(1000 * random.nextInt(3,5));
-
+        MX.print("El humano "+IdH+" se ha recuperado del ataque");
     }
  
 }

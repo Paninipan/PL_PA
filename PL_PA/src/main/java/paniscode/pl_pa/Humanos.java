@@ -1,6 +1,7 @@
 package paniscode.pl_pa;
 
 import java.util.Random;
+import java.util.concurrent.BrokenBarrierException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -49,10 +50,10 @@ public class Humanos extends Thread{
                 
 
                 int tunel;
-                refugio.ir_tunel(tunel = random.nextInt(1,4));
+                refugio.ir_tunel(tunel = random.nextInt(1,4),this.IdH);
                 MX.print("El humano "+this.IdH+" va por el tunel" + tunel);
 
-                exterior.ir_zona(tunel);
+                exterior.ir_zona(tunel, this.IdH);
                 this.setComida(2);
                 exterior.aguantar(this.IdH);
 
@@ -82,6 +83,8 @@ public class Humanos extends Thread{
                 else{}
             }          
         } catch (InterruptedException ex) {
+            Logger.getLogger(Humanos.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (BrokenBarrierException ex) {
             Logger.getLogger(Humanos.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
