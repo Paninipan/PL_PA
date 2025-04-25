@@ -24,6 +24,8 @@ public class Tunel {
     private Condition salir_tunel = paso_tunel.newCondition();
 
     private CyclicBarrier salir_refugio = new CyclicBarrier(3);
+    private CyclicBarrier entrar_refugio = new CyclicBarrier(3);
+
 
     public Tunel() {
         this.Hilos_ir_refugio = new ArrayList<>();
@@ -33,7 +35,6 @@ public class Tunel {
     }
 
     void salir_refugio(String IdH) throws InterruptedException, BrokenBarrierException {
-
         try {
             paso_tunel.lock();
 
@@ -55,7 +56,8 @@ public class Tunel {
                     salir_tunel.await();
                 } else {
                     MX.print("Humano " + IdH + " sale");
-                    salir();
+                    salir(IdH);
+                    grupo_salida_lleno.signal();
                 }
             } while (!grupo_salir_refugio.isEmpty());
 
@@ -65,12 +67,36 @@ public class Tunel {
 
     }
 
-    public synchronized void salir() {
-        grupo_salir_refugio.removeFirst();
+    public synchronized void salir(String IdH) {
+        grupo_salir_refugio.remove(grupo_salir_refugio.indexOf(IdH));
     }
 
-    void entrar_refugio(String IdH) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    void entrar_refugio(String IdH) throws InterruptedException, BrokenBarrierException {
+        try{
+            paso_tunel.lock();
+
+            this.Hilos_ir_refugio.add(IdH);
+            int cantidad_grupo_entrada = this.grupo_entrar_refugio.size();
+
+            if (cantidad_grupo_entrada == 3) {
+                MX.print("Humano " + IdH + " espera o atro grupo");
+                grupo_entrada_lleno.await();
+            } else {
+            }
+            this.grupo_entrar_refugio.add(IdH);
+            MX.print("Humano " + IdH + " entra al grupo");
+            entrar_refugio.await();
+
+            entrar(IdH);
+            grupo_entrada_lleno.signal();
+
+        } finally {
+            paso_tunel.unlock();
+        }
+    }
+    
+    public synchronized void entrar(String IdH) {
+        grupo_entrar_refugio.remove(grupo_entrar_refugio.indexOf(IdH));
     }
 
 }

@@ -41,7 +41,7 @@ public class Refugio{
     }
 
     public void ir_zona_común(String IdH) throws InterruptedException {
-        sleep(1000 * random.nextInt(1,2));
+        sleep(1000 * random.nextInt(1,3));
     }
 
     public void ir_tunel(int tunel, String IdH) throws InterruptedException, BrokenBarrierException {
@@ -67,7 +67,7 @@ public class Refugio{
     }
 
     public void ir_zona_descanso(String IdH) throws InterruptedException {
-        sleep(1000 * random.nextInt(2,4));
+        sleep(1000 * random.nextInt(2,5));
     }
 
     public void ir_comedor(String IdH) throws InterruptedException {
@@ -77,7 +77,7 @@ public class Refugio{
                 reservas_vacias.await();            
             }      
             else{}
-            sleep(1000 * random.nextInt(3,5));
+            sleep(1000 * random.nextInt(3,6));
             MX.print("El humano "+IdH+" va a comer");
             cantidad_comida--;
         }
@@ -89,7 +89,7 @@ public class Refugio{
     }
 
     public void ir_recuperarse(String IdH) throws InterruptedException {
-        sleep(1000 * random.nextInt(3,5));
+        sleep(1000 * random.nextInt(3,6));
         MX.print("El humano "+IdH+" se ha recuperado del ataque");
     }
  

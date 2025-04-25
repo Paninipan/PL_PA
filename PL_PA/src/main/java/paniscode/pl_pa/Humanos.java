@@ -46,6 +46,14 @@ public class Humanos extends Thread{
         this.comida = comida;
     }
 
+    public boolean isMuerto() {
+        return muerto;
+    }
+
+    public boolean isAtacado() {
+        return atacado;
+    }
+
     @Override
     public void run() {
         try {
@@ -56,15 +64,15 @@ public class Humanos extends Thread{
                 
 
                 int tunel;
-                refugio.ir_tunel(tunel = random.nextInt(1,4),this.IdH);
+                refugio.ir_tunel(tunel = random.nextInt(1,5),this.IdH);
                 MX.print("El humano "+this.IdH+" va por el tunel" + tunel);
 
-                exterior.entrar_zona(tunel, this.IdH);
+                exterior.entrar_zona(tunel, this);
                 this.setComida(2);
-                exterior.aguantar(this.IdH);
+                exterior.aguantar(this);
 
                 if(!this.muerto){
-                    exterior.ir_tunel(tunel);
+                    exterior.ir_tunel(tunel,this.IdH);
                     MX.print("El humano "+this.IdH+" regresa por el tunel" + tunel);
 
                     if(this.atacado){
@@ -88,9 +96,7 @@ public class Humanos extends Thread{
                 }
                 else{}
             }          
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Humanos.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (BrokenBarrierException ex) {
+        } catch (InterruptedException | BrokenBarrierException ex) {
             Logger.getLogger(Humanos.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
