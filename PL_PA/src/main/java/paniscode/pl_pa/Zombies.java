@@ -21,6 +21,8 @@ public class Zombies extends Thread {
     private int contadorMuertes;
     private boolean atacarEnZona;
     private boolean activo;
+    
+    
 
     /**
      *
@@ -38,8 +40,8 @@ public class Zombies extends Thread {
     public void run() {
         try {
             while(true){
-                int zona = random.nextInt(1,4);
-                MX.print("El zombie " + IdZ + " se dirige hacia " + zona);
+                int zona = random.nextInt(1,5);
+                System.out.println("El zombie " + IdZ + " se dirige hacia " + zona);
                 
                 exterior.atacar(zona, this);
             }
@@ -47,6 +49,14 @@ public class Zombies extends Thread {
         } catch (InterruptedException ex) {
             Logger.getLogger(Zombies.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    public String getIdZ() {
+        return IdZ;
+    }
+
+    public int getContadorMuertes() {
+        return contadorMuertes;
     }
 
     public Exterior getExterior() {

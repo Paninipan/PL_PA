@@ -78,7 +78,7 @@ public class Refugio{
             }      
             else{}
             sleep(1000 * random.nextInt(3,6));
-            MX.print("El humano "+IdH+" va a comer");
+            //System.out.println("El humano "+IdH+" va a comer");
             cantidad_comida--;
         }
         finally{
@@ -90,7 +90,7 @@ public class Refugio{
 
     public void ir_recuperarse(String IdH) throws InterruptedException {
         sleep(1000 * random.nextInt(3,6));
-        MX.print("El humano "+IdH+" se ha recuperado del ataque");
+        //System.out.println("El humano "+IdH+" se ha recuperado del ataque");
     }
  
 }

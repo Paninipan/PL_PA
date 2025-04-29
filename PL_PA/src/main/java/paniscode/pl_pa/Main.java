@@ -1,13 +1,14 @@
 package paniscode.pl_pa;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 public class Main {
 
-    private static final int NUM_HUMANOS = 10; // Número de ejemplo de humanos iniciales
+    private static final int NUM_HUMANOS = 15; // Número de ejemplo de humanos iniciales
 
     public static void main(String[] args) {
+        Random random = new Random();
+
         Tunel tunel1 = new Tunel();
         Tunel tunel2 = new Tunel();
         Tunel tunel3 = new Tunel();
@@ -19,20 +20,16 @@ public class Main {
         Zombies pacienteCero = new Zombies("Z0000", exterior); // Aquí he puesto el primer zombie
         pacienteCero.start();
 
-        Thread generadorHumanos = new Thread(() -> { // He puesto la creación de humanos como un propio hilo (puede que no sea necesario)
-            Random random = new Random();
-            for (int i = 0; i < NUM_HUMANOS; i++) {
-                String id = String.format("H%04d", i); // Le doy un cierto valor a su id de manera ordenada
-                Humanos humano = new Humanos(id, refugio, exterior); // Lo mismo que con los zombies
-                humano.start();
-                try {
-                    long espera = 500 + random.nextInt(1500); // El tiempo de espera 
-                    TimeUnit.MILLISECONDS.sleep(espera);
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                }
+        for (int i = 0; i < NUM_HUMANOS; i++) {
+            String id = String.format("H%04d", i+1);
+            Humanos humano = new Humanos(id, refugio, exterior);
+            humano.start();
+            try {
+                Thread.sleep(500 + random.nextInt(1500));
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
             }
-        });
-        generadorHumanos.start();
+        }
+
     }
 }
