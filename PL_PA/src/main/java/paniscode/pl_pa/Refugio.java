@@ -15,12 +15,12 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Refugio{
     private Random random = new Random();
+    
+    private InterfazP1 interfazP1;
+
     private Tunel tunel1;
-    
     private Tunel tunel2;
-    
     private Tunel tunel3;
-    
     private Tunel tunel4;
     
     private Lock reservas_comida = new ReentrantLock();
@@ -32,12 +32,13 @@ public class Refugio{
     
     
 
-    public Refugio(Tunel tunel1, Tunel tunel2, Tunel tunel3, Tunel tunel4) {
+    public Refugio(Tunel tunel1, Tunel tunel2, Tunel tunel3, Tunel tunel4,InterfazP1 interfazP1) {
         this.tunel1 = tunel1;
         this.tunel2 = tunel2;
         this.tunel3 = tunel3;
         this.tunel4 = tunel4;
         this.cantidad_comida = 0;
+        this.interfazP1 = interfazP1;
     }
 
     public void ir_zona_común(String IdH) throws InterruptedException {

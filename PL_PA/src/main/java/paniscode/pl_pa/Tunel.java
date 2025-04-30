@@ -15,6 +15,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Tunel {
 
+    private InterfazP1 interfazP1;
+
     private Semaphore crear_grupo_salir_refugio = new Semaphore(3); //tres humanos para salir
     private Semaphore crear_grupo_entrar_refugio = new Semaphore(3); //tres humanos para entrar
 
@@ -27,6 +29,11 @@ public class Tunel {
     private int grupo_entrando = 0; //gente intentando entrar
     private int gente_entrado = 0; //gente intentando entrar
 
+    public Tunel(InterfazP1 interfazP1) {
+        this.interfazP1 = interfazP1;
+    }
+    
+    
 
     public void salir_refugio(String IdH) throws InterruptedException, BrokenBarrierException {
         crear_grupo_salir_refugio.acquire(); //si hay 3 se bloquea

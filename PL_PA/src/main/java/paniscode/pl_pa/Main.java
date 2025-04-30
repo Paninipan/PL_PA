@@ -8,14 +8,14 @@ public class Main {
 
     public static void main(String[] args) {
         Random random = new Random();
+        InterfazP1 interfazP1 = new InterfazP1();
+        Tunel tunel1 = new Tunel(interfazP1);
+        Tunel tunel2 = new Tunel(interfazP1);
+        Tunel tunel3 = new Tunel(interfazP1);
+        Tunel tunel4 = new Tunel(interfazP1);
 
-        Tunel tunel1 = new Tunel();
-        Tunel tunel2 = new Tunel();
-        Tunel tunel3 = new Tunel();
-        Tunel tunel4 = new Tunel();
-
-        Refugio refugio = new Refugio(tunel1, tunel2, tunel3, tunel4);
-        Exterior exterior = new Exterior(tunel1, tunel2, tunel3, tunel4);
+        Refugio refugio = new Refugio(tunel1, tunel2, tunel3, tunel4,interfazP1);
+        Exterior exterior = new Exterior(tunel1, tunel2, tunel3, tunel4,interfazP1);
 
         Zombies pacienteCero = new Zombies("Z0000", exterior); // Aquí he puesto el primer zombie
         pacienteCero.start();

@@ -19,12 +19,12 @@ import java.util.concurrent.Semaphore;
 class Exterior {
 
     private Random random = new Random();
+    
+    private InterfazP1 interfazP1;
+    
     private Tunel tunel1;
-
     private Tunel tunel2;
-
     private Tunel tunel3;
-
     private Tunel tunel4;
 
     private ArrayList<Humanos> zona1_Humanos;
@@ -37,7 +37,7 @@ class Exterior {
     private Semaphore SM_zona3 = new Semaphore(1);
     private Semaphore SM_zona4 = new Semaphore(1);
 
-    public Exterior(Tunel tunel1, Tunel tunel2, Tunel tunel3, Tunel tunel4) {
+    public Exterior(Tunel tunel1, Tunel tunel2, Tunel tunel3, Tunel tunel4, InterfazP1 interfazP1) {
         this.tunel1 = tunel1;
         this.tunel2 = tunel2;
         this.tunel3 = tunel3;
@@ -46,6 +46,8 @@ class Exterior {
         this.zona2_Humanos = new ArrayList<>();
         this.zona3_Humanos = new ArrayList<>();
         this.zona4_Humanos = new ArrayList<>();
+        this.interfazP1 = interfazP1;
+
     }
 
     void entrar_zona(int tunel, Humanos humano) { //meter al humano en la lista correspondiente tras cruzar el tunel
