@@ -8,7 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         Random random = new Random();
+        
         InterfazP1 interfazP1 = new InterfazP1();
+        interfazP1.setVisible(true);
+        
         Tunel tunel1 = new Tunel(interfazP1);
         Tunel tunel2 = new Tunel(interfazP1);
         Tunel tunel3 = new Tunel(interfazP1);

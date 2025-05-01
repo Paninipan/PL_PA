@@ -1,21 +1,30 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package paniscode.pl_pa;
+
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author alvaro
  */
-public class InterfazP1 extends javax.swing.JPanel {
+public class InterfazP1 extends javax.swing.JFrame {
+
+    private Boolean parado;
+    
+    private final Object espera_Control = new Object(); //"monitor para esperar si se detiene la ejecucion" 
 
     /**
      * Creates new form InterfazP1
+     * @param parado
      */
     public InterfazP1() {
+        this.parado = true;
         initComponents();
-        
     }
 
     /**
@@ -27,10 +36,7 @@ public class InterfazP1 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel7 = new javax.swing.JPanel();
-        jPanel19 = new javax.swing.JPanel();
-        jPanel20 = new javax.swing.JPanel();
-        Refugio = new javax.swing.JPanel();
+        RefugioPanel = new javax.swing.JPanel();
         RefugioH = new javax.swing.JLabel();
         ZonaComun = new javax.swing.JTextField();
         ZonaComunTxt = new javax.swing.JLabel();
@@ -40,9 +46,12 @@ public class InterfazP1 extends javax.swing.JPanel {
         Comedor = new javax.swing.JTextField();
         ComidaTxt = new javax.swing.JLabel();
         Comida = new javax.swing.JTextField();
-        Exterior = new javax.swing.JPanel();
+        ExterioirPanel = new javax.swing.JPanel();
+        Zona4Txt = new javax.swing.JLabel();
         ExterioirH = new javax.swing.JLabel();
+        ZombiesZ4 = new javax.swing.JTextField();
         HumanosZ1 = new javax.swing.JTextField();
+        HumanosZ4 = new javax.swing.JTextField();
         ZombiesZ1 = new javax.swing.JTextField();
         Zona1Txt = new javax.swing.JLabel();
         Zona2Txt = new javax.swing.JLabel();
@@ -51,98 +60,51 @@ public class InterfazP1 extends javax.swing.JPanel {
         Zona3Txt = new javax.swing.JLabel();
         ZombiesZ3 = new javax.swing.JTextField();
         HumanosZ3 = new javax.swing.JTextField();
-        Zona4Txt = new javax.swing.JLabel();
-        ZombiesZ4 = new javax.swing.JTextField();
-        HumanosZ4 = new javax.swing.JTextField();
-        jPanel4 = new javax.swing.JPanel();
-        Tuneles1 = new javax.swing.JPanel();
+        ContBtn = new javax.swing.JButton();
+        StopBtn = new javax.swing.JButton();
+        TunelesPanel = new javax.swing.JPanel();
         TunelesH = new javax.swing.JLabel();
-        GrupoSalidaT1 = new javax.swing.JTextField();
         PasoT1 = new javax.swing.JTextField();
         GrupoEntradaT1 = new javax.swing.JTextField();
         Tunel1Txt = new javax.swing.JLabel();
+        GrupoSalidaT1 = new javax.swing.JTextField();
+        GrupoEntradaT2 = new javax.swing.JTextField();
+        PasoT2 = new javax.swing.JTextField();
         Tunel2Txt = new javax.swing.JLabel();
         GrupoSalidaT2 = new javax.swing.JTextField();
-        PasoT2 = new javax.swing.JTextField();
-        GrupoEntradaT2 = new javax.swing.JTextField();
+        GrupoEntradaT3 = new javax.swing.JTextField();
+        PasoT3 = new javax.swing.JTextField();
         Tunel3Txt = new javax.swing.JLabel();
         GrupoSalidaT3 = new javax.swing.JTextField();
-        PasoT3 = new javax.swing.JTextField();
-        GrupoEntradaT3 = new javax.swing.JTextField();
+        GrupoEntradaT4 = new javax.swing.JTextField();
+        PasoT4 = new javax.swing.JTextField();
         Tunel4Txt = new javax.swing.JLabel();
         GrupoSalidaT4 = new javax.swing.JTextField();
-        PasoT4 = new javax.swing.JTextField();
-        GrupoEntradaT4 = new javax.swing.JTextField();
-        ContBtn = new javax.swing.JButton();
-        StopBtn = new javax.swing.JButton();
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 104, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
-        jPanel20.setLayout(jPanel20Layout);
-        jPanel20Layout.setHorizontalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel20Layout.setVerticalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 140, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
-        jPanel19.setLayout(jPanel19Layout);
-        jPanel19Layout.setHorizontalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel19Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
-        );
-        jPanel19Layout.setVerticalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 140, Short.MAX_VALUE)
-            .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel19Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        setBackground(new java.awt.Color(51, 255, 204));
-        setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 204, 204), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        setPreferredSize(new java.awt.Dimension(700, 600));
-
-        Refugio.setBackground(new java.awt.Color(0, 204, 255));
-        Refugio.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 59, 186), new java.awt.Color(0, 36, 128)));
+        RefugioPanel.setBackground(new java.awt.Color(0, 204, 255));
+        RefugioPanel.setPreferredSize(new java.awt.Dimension(218, 482));
 
         RefugioH.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         RefugioH.setText("REFUGIO");
 
         ZonaComun.setEditable(false);
-        ZonaComun.setText("jTextField3");
+        ZonaComun.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ZonaComunActionPerformed(evt);
+            }
+        });
 
         ZonaComunTxt.setText("Zona Común");
 
         ZonaDescansoTxt.setText("Zona Descanso");
 
         ZonaDescanso.setEditable(false);
-        ZonaDescanso.setText("jTextField3");
 
         ComedorTxt.setText("Comedor");
 
         Comedor.setEditable(false);
-        Comedor.setText("jTextField3");
 
         ComidaTxt.setText("Comida:");
 
@@ -155,39 +117,39 @@ public class InterfazP1 extends javax.swing.JPanel {
             }
         });
 
-        javax.swing.GroupLayout RefugioLayout = new javax.swing.GroupLayout(Refugio);
-        Refugio.setLayout(RefugioLayout);
-        RefugioLayout.setHorizontalGroup(
-            RefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RefugioLayout.createSequentialGroup()
-                .addGroup(RefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RefugioLayout.createSequentialGroup()
-                        .addGroup(RefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(RefugioLayout.createSequentialGroup()
+        javax.swing.GroupLayout RefugioPanelLayout = new javax.swing.GroupLayout(RefugioPanel);
+        RefugioPanel.setLayout(RefugioPanelLayout);
+        RefugioPanelLayout.setHorizontalGroup(
+            RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RefugioPanelLayout.createSequentialGroup()
+                .addGroup(RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RefugioPanelLayout.createSequentialGroup()
+                        .addGroup(RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(RefugioPanelLayout.createSequentialGroup()
                                 .addGap(53, 53, 53)
                                 .addComponent(RefugioH))
-                            .addGroup(RefugioLayout.createSequentialGroup()
+                            .addGroup(RefugioPanelLayout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(ZonaComunTxt)))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(RefugioLayout.createSequentialGroup()
+                    .addGroup(RefugioPanelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(RefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(ZonaComun)
                             .addComponent(ZonaDescanso)
                             .addComponent(Comedor)
                             .addComponent(ZonaDescansoTxt)
-                            .addGroup(RefugioLayout.createSequentialGroup()
+                            .addGroup(RefugioPanelLayout.createSequentialGroup()
                                 .addComponent(ComedorTxt)
                                 .addGap(37, 37, 37)
                                 .addComponent(ComidaTxt)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(Comida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap())
+                .addGap(252, 252, 252))
         );
-        RefugioLayout.setVerticalGroup(
-            RefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RefugioLayout.createSequentialGroup()
+        RefugioPanelLayout.setVerticalGroup(
+            RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RefugioPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(RefugioH)
                 .addGap(18, 18, 18)
@@ -199,159 +161,160 @@ public class InterfazP1 extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ZonaDescanso, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(RefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ComedorTxt)
                     .addComponent(ComidaTxt)
                     .addComponent(Comida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Comedor, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        Exterior.setBackground(new java.awt.Color(196, 158, 17));
-        Exterior.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(242, 228, 151), new java.awt.Color(255, 204, 140)));
+        ExterioirPanel.setBackground(new java.awt.Color(196, 158, 17));
+        ExterioirPanel.setPreferredSize(new java.awt.Dimension(214, 482));
+
+        Zona4Txt.setText("Zona 4");
 
         ExterioirH.setBackground(new java.awt.Color(153, 153, 153));
         ExterioirH.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         ExterioirH.setText("EXTERIOR");
 
+        ZombiesZ4.setEditable(false);
+
         HumanosZ1.setEditable(false);
-        HumanosZ1.setText("jTextField1");
+
+        HumanosZ4.setEditable(false);
 
         ZombiesZ1.setEditable(false);
-        ZombiesZ1.setText("jTextField1");
 
         Zona1Txt.setText("Zona 1");
 
         Zona2Txt.setText("Zona 2");
 
         ZombiesZ2.setEditable(false);
-        ZombiesZ2.setText("jTextField1");
 
         HumanosZ2.setEditable(false);
-        HumanosZ2.setText("jTextField1");
 
         Zona3Txt.setText("Zona 3");
 
         ZombiesZ3.setEditable(false);
-        ZombiesZ3.setText("jTextField1");
 
         HumanosZ3.setEditable(false);
-        HumanosZ3.setText("jTextField1");
 
-        Zona4Txt.setText("Zona 4");
-
-        ZombiesZ4.setEditable(false);
-        ZombiesZ4.setText("jTextField1");
-
-        HumanosZ4.setEditable(false);
-        HumanosZ4.setText("jTextField1");
-
-        javax.swing.GroupLayout ExteriorLayout = new javax.swing.GroupLayout(Exterior);
-        Exterior.setLayout(ExteriorLayout);
-        ExteriorLayout.setHorizontalGroup(
-            ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExteriorLayout.createSequentialGroup()
+        javax.swing.GroupLayout ExterioirPanelLayout = new javax.swing.GroupLayout(ExterioirPanel);
+        ExterioirPanel.setLayout(ExterioirPanelLayout);
+        ExterioirPanelLayout.setHorizontalGroup(
+            ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(ExterioirH)
                 .addGap(51, 51, 51))
-            .addGroup(ExteriorLayout.createSequentialGroup()
-                .addGroup(ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ExteriorLayout.createSequentialGroup()
+            .addGroup(ExterioirPanelLayout.createSequentialGroup()
+                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ExterioirPanelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExteriorLayout.createSequentialGroup()
-                                    .addComponent(HumanosZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(ZombiesZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExteriorLayout.createSequentialGroup()
-                                    .addComponent(Zona3Txt)
-                                    .addGap(79, 79, 79)))
-                            .addGroup(ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExteriorLayout.createSequentialGroup()
-                                    .addComponent(HumanosZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(ZombiesZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExteriorLayout.createSequentialGroup()
-                                    .addComponent(Zona4Txt)
-                                    .addGap(79, 79, 79)))
-                            .addGroup(ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExteriorLayout.createSequentialGroup()
-                                    .addComponent(HumanosZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(ZombiesZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExteriorLayout.createSequentialGroup()
-                                    .addComponent(HumanosZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(ZombiesZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(ExteriorLayout.createSequentialGroup()
+                        .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
+                                .addComponent(HumanosZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ZombiesZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
+                                .addComponent(HumanosZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ZombiesZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(ExterioirPanelLayout.createSequentialGroup()
                         .addGap(83, 83, 83)
                         .addComponent(Zona1Txt))
-                    .addGroup(ExteriorLayout.createSequentialGroup()
+                    .addGroup(ExterioirPanelLayout.createSequentialGroup()
                         .addGap(85, 85, 85)
-                        .addComponent(Zona2Txt)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(Zona2Txt))
+                    .addGroup(ExterioirPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
+                                .addComponent(HumanosZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ZombiesZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
+                                .addComponent(Zona4Txt)
+                                .addGap(79, 79, 79))))
+                    .addGroup(ExterioirPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(ExterioirPanelLayout.createSequentialGroup()
+                                .addGap(82, 82, 82)
+                                .addComponent(Zona3Txt)
+                                .addGap(79, 79, 79))
+                            .addGroup(ExterioirPanelLayout.createSequentialGroup()
+                                .addComponent(HumanosZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ZombiesZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
-        ExteriorLayout.setVerticalGroup(
-            ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ExteriorLayout.createSequentialGroup()
+        ExterioirPanelLayout.setVerticalGroup(
+            ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ExterioirPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(ExterioirH)
                 .addGap(18, 18, 18)
                 .addComponent(Zona1Txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ZombiesZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(HumanosZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(Zona2Txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ZombiesZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(HumanosZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(Zona3Txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ZombiesZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(HumanosZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(HumanosZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ZombiesZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Zona4Txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ExteriorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ZombiesZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(HumanosZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 667, Short.MAX_VALUE)
-        );
+        ContBtn.setBackground(new java.awt.Color(51, 255, 51));
+        ContBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        ContBtn.setText("CONTINUE");
+        ContBtn.setToolTipText("");
+        ContBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(51, 204, 0), new java.awt.Color(0, 255, 51), new java.awt.Color(51, 153, 0), new java.awt.Color(0, 153, 51)));
+        ContBtn.setPreferredSize(new java.awt.Dimension(83, 45));
+        ContBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ContBtnActionPerformed(evt);
+            }
+        });
 
-        Tuneles1.setBackground(new java.awt.Color(255, 255, 102));
-        Tuneles1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 190, 52), new java.awt.Color(211, 114, 29)));
+        StopBtn.setBackground(new java.awt.Color(255, 51, 51));
+        StopBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        StopBtn.setText("STOP");
+        StopBtn.setToolTipText("");
+        StopBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(255, 0, 51), new java.awt.Color(255, 51, 0), new java.awt.Color(153, 0, 0), new java.awt.Color(153, 51, 0)));
+        StopBtn.setPreferredSize(new java.awt.Dimension(83, 45));
+        StopBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                StopBtnActionPerformed(evt);
+            }
+        });
+
+        TunelesPanel.setBackground(new java.awt.Color(255, 255, 102));
+        TunelesPanel.setPreferredSize(new java.awt.Dimension(240, 482));
 
         TunelesH.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         TunelesH.setText("TUNELES");
 
-        GrupoSalidaT1.setEditable(false);
-        GrupoSalidaT1.setText("H00023");
-        GrupoSalidaT1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoSalidaT1ActionPerformed(evt);
-            }
-        });
-
         PasoT1.setEditable(false);
-        PasoT1.setText("jTextField3");
+        PasoT1.setMinimumSize(new java.awt.Dimension(88, 22));
         PasoT1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PasoT1ActionPerformed(evt);
@@ -359,7 +322,7 @@ public class InterfazP1 extends javax.swing.JPanel {
         });
 
         GrupoEntradaT1.setEditable(false);
-        GrupoEntradaT1.setText("H00023");
+        GrupoEntradaT1.setPreferredSize(new java.awt.Dimension(64, 68));
         GrupoEntradaT1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GrupoEntradaT1ActionPerformed(evt);
@@ -368,219 +331,243 @@ public class InterfazP1 extends javax.swing.JPanel {
 
         Tunel1Txt.setText("Tunel 1");
 
-        Tunel2Txt.setText("Tunel 2");
-
-        GrupoSalidaT2.setEditable(false);
-        GrupoSalidaT2.setText("H00023");
-        GrupoSalidaT2.addActionListener(new java.awt.event.ActionListener() {
+        GrupoSalidaT1.setEditable(false);
+        GrupoSalidaT1.setPreferredSize(new java.awt.Dimension(64, 68));
+        GrupoSalidaT1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoSalidaT2ActionPerformed(evt);
+                GrupoSalidaT1ActionPerformed(evt);
             }
         });
 
-        PasoT2.setEditable(false);
-        PasoT2.setText("jTextField3");
-
         GrupoEntradaT2.setEditable(false);
-        GrupoEntradaT2.setText("H00023");
+        GrupoEntradaT2.setPreferredSize(new java.awt.Dimension(64, 68));
         GrupoEntradaT2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GrupoEntradaT2ActionPerformed(evt);
             }
         });
 
-        Tunel3Txt.setText("Tunel 3");
-
-        GrupoSalidaT3.setEditable(false);
-        GrupoSalidaT3.setText("H00023");
-        GrupoSalidaT3.addActionListener(new java.awt.event.ActionListener() {
+        PasoT2.setEditable(false);
+        PasoT2.setMinimumSize(new java.awt.Dimension(88, 22));
+        PasoT2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoSalidaT3ActionPerformed(evt);
+                PasoT2ActionPerformed(evt);
             }
         });
 
-        PasoT3.setEditable(false);
-        PasoT3.setText("jTextField3");
+        Tunel2Txt.setText("Tunel 2");
+
+        GrupoSalidaT2.setEditable(false);
+        GrupoSalidaT2.setPreferredSize(new java.awt.Dimension(64, 68));
+        GrupoSalidaT2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GrupoSalidaT2ActionPerformed(evt);
+            }
+        });
 
         GrupoEntradaT3.setEditable(false);
-        GrupoEntradaT3.setText("H00023");
+        GrupoEntradaT3.setPreferredSize(new java.awt.Dimension(64, 68));
         GrupoEntradaT3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GrupoEntradaT3ActionPerformed(evt);
             }
         });
 
-        Tunel4Txt.setText("Tunel 4");
-
-        GrupoSalidaT4.setEditable(false);
-        GrupoSalidaT4.setText("H00023");
-        GrupoSalidaT4.addActionListener(new java.awt.event.ActionListener() {
+        PasoT3.setEditable(false);
+        PasoT3.setMinimumSize(new java.awt.Dimension(88, 22));
+        PasoT3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoSalidaT4ActionPerformed(evt);
+                PasoT3ActionPerformed(evt);
             }
         });
 
-        PasoT4.setEditable(false);
-        PasoT4.setText("jTextField3");
+        Tunel3Txt.setText("Tunel 3");
+
+        GrupoSalidaT3.setEditable(false);
+        GrupoSalidaT3.setPreferredSize(new java.awt.Dimension(64, 68));
+        GrupoSalidaT3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GrupoSalidaT3ActionPerformed(evt);
+            }
+        });
 
         GrupoEntradaT4.setEditable(false);
-        GrupoEntradaT4.setText("H00023");
+        GrupoEntradaT4.setPreferredSize(new java.awt.Dimension(64, 68));
         GrupoEntradaT4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GrupoEntradaT4ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout Tuneles1Layout = new javax.swing.GroupLayout(Tuneles1);
-        Tuneles1.setLayout(Tuneles1Layout);
-        Tuneles1Layout.setHorizontalGroup(
-            Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Tuneles1Layout.createSequentialGroup()
+        PasoT4.setEditable(false);
+        PasoT4.setMinimumSize(new java.awt.Dimension(88, 22));
+        PasoT4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PasoT4ActionPerformed(evt);
+            }
+        });
+
+        Tunel4Txt.setText("Tunel 4");
+
+        GrupoSalidaT4.setEditable(false);
+        GrupoSalidaT4.setPreferredSize(new java.awt.Dimension(64, 68));
+        GrupoSalidaT4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GrupoSalidaT4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout TunelesPanelLayout = new javax.swing.GroupLayout(TunelesPanel);
+        TunelesPanel.setLayout(TunelesPanelLayout);
+        TunelesPanelLayout.setHorizontalGroup(
+            TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TunelesPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Tuneles1Layout.createSequentialGroup()
-                        .addComponent(GrupoSalidaT2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TunelesPanelLayout.createSequentialGroup()
+                        .addComponent(GrupoSalidaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(PasoT2)
-                            .addGroup(Tuneles1Layout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addComponent(Tunel2Txt)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(GrupoEntradaT2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Tuneles1Layout.createSequentialGroup()
-                        .addComponent(GrupoSalidaT3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(PasoT3)
-                            .addGroup(Tuneles1Layout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addComponent(Tunel3Txt)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(GrupoEntradaT3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Tuneles1Layout.createSequentialGroup()
-                        .addComponent(GrupoSalidaT4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(PasoT4)
-                            .addGroup(Tuneles1Layout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addComponent(Tunel4Txt)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(GrupoEntradaT4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Tuneles1Layout.createSequentialGroup()
-                        .addComponent(GrupoSalidaT1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(Tuneles1Layout.createSequentialGroup()
+                        .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(TunelesPanelLayout.createSequentialGroup()
                                 .addComponent(TunelesH)
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(Tuneles1Layout.createSequentialGroup()
-                                .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(PasoT1, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
-                                    .addGroup(Tuneles1Layout.createSequentialGroup()
+                            .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(TunelesPanelLayout.createSequentialGroup()
                                         .addGap(17, 17, 17)
-                                        .addComponent(Tunel1Txt)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(GrupoEntradaT1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(Tunel1Txt))
+                                    .addComponent(PasoT1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(GrupoEntradaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TunelesPanelLayout.createSequentialGroup()
+                        .addComponent(GrupoSalidaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addComponent(Tunel2Txt))
+                            .addComponent(PasoT2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(GrupoEntradaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(TunelesPanelLayout.createSequentialGroup()
+                        .addComponent(GrupoSalidaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addComponent(Tunel3Txt))
+                            .addComponent(PasoT3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(GrupoEntradaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(TunelesPanelLayout.createSequentialGroup()
+                        .addComponent(GrupoSalidaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addComponent(Tunel4Txt))
+                            .addComponent(PasoT4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(GrupoEntradaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
-        Tuneles1Layout.setVerticalGroup(
-            Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Tuneles1Layout.createSequentialGroup()
-                .addContainerGap()
+        TunelesPanelLayout.setVerticalGroup(
+            TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TunelesPanelLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
                 .addComponent(TunelesH)
                 .addGap(38, 38, 38)
-                .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(Tuneles1Layout.createSequentialGroup()
+                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(TunelesPanelLayout.createSequentialGroup()
                         .addComponent(Tunel1Txt)
                         .addGap(48, 48, 48))
-                    .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(GrupoSalidaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(GrupoEntradaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(PasoT1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(45, 45, 45)
-                .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(Tuneles1Layout.createSequentialGroup()
+                        .addComponent(PasoT1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(GrupoSalidaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(TunelesPanelLayout.createSequentialGroup()
                         .addComponent(Tunel2Txt)
                         .addGap(48, 48, 48))
-                    .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(GrupoSalidaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(GrupoEntradaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(PasoT2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(41, 41, 41)
-                .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(Tuneles1Layout.createSequentialGroup()
+                        .addComponent(PasoT2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(GrupoSalidaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(40, 40, 40)
+                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(TunelesPanelLayout.createSequentialGroup()
                         .addComponent(Tunel3Txt)
                         .addGap(48, 48, 48))
-                    .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(GrupoSalidaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(GrupoEntradaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(PasoT3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(44, 44, 44)
-                .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(Tuneles1Layout.createSequentialGroup()
+                        .addComponent(PasoT3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(GrupoSalidaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(48, 48, 48)
+                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(TunelesPanelLayout.createSequentialGroup()
                         .addComponent(Tunel4Txt)
                         .addGap(48, 48, 48))
-                    .addGroup(Tuneles1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(GrupoSalidaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(GrupoEntradaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(PasoT4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(PasoT4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(GrupoSalidaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
 
-        ContBtn.setBackground(new java.awt.Color(51, 255, 51));
-        ContBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        ContBtn.setText("CONTINUE");
-        ContBtn.setToolTipText("");
-        ContBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(51, 204, 0), new java.awt.Color(0, 255, 51), new java.awt.Color(51, 153, 0), new java.awt.Color(0, 153, 51)));
-
-        StopBtn.setBackground(new java.awt.Color(255, 51, 51));
-        StopBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        StopBtn.setText("STOP");
-        StopBtn.setToolTipText("");
-        StopBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(255, 0, 51), new java.awt.Color(255, 51, 0), new java.awt.Color(153, 0, 0), new java.awt.Color(153, 51, 0)));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Refugio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(RefugioPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Tuneles1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Exterior, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(ExterioirPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 8, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(184, 184, 184)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(163, 163, 163)
-                        .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(176, 176, 176)
+                        .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(170, 170, 170))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(RefugioPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE)
+                    .addComponent(TunelesPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE)
+                    .addComponent(ExterioirPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Refugio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Exterior, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Tuneles1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ZonaComunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZonaComunActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ZonaComunActionPerformed
+
+    private void ComidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComidaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ComidaActionPerformed
+
+    private void PasoT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasoT1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PasoT1ActionPerformed
 
     private void GrupoEntradaT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoEntradaT1ActionPerformed
         // TODO add your handling code here:
@@ -590,38 +577,124 @@ public class InterfazP1 extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_GrupoSalidaT1ActionPerformed
 
-    private void GrupoSalidaT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoSalidaT2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoSalidaT2ActionPerformed
-
     private void GrupoEntradaT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoEntradaT2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_GrupoEntradaT2ActionPerformed
 
-    private void GrupoSalidaT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoSalidaT3ActionPerformed
+    private void PasoT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasoT2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoSalidaT3ActionPerformed
+    }//GEN-LAST:event_PasoT2ActionPerformed
+
+    private void GrupoSalidaT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoSalidaT2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GrupoSalidaT2ActionPerformed
 
     private void GrupoEntradaT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoEntradaT3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_GrupoEntradaT3ActionPerformed
 
-    private void GrupoSalidaT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoSalidaT4ActionPerformed
+    private void PasoT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasoT3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoSalidaT4ActionPerformed
+    }//GEN-LAST:event_PasoT3ActionPerformed
+
+    private void GrupoSalidaT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoSalidaT3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GrupoSalidaT3ActionPerformed
 
     private void GrupoEntradaT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoEntradaT4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_GrupoEntradaT4ActionPerformed
 
-    private void PasoT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasoT1ActionPerformed
+    private void PasoT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasoT4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PasoT1ActionPerformed
+    }//GEN-LAST:event_PasoT4ActionPerformed
 
-    private void ComidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComidaActionPerformed
+    private void GrupoSalidaT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoSalidaT4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ComidaActionPerformed
+    }//GEN-LAST:event_GrupoSalidaT4ActionPerformed
 
+    private void ContBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContBtnActionPerformed
+        // TODO add your handling code here:
+        this.parado = false;
+        this.espera_Control.notifyAll();
+    }//GEN-LAST:event_ContBtnActionPerformed
+
+    private void StopBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StopBtnActionPerformed
+        // TODO add your handling code here:
+        this.parado = true;
+        new SimulacionParada().setVisible(true);
+    }//GEN-LAST:event_StopBtnActionPerformed
+    
+    public void ha_parado() throws InterruptedException{
+        if(parado){this.espera_Control.wait();}
+    }
+    
+    public synchronized void mod_text_zonaComun(List<String> listaHumanos){ //reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
+        StringBuilder texto = new StringBuilder();  // Usamos StringBuilder para acumular los resultados
+        for (String IdH : listaHumanos) {
+            texto.append(IdH).append("\n");  // Agregamos cada id a la cadena
+        }
+        // Ahora escribimos todo el texto en el JTextField
+        this.ZonaComun.setText(texto.toString());
+    }
+    
+    public synchronized void mod_text_descanso(List<String> listaHumanos){//reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
+        StringBuilder texto = new StringBuilder();  // Usamos StringBuilder para acumular los resultados
+        for (String IdH : listaHumanos) {
+            texto.append(IdH).append("\n");  // Agregamos cada id a la cadena
+        }
+        // Ahora escribimos todo el texto en el JTextField
+        this.ZonaComun.setText(texto.toString());
+    }
+    
+    public synchronized void mod_text_comedor(List<String> listaHumanos){//reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
+        StringBuilder texto = new StringBuilder();  // Usamos StringBuilder para acumular los resultados
+        for (String IdH : listaHumanos) {
+            texto.append(IdH).append("\n");  // Agregamos cada id a la cadena
+        }
+        // Ahora escribimos todo el texto en el JTextField
+        this.Comedor.setText(texto.toString());
+    }
+    public synchronized void  mod_text_comida(int cantidad){//reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
+        this.Comida.setText(String.valueOf(cantidad));
+    }
+
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(InterfazP1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(InterfazP1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(InterfazP1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(InterfazP1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new InterfazP1().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Comedor;
@@ -630,7 +703,7 @@ public class InterfazP1 extends javax.swing.JPanel {
     private javax.swing.JLabel ComidaTxt;
     private javax.swing.JButton ContBtn;
     private javax.swing.JLabel ExterioirH;
-    private javax.swing.JPanel Exterior;
+    private javax.swing.JPanel ExterioirPanel;
     private javax.swing.JTextField GrupoEntradaT1;
     private javax.swing.JTextField GrupoEntradaT2;
     private javax.swing.JTextField GrupoEntradaT3;
@@ -647,15 +720,15 @@ public class InterfazP1 extends javax.swing.JPanel {
     private javax.swing.JTextField PasoT2;
     private javax.swing.JTextField PasoT3;
     private javax.swing.JTextField PasoT4;
-    private javax.swing.JPanel Refugio;
     private javax.swing.JLabel RefugioH;
+    private javax.swing.JPanel RefugioPanel;
     private javax.swing.JButton StopBtn;
     private javax.swing.JLabel Tunel1Txt;
     private javax.swing.JLabel Tunel2Txt;
     private javax.swing.JLabel Tunel3Txt;
     private javax.swing.JLabel Tunel4Txt;
-    private javax.swing.JPanel Tuneles1;
     private javax.swing.JLabel TunelesH;
+    private javax.swing.JPanel TunelesPanel;
     private javax.swing.JTextField ZombiesZ1;
     private javax.swing.JTextField ZombiesZ2;
     private javax.swing.JTextField ZombiesZ3;
@@ -668,9 +741,5 @@ public class InterfazP1 extends javax.swing.JPanel {
     private javax.swing.JLabel ZonaComunTxt;
     private javax.swing.JTextField ZonaDescanso;
     private javax.swing.JLabel ZonaDescansoTxt;
-    private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel7;
     // End of variables declaration//GEN-END:variables
 }

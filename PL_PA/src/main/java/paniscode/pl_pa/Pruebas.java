@@ -11,10 +11,11 @@ import static java.lang.Thread.sleep;
  * @author alvaro
  */
 public class Pruebas {
-
+   
     /**
      * @param args the command line arguments
      */
+    /*
     public static void main(String[] args) throws InterruptedException {
         Tunel tunel1 = new Tunel();
         Tunel tunel2 = new Tunel();
@@ -31,5 +32,5 @@ public class Pruebas {
                     
         }
     }
-    
+    */
 }
