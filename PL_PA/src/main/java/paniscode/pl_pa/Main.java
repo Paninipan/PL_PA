@@ -12,10 +12,10 @@ public class Main {
         InterfazP1 interfazP1 = new InterfazP1();
         interfazP1.setVisible(true);
         
-        Tunel tunel1 = new Tunel(interfazP1);
-        Tunel tunel2 = new Tunel(interfazP1);
-        Tunel tunel3 = new Tunel(interfazP1);
-        Tunel tunel4 = new Tunel(interfazP1);
+        Tunel tunel1 = new Tunel(1,interfazP1);
+        Tunel tunel2 = new Tunel(2,interfazP1);
+        Tunel tunel3 = new Tunel(3,interfazP1);
+        Tunel tunel4 = new Tunel(4,interfazP1);
 
         Refugio refugio = new Refugio(tunel1, tunel2, tunel3, tunel4,interfazP1);
         Exterior exterior = new Exterior(tunel1, tunel2, tunel3, tunel4,interfazP1);

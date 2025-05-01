@@ -139,11 +139,11 @@ class Exterior {
             case 1 ->
                 tunel1.entrar_refugio(IdH);
             case 2 ->
-                tunel1.entrar_refugio(IdH);
+                tunel2.entrar_refugio(IdH);
             case 3 ->
-                tunel1.entrar_refugio(IdH);
+                tunel3.entrar_refugio(IdH);
             case 4 ->
-                tunel1.entrar_refugio(IdH);
+                tunel4.entrar_refugio(IdH);
         }
     }
 

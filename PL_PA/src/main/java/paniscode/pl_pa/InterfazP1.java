@@ -5,8 +5,8 @@
 package paniscode.pl_pa;
 
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.concurrent.Semaphore;
+import javax.swing.JTextPane;
 
 /**
  *
@@ -17,7 +17,16 @@ public class InterfazP1 extends javax.swing.JFrame {
     private Boolean parado;
     
     private final Object espera_Control = new Object(); //"monitor para esperar si se detiene la ejecucion" 
-
+    
+    private Semaphore ster1 = new Semaphore(1); //para acceso a los tuneles de entrada al refugio
+    private Semaphore ster2 = new Semaphore(1); //STER(semaforo tunel entrada refugio x)
+    private Semaphore ster3 = new Semaphore(1);
+    private Semaphore ster4 = new Semaphore(1);
+    
+    private Semaphore stsr1 = new Semaphore(1); //para acceso a los tuneles de salida del refugio
+    private Semaphore stsr2 = new Semaphore(1); //STSR(semaforo tunel salida refugio x)
+    private Semaphore stsr3 = new Semaphore(1);
+    private Semaphore stsr4 = new Semaphore(1);
     /**
      * Creates new form InterfazP1
      * @param parado
@@ -36,16 +45,20 @@ public class InterfazP1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jCheckBox1 = new javax.swing.JCheckBox();
         RefugioPanel = new javax.swing.JPanel();
         RefugioH = new javax.swing.JLabel();
-        ZonaComun = new javax.swing.JTextField();
         ZonaComunTxt = new javax.swing.JLabel();
         ZonaDescansoTxt = new javax.swing.JLabel();
-        ZonaDescanso = new javax.swing.JTextField();
         ComedorTxt = new javax.swing.JLabel();
-        Comedor = new javax.swing.JTextField();
         ComidaTxt = new javax.swing.JLabel();
         Comida = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        ZonaComun = new javax.swing.JTextPane();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        Comedor = new javax.swing.JTextPane();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        ZonaDescanso1 = new javax.swing.JTextPane();
         ExterioirPanel = new javax.swing.JPanel();
         Zona4Txt = new javax.swing.JLabel();
         ExterioirH = new javax.swing.JLabel();
@@ -64,22 +77,38 @@ public class InterfazP1 extends javax.swing.JFrame {
         StopBtn = new javax.swing.JButton();
         TunelesPanel = new javax.swing.JPanel();
         TunelesH = new javax.swing.JLabel();
-        PasoT1 = new javax.swing.JTextField();
-        GrupoEntradaT1 = new javax.swing.JTextField();
-        Tunel1Txt = new javax.swing.JLabel();
-        GrupoSalidaT1 = new javax.swing.JTextField();
-        GrupoEntradaT2 = new javax.swing.JTextField();
-        PasoT2 = new javax.swing.JTextField();
-        Tunel2Txt = new javax.swing.JLabel();
-        GrupoSalidaT2 = new javax.swing.JTextField();
-        GrupoEntradaT3 = new javax.swing.JTextField();
-        PasoT3 = new javax.swing.JTextField();
-        Tunel3Txt = new javax.swing.JLabel();
-        GrupoSalidaT3 = new javax.swing.JTextField();
-        GrupoEntradaT4 = new javax.swing.JTextField();
-        PasoT4 = new javax.swing.JTextField();
-        Tunel4Txt = new javax.swing.JLabel();
-        GrupoSalidaT4 = new javax.swing.JTextField();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        GrupoSalidaT1 = new javax.swing.JTextPane();
+        TunelTxt1 = new javax.swing.JLabel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        PasoT1 = new javax.swing.JTextPane();
+        jScrollPane17 = new javax.swing.JScrollPane();
+        GrupoEntradaT1 = new javax.swing.JTextPane();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        GrupoSalidaT2 = new javax.swing.JTextPane();
+        TunelTxt2 = new javax.swing.JLabel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        PasoT2 = new javax.swing.JTextPane();
+        jScrollPane18 = new javax.swing.JScrollPane();
+        GrupoEntradaT2 = new javax.swing.JTextPane();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        GrupoSalidaT3 = new javax.swing.JTextPane();
+        TunelTxt3 = new javax.swing.JLabel();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        PasoT3 = new javax.swing.JTextPane();
+        jScrollPane19 = new javax.swing.JScrollPane();
+        GrupoEntradaT3 = new javax.swing.JTextPane();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        GrupoSalidaT4 = new javax.swing.JTextPane();
+        TunelTxt4 = new javax.swing.JLabel();
+        jScrollPane15 = new javax.swing.JScrollPane();
+        PasoT4 = new javax.swing.JTextPane();
+        jScrollPane20 = new javax.swing.JScrollPane();
+        GrupoEntradaT4 = new javax.swing.JTextPane();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+
+        jCheckBox1.setText("jCheckBox1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -89,22 +118,11 @@ public class InterfazP1 extends javax.swing.JFrame {
         RefugioH.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         RefugioH.setText("REFUGIO");
 
-        ZonaComun.setEditable(false);
-        ZonaComun.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ZonaComunActionPerformed(evt);
-            }
-        });
-
         ZonaComunTxt.setText("Zona Común");
 
         ZonaDescansoTxt.setText("Zona Descanso");
 
-        ZonaDescanso.setEditable(false);
-
         ComedorTxt.setText("Comedor");
-
-        Comedor.setEditable(false);
 
         ComidaTxt.setText("Comida:");
 
@@ -117,6 +135,18 @@ public class InterfazP1 extends javax.swing.JFrame {
             }
         });
 
+        ZonaComun.setEditable(false);
+        ZonaComun.setPreferredSize(new java.awt.Dimension(201, 109));
+        jScrollPane2.setViewportView(ZonaComun);
+
+        Comedor.setEditable(false);
+        Comedor.setPreferredSize(new java.awt.Dimension(201, 109));
+        jScrollPane3.setViewportView(Comedor);
+
+        ZonaDescanso1.setEditable(false);
+        ZonaDescanso1.setPreferredSize(new java.awt.Dimension(201, 109));
+        jScrollPane4.setViewportView(ZonaDescanso1);
+
         javax.swing.GroupLayout RefugioPanelLayout = new javax.swing.GroupLayout(RefugioPanel);
         RefugioPanel.setLayout(RefugioPanelLayout);
         RefugioPanelLayout.setHorizontalGroup(
@@ -124,50 +154,47 @@ public class InterfazP1 extends javax.swing.JFrame {
             .addGroup(RefugioPanelLayout.createSequentialGroup()
                 .addGroup(RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RefugioPanelLayout.createSequentialGroup()
-                        .addGroup(RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(RefugioPanelLayout.createSequentialGroup()
-                                .addGap(53, 53, 53)
-                                .addComponent(RefugioH))
-                            .addGroup(RefugioPanelLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(ZonaComunTxt)))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(53, 53, 53)
+                        .addComponent(RefugioH))
+                    .addGroup(RefugioPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(ZonaComunTxt))
                     .addGroup(RefugioPanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ZonaComun)
-                            .addComponent(ZonaDescanso)
-                            .addComponent(Comedor)
-                            .addComponent(ZonaDescansoTxt)
                             .addGroup(RefugioPanelLayout.createSequentialGroup()
                                 .addComponent(ComedorTxt)
                                 .addGap(37, 37, 37)
                                 .addComponent(ComidaTxt)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Comida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(252, 252, 252))
+                                .addComponent(Comida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ZonaDescansoTxt)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
         RefugioPanelLayout.setVerticalGroup(
             RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RefugioPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(RefugioH)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ZonaComunTxt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ZonaComun, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(ZonaDescansoTxt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ZonaDescanso, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(RefugioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ComedorTxt)
                     .addComponent(ComidaTxt)
                     .addComponent(Comida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Comedor, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
         ExterioirPanel.setBackground(new java.awt.Color(196, 158, 17));
@@ -313,163 +340,123 @@ public class InterfazP1 extends javax.swing.JFrame {
         TunelesH.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         TunelesH.setText("TUNELES");
 
+        GrupoSalidaT1.setEditable(false);
+        GrupoSalidaT1.setPreferredSize(new java.awt.Dimension(64, 68));
+        jScrollPane8.setViewportView(GrupoSalidaT1);
+
+        TunelTxt1.setText("Tunel 1");
+
         PasoT1.setEditable(false);
-        PasoT1.setMinimumSize(new java.awt.Dimension(88, 22));
-        PasoT1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PasoT1ActionPerformed(evt);
-            }
-        });
+        PasoT1.setPreferredSize(new java.awt.Dimension(88, 22));
+        jScrollPane9.setViewportView(PasoT1);
 
         GrupoEntradaT1.setEditable(false);
         GrupoEntradaT1.setPreferredSize(new java.awt.Dimension(64, 68));
-        GrupoEntradaT1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoEntradaT1ActionPerformed(evt);
-            }
-        });
-
-        Tunel1Txt.setText("Tunel 1");
-
-        GrupoSalidaT1.setEditable(false);
-        GrupoSalidaT1.setPreferredSize(new java.awt.Dimension(64, 68));
-        GrupoSalidaT1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoSalidaT1ActionPerformed(evt);
-            }
-        });
-
-        GrupoEntradaT2.setEditable(false);
-        GrupoEntradaT2.setPreferredSize(new java.awt.Dimension(64, 68));
-        GrupoEntradaT2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoEntradaT2ActionPerformed(evt);
-            }
-        });
-
-        PasoT2.setEditable(false);
-        PasoT2.setMinimumSize(new java.awt.Dimension(88, 22));
-        PasoT2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PasoT2ActionPerformed(evt);
-            }
-        });
-
-        Tunel2Txt.setText("Tunel 2");
+        jScrollPane17.setViewportView(GrupoEntradaT1);
 
         GrupoSalidaT2.setEditable(false);
         GrupoSalidaT2.setPreferredSize(new java.awt.Dimension(64, 68));
-        GrupoSalidaT2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoSalidaT2ActionPerformed(evt);
-            }
-        });
+        jScrollPane10.setViewportView(GrupoSalidaT2);
 
-        GrupoEntradaT3.setEditable(false);
-        GrupoEntradaT3.setPreferredSize(new java.awt.Dimension(64, 68));
-        GrupoEntradaT3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoEntradaT3ActionPerformed(evt);
-            }
-        });
+        TunelTxt2.setText("Tunel 2");
 
-        PasoT3.setEditable(false);
-        PasoT3.setMinimumSize(new java.awt.Dimension(88, 22));
-        PasoT3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PasoT3ActionPerformed(evt);
-            }
-        });
+        PasoT2.setEditable(false);
+        PasoT2.setPreferredSize(new java.awt.Dimension(88, 22));
+        jScrollPane11.setViewportView(PasoT2);
 
-        Tunel3Txt.setText("Tunel 3");
+        GrupoEntradaT2.setEditable(false);
+        GrupoEntradaT2.setPreferredSize(new java.awt.Dimension(64, 68));
+        jScrollPane18.setViewportView(GrupoEntradaT2);
 
         GrupoSalidaT3.setEditable(false);
         GrupoSalidaT3.setPreferredSize(new java.awt.Dimension(64, 68));
-        GrupoSalidaT3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoSalidaT3ActionPerformed(evt);
-            }
-        });
+        jScrollPane12.setViewportView(GrupoSalidaT3);
 
-        GrupoEntradaT4.setEditable(false);
-        GrupoEntradaT4.setPreferredSize(new java.awt.Dimension(64, 68));
-        GrupoEntradaT4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoEntradaT4ActionPerformed(evt);
-            }
-        });
+        TunelTxt3.setText("Tunel 3");
 
-        PasoT4.setEditable(false);
-        PasoT4.setMinimumSize(new java.awt.Dimension(88, 22));
-        PasoT4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PasoT4ActionPerformed(evt);
-            }
-        });
+        PasoT3.setEditable(false);
+        PasoT3.setPreferredSize(new java.awt.Dimension(88, 22));
+        jScrollPane13.setViewportView(PasoT3);
 
-        Tunel4Txt.setText("Tunel 4");
+        GrupoEntradaT3.setEditable(false);
+        GrupoEntradaT3.setPreferredSize(new java.awt.Dimension(64, 68));
+        jScrollPane19.setViewportView(GrupoEntradaT3);
 
         GrupoSalidaT4.setEditable(false);
         GrupoSalidaT4.setPreferredSize(new java.awt.Dimension(64, 68));
-        GrupoSalidaT4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GrupoSalidaT4ActionPerformed(evt);
-            }
-        });
+        jScrollPane14.setViewportView(GrupoSalidaT4);
+
+        TunelTxt4.setText("Tunel 4");
+
+        PasoT4.setEditable(false);
+        PasoT4.setPreferredSize(new java.awt.Dimension(88, 22));
+        jScrollPane15.setViewportView(PasoT4);
+
+        GrupoEntradaT4.setEditable(false);
+        GrupoEntradaT4.setPreferredSize(new java.awt.Dimension(64, 68));
+        jScrollPane20.setViewportView(GrupoEntradaT4);
 
         javax.swing.GroupLayout TunelesPanelLayout = new javax.swing.GroupLayout(TunelesPanel);
         TunelesPanel.setLayout(TunelesPanelLayout);
         TunelesPanelLayout.setHorizontalGroup(
             TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TunelesPanelLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(TunelesPanelLayout.createSequentialGroup()
-                        .addComponent(GrupoSalidaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(TunelesPanelLayout.createSequentialGroup()
+                            .addContainerGap(6, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TunelesPanelLayout.createSequentialGroup()
+                                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                            .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(29, 29, 29)
+                                            .addComponent(TunelTxt2))
+                                        .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                            .addGap(69, 69, 69)
+                                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TunelesPanelLayout.createSequentialGroup()
+                                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                            .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(29, 29, 29)
+                                            .addComponent(TunelTxt3))
+                                        .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                            .addGap(69, 69, 69)
+                                            .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(TunelesPanelLayout.createSequentialGroup()
-                                .addComponent(TunelesH)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                .addContainerGap()
                                 .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(TunelesPanelLayout.createSequentialGroup()
-                                        .addGap(17, 17, 17)
-                                        .addComponent(Tunel1Txt))
-                                    .addComponent(PasoT1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(GrupoEntradaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TunelesPanelLayout.createSequentialGroup()
-                        .addComponent(GrupoSalidaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(29, 29, 29)
+                                        .addComponent(TunelTxt1))
+                                    .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                        .addGap(69, 69, 69)
+                                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(TunelesPanelLayout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addComponent(Tunel2Txt))
-                            .addComponent(PasoT2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(GrupoEntradaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(76, 76, 76)
+                                .addComponent(TunelesH))))
                     .addGroup(TunelesPanelLayout.createSequentialGroup()
-                        .addComponent(GrupoSalidaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addContainerGap()
                         .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(TunelesPanelLayout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addComponent(Tunel3Txt))
-                            .addComponent(PasoT3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(GrupoEntradaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(TunelesPanelLayout.createSequentialGroup()
-                        .addComponent(GrupoSalidaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(29, 29, 29)
+                                .addComponent(TunelTxt4))
                             .addGroup(TunelesPanelLayout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addComponent(Tunel4Txt))
-                            .addComponent(PasoT4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(GrupoEntradaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                                .addGap(69, 69, 69)
+                                .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         TunelesPanelLayout.setVerticalGroup(
             TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -477,43 +464,54 @@ public class InterfazP1 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(TunelesH)
                 .addGap(38, 38, 38)
-                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(TunelesPanelLayout.createSequentialGroup()
-                        .addComponent(Tunel1Txt)
-                        .addGap(48, 48, 48))
-                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(GrupoEntradaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(PasoT1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(GrupoSalidaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(2, 2, 2)
+                        .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                .addComponent(TunelTxt1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(46, 46, 46)
+                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(TunelesPanelLayout.createSequentialGroup()
-                        .addComponent(Tunel2Txt)
-                        .addGap(48, 48, 48))
-                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(GrupoEntradaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(PasoT2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(GrupoSalidaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(40, 40, 40)
-                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(2, 2, 2)
+                        .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                .addComponent(TunelTxt2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(39, 39, 39)
+                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(TunelesPanelLayout.createSequentialGroup()
-                        .addComponent(Tunel3Txt)
-                        .addGap(48, 48, 48))
-                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(GrupoEntradaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(PasoT3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(GrupoSalidaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(48, 48, 48)
-                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(2, 2, 2)
+                        .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                .addComponent(TunelTxt3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(TunelesPanelLayout.createSequentialGroup()
-                        .addComponent(Tunel4Txt)
-                        .addGap(48, 48, 48))
-                    .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(GrupoEntradaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(PasoT4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(GrupoSalidaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(2, 2, 2)
+                        .addGroup(TunelesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(TunelesPanelLayout.createSequentialGroup()
+                                .addComponent(TunelTxt4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap())
         );
+
+        jTextPane1.setEditable(false);
+        jScrollPane1.setViewportView(jTextPane1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -525,93 +523,49 @@ public class InterfazP1 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(RefugioPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ExterioirPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 8, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(176, 176, 176)
                         .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(170, 170, 170))))
+                        .addGap(60, 60, 60)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(RefugioPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE)
-                    .addComponent(TunelesPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE)
-                    .addComponent(ExterioirPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(RefugioPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE)
+                            .addComponent(ExterioirPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE))
+                        .addGap(14, 14, 14)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ZonaComunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZonaComunActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ZonaComunActionPerformed
-
     private void ComidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComidaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ComidaActionPerformed
-
-    private void PasoT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasoT1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PasoT1ActionPerformed
-
-    private void GrupoEntradaT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoEntradaT1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoEntradaT1ActionPerformed
-
-    private void GrupoSalidaT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoSalidaT1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoSalidaT1ActionPerformed
-
-    private void GrupoEntradaT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoEntradaT2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoEntradaT2ActionPerformed
-
-    private void PasoT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasoT2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PasoT2ActionPerformed
-
-    private void GrupoSalidaT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoSalidaT2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoSalidaT2ActionPerformed
-
-    private void GrupoEntradaT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoEntradaT3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoEntradaT3ActionPerformed
-
-    private void PasoT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasoT3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PasoT3ActionPerformed
-
-    private void GrupoSalidaT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoSalidaT3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoSalidaT3ActionPerformed
-
-    private void GrupoEntradaT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoEntradaT4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoEntradaT4ActionPerformed
-
-    private void PasoT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasoT4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PasoT4ActionPerformed
-
-    private void GrupoSalidaT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrupoSalidaT4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GrupoSalidaT4ActionPerformed
 
     private void ContBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContBtnActionPerformed
         // TODO add your handling code here:
@@ -658,7 +612,56 @@ public class InterfazP1 extends javax.swing.JFrame {
     public synchronized void  mod_text_comida(int cantidad){//reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
         this.Comida.setText(String.valueOf(cantidad));
     }
+        
+    public void mod_text_tuneles_entrada(List<String> listaHumanos, int tunel) {
+        Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};
+        JTextPane[] paneles = {null,GrupoEntradaT1, GrupoEntradaT2, GrupoEntradaT3, GrupoEntradaT4};
+        try {
+            semaforos[tunel].acquire();
 
+            StringBuilder texto = new StringBuilder();
+            for (String IdH : listaHumanos) {
+                texto.append(IdH).append("\n");
+            }
+
+            paneles[tunel].setText(texto.toString());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            semaforos[tunel].release();
+        }
+    }
+    public void mod_text_tuneles_salida(List<String> listaHumanos, int tunel) {
+        Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};
+        JTextPane[] paneles = {null,GrupoSalidaT1, GrupoSalidaT2, GrupoSalidaT3, GrupoSalidaT4};
+
+        try {
+            semaforos[tunel].acquire();
+
+            StringBuilder texto = new StringBuilder();
+            for (String IdH : listaHumanos) {
+                texto.append(IdH).append("\n");
+            }
+
+            paneles[tunel].setText(texto.toString());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            semaforos[tunel].release();
+        }
+    }
+    
+    public void mod_text_paso_tunel(String IdH, int tunel){
+        JTextPane[] paneles = {null,PasoT1, PasoT2, PasoT3, PasoT4};
+
+        if(IdH == null){
+                paneles[tunel].setText("");}
+        else{
+             paneles[tunel].setText(IdH);}    
+    }
+
+                
+    
     
     /**
      * @param args the command line arguments
@@ -697,36 +700,36 @@ public class InterfazP1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField Comedor;
+    private javax.swing.JTextPane Comedor;
     private javax.swing.JLabel ComedorTxt;
     private javax.swing.JTextField Comida;
     private javax.swing.JLabel ComidaTxt;
     private javax.swing.JButton ContBtn;
     private javax.swing.JLabel ExterioirH;
     private javax.swing.JPanel ExterioirPanel;
-    private javax.swing.JTextField GrupoEntradaT1;
-    private javax.swing.JTextField GrupoEntradaT2;
-    private javax.swing.JTextField GrupoEntradaT3;
-    private javax.swing.JTextField GrupoEntradaT4;
-    private javax.swing.JTextField GrupoSalidaT1;
-    private javax.swing.JTextField GrupoSalidaT2;
-    private javax.swing.JTextField GrupoSalidaT3;
-    private javax.swing.JTextField GrupoSalidaT4;
+    private javax.swing.JTextPane GrupoEntradaT1;
+    private javax.swing.JTextPane GrupoEntradaT2;
+    private javax.swing.JTextPane GrupoEntradaT3;
+    private javax.swing.JTextPane GrupoEntradaT4;
+    private javax.swing.JTextPane GrupoSalidaT1;
+    private javax.swing.JTextPane GrupoSalidaT2;
+    private javax.swing.JTextPane GrupoSalidaT3;
+    private javax.swing.JTextPane GrupoSalidaT4;
     private javax.swing.JTextField HumanosZ1;
     private javax.swing.JTextField HumanosZ2;
     private javax.swing.JTextField HumanosZ3;
     private javax.swing.JTextField HumanosZ4;
-    private javax.swing.JTextField PasoT1;
-    private javax.swing.JTextField PasoT2;
-    private javax.swing.JTextField PasoT3;
-    private javax.swing.JTextField PasoT4;
+    private javax.swing.JTextPane PasoT1;
+    private javax.swing.JTextPane PasoT2;
+    private javax.swing.JTextPane PasoT3;
+    private javax.swing.JTextPane PasoT4;
     private javax.swing.JLabel RefugioH;
     private javax.swing.JPanel RefugioPanel;
     private javax.swing.JButton StopBtn;
-    private javax.swing.JLabel Tunel1Txt;
-    private javax.swing.JLabel Tunel2Txt;
-    private javax.swing.JLabel Tunel3Txt;
-    private javax.swing.JLabel Tunel4Txt;
+    private javax.swing.JLabel TunelTxt1;
+    private javax.swing.JLabel TunelTxt2;
+    private javax.swing.JLabel TunelTxt3;
+    private javax.swing.JLabel TunelTxt4;
     private javax.swing.JLabel TunelesH;
     private javax.swing.JPanel TunelesPanel;
     private javax.swing.JTextField ZombiesZ1;
@@ -737,9 +740,27 @@ public class InterfazP1 extends javax.swing.JFrame {
     private javax.swing.JLabel Zona2Txt;
     private javax.swing.JLabel Zona3Txt;
     private javax.swing.JLabel Zona4Txt;
-    private javax.swing.JTextField ZonaComun;
+    private javax.swing.JTextPane ZonaComun;
     private javax.swing.JLabel ZonaComunTxt;
-    private javax.swing.JTextField ZonaDescanso;
+    private javax.swing.JTextPane ZonaDescanso1;
     private javax.swing.JLabel ZonaDescansoTxt;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
+    private javax.swing.JScrollPane jScrollPane14;
+    private javax.swing.JScrollPane jScrollPane15;
+    private javax.swing.JScrollPane jScrollPane17;
+    private javax.swing.JScrollPane jScrollPane18;
+    private javax.swing.JScrollPane jScrollPane19;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane20;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }
