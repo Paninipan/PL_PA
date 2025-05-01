@@ -31,6 +31,12 @@ class Exterior {
     private ArrayList<Humanos> zona2_Humanos;
     private ArrayList<Humanos> zona3_Humanos;
     private ArrayList<Humanos> zona4_Humanos;
+    
+    private ArrayList<Zombies> zona1_Zombies;
+    private ArrayList<Zombies> zona2_Zombies;
+    private ArrayList<Zombies> zona3_Zombies;
+    private ArrayList<Zombies> zona4_Zombies;
+
 
     private Semaphore SM_zona1 = new Semaphore(1);
     private Semaphore SM_zona2 = new Semaphore(1);
@@ -46,6 +52,10 @@ class Exterior {
         this.zona2_Humanos = new ArrayList<>();
         this.zona3_Humanos = new ArrayList<>();
         this.zona4_Humanos = new ArrayList<>();
+        this.zona1_Zombies = new ArrayList<>();
+        this.zona2_Zombies = new ArrayList<>();
+        this.zona3_Zombies = new ArrayList<>();
+        this.zona4_Zombies = new ArrayList<>();
         this.interfazP1 = interfazP1;
 
     }
@@ -61,6 +71,8 @@ class Exterior {
             case 4 ->
                 zona4_Humanos.add(humano);
         }
+        interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(tunel), tunel);
+
     }
 
     public void aguantar(Humanos humano) { //esperar a que el humano termine de recolectar o sea atacado
@@ -88,9 +100,16 @@ class Exterior {
             case 4 -> SM_zona4;
             default -> throw new IllegalArgumentException("Zona inválida: " + zona);//esto nunco ocurriria
         };
+        
+        List<List<Zombies>> zonasZ = Arrays.asList(null, zona1_Zombies, zona2_Zombies, zona3_Zombies, zona4_Zombies);
+        List<Zombies> zombiesZona = zonasZ.get(zona);
+        zombiesZona.add(zombie); // El zombie “entra” en la zona
+        interfazP1.mod_text_zona_exterior_zombies(zombiesZona, zona);
 
         List<List<Humanos>> zonas = Arrays.asList(null, zona1_Humanos, zona2_Humanos, zona3_Humanos, zona4_Humanos); // índice 1-4
         List<Humanos> humanosZona = zonas.get(zona);
+        
+        
 
         try {
             // Esperar hasta encontrar un humano o que se agote el tiempo
@@ -109,6 +128,7 @@ class Exterior {
                     case 3 ->zona3_Humanos.remove(zona3_Humanos.indexOf(elegido));
                     case 4 ->zona4_Humanos.remove(zona4_Humanos.indexOf(elegido));
                 }
+                interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(zona), zona);
             }
 
         } finally {
@@ -117,6 +137,10 @@ class Exterior {
                 ataque(elegido, zombie); // Ejecutar ataque
                 Thread.sleep(1000L * random.nextInt(2, 4)); // Tiempo entre ataques
             }
+            // Eliminar zombie de la zona tras el ataque
+            zombiesZona.remove(zombie);
+            interfazP1.mod_text_zona_exterior_zombies(zombiesZona, zona);
+
         }
     }
 
@@ -156,8 +180,23 @@ class Exterior {
                 case 3 -> zona3_Humanos.remove(humano);
                 case 4 -> zona4_Humanos.remove(humano);
             }
+            interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(tunel), tunel);
         } catch (IndexOutOfBoundsException | NullPointerException e) {
             // Silencioso: puede no estar en la lista (ya eliminado), ignoramos
         }       
     }    
+    private ArrayList<Humanos> getZonaHumanos(int zona) {
+        return switch (zona) {
+            case 1 -> zona1_Humanos;
+            case 2 -> zona2_Humanos;
+            case 3 -> zona3_Humanos;
+            case 4 -> zona4_Humanos;
+            default -> throw new IllegalArgumentException("Zona inválida: " + zona);
+        };
+    }
+
+
+
+
 }
+

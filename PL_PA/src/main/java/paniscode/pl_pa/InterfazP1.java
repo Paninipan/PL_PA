@@ -62,17 +62,25 @@ public class InterfazP1 extends javax.swing.JFrame {
         ExterioirPanel = new javax.swing.JPanel();
         Zona4Txt = new javax.swing.JLabel();
         ExterioirH = new javax.swing.JLabel();
-        ZombiesZ4 = new javax.swing.JTextField();
-        HumanosZ1 = new javax.swing.JTextField();
-        HumanosZ4 = new javax.swing.JTextField();
-        ZombiesZ1 = new javax.swing.JTextField();
         Zona1Txt = new javax.swing.JLabel();
         Zona2Txt = new javax.swing.JLabel();
-        ZombiesZ2 = new javax.swing.JTextField();
-        HumanosZ2 = new javax.swing.JTextField();
         Zona3Txt = new javax.swing.JLabel();
-        ZombiesZ3 = new javax.swing.JTextField();
-        HumanosZ3 = new javax.swing.JTextField();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        HumanosZ1 = new javax.swing.JTextPane();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        ZombiesZ1 = new javax.swing.JTextPane();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        HumanosZ2 = new javax.swing.JTextPane();
+        jScrollPane16 = new javax.swing.JScrollPane();
+        ZombiesZ2 = new javax.swing.JTextPane();
+        jScrollPane21 = new javax.swing.JScrollPane();
+        HumanosZ3 = new javax.swing.JTextPane();
+        jScrollPane22 = new javax.swing.JScrollPane();
+        ZombiesZ3 = new javax.swing.JTextPane();
+        jScrollPane23 = new javax.swing.JScrollPane();
+        HumanosZ4 = new javax.swing.JTextPane();
+        jScrollPane24 = new javax.swing.JScrollPane();
+        ZombiesZ4 = new javax.swing.JTextPane();
         ContBtn = new javax.swing.JButton();
         StopBtn = new javax.swing.JButton();
         TunelesPanel = new javax.swing.JPanel();
@@ -194,7 +202,7 @@ public class InterfazP1 extends javax.swing.JFrame {
                     .addComponent(Comida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         ExterioirPanel.setBackground(new java.awt.Color(196, 158, 17));
@@ -206,27 +214,28 @@ public class InterfazP1 extends javax.swing.JFrame {
         ExterioirH.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         ExterioirH.setText("EXTERIOR");
 
-        ZombiesZ4.setEditable(false);
-
-        HumanosZ1.setEditable(false);
-
-        HumanosZ4.setEditable(false);
-
-        ZombiesZ1.setEditable(false);
-
         Zona1Txt.setText("Zona 1");
 
         Zona2Txt.setText("Zona 2");
 
-        ZombiesZ2.setEditable(false);
-
-        HumanosZ2.setEditable(false);
-
         Zona3Txt.setText("Zona 3");
 
-        ZombiesZ3.setEditable(false);
+        HumanosZ1.setPreferredSize(new java.awt.Dimension(64, 22));
+        jScrollPane5.setViewportView(HumanosZ1);
 
-        HumanosZ3.setEditable(false);
+        jScrollPane6.setViewportView(ZombiesZ1);
+
+        jScrollPane7.setViewportView(HumanosZ2);
+
+        jScrollPane16.setViewportView(ZombiesZ2);
+
+        jScrollPane21.setViewportView(HumanosZ3);
+
+        jScrollPane22.setViewportView(ZombiesZ3);
+
+        jScrollPane23.setViewportView(HumanosZ4);
+
+        jScrollPane24.setViewportView(ZombiesZ4);
 
         javax.swing.GroupLayout ExterioirPanelLayout = new javax.swing.GroupLayout(ExterioirPanel);
         ExterioirPanel.setLayout(ExterioirPanelLayout);
@@ -238,44 +247,40 @@ public class InterfazP1 extends javax.swing.JFrame {
                 .addGap(51, 51, 51))
             .addGroup(ExterioirPanelLayout.createSequentialGroup()
                 .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(ExterioirPanelLayout.createSequentialGroup()
+                            .addContainerGap()
+                            .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
+                                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
+                                    .addComponent(jScrollPane7)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(ExterioirPanelLayout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(jScrollPane23, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jScrollPane24))
+                        .addGroup(ExterioirPanelLayout.createSequentialGroup()
+                            .addGap(88, 88, 88)
+                            .addComponent(Zona3Txt))
+                        .addGroup(ExterioirPanelLayout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jScrollPane22)))
                     .addGroup(ExterioirPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
-                                .addComponent(HumanosZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ZombiesZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
-                                .addComponent(HumanosZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ZombiesZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(ExterioirPanelLayout.createSequentialGroup()
-                        .addGap(83, 83, 83)
+                        .addGap(87, 87, 87)
                         .addComponent(Zona1Txt))
                     .addGroup(ExterioirPanelLayout.createSequentialGroup()
-                        .addGap(85, 85, 85)
+                        .addGap(86, 86, 86)
                         .addComponent(Zona2Txt))
                     .addGroup(ExterioirPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
-                                .addComponent(HumanosZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ZombiesZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ExterioirPanelLayout.createSequentialGroup()
-                                .addComponent(Zona4Txt)
-                                .addGap(79, 79, 79))))
-                    .addGroup(ExterioirPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(ExterioirPanelLayout.createSequentialGroup()
-                                .addGap(82, 82, 82)
-                                .addComponent(Zona3Txt)
-                                .addGap(79, 79, 79))
-                            .addGroup(ExterioirPanelLayout.createSequentialGroup()
-                                .addComponent(HumanosZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ZombiesZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(88, 88, 88)
+                        .addComponent(Zona4Txt)))
                 .addContainerGap(10, Short.MAX_VALUE))
         );
         ExterioirPanelLayout.setVerticalGroup(
@@ -283,31 +288,31 @@ public class InterfazP1 extends javax.swing.JFrame {
             .addGroup(ExterioirPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(ExterioirH)
-                .addGap(18, 18, 18)
+                .addGap(30, 30, 30)
                 .addComponent(Zona1Txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ZombiesZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(HumanosZ1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(Zona2Txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ZombiesZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(HumanosZ2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(Zona3Txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(HumanosZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ZombiesZ3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Zona4Txt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ZombiesZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(HumanosZ4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane23, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                    .addComponent(jScrollPane24))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         ContBtn.setBackground(new java.awt.Color(51, 255, 51));
@@ -523,16 +528,19 @@ public class InterfazP1 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(RefugioPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ExterioirPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(176, 176, 176)
-                        .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(60, 60, 60)
+                        .addGap(126, 126, 126)
+                        .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ExterioirPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(110, 110, 110)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(46, 46, 46))))
         );
@@ -543,18 +551,16 @@ public class InterfazP1 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(RefugioPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE)
-                            .addComponent(ExterioirPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE))
+                            .addComponent(RefugioPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 532, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(ExterioirPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE)
+                                .addGap(44, 44, 44)))
                         .addGap(14, 14, 14)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
@@ -660,8 +666,26 @@ public class InterfazP1 extends javax.swing.JFrame {
              paneles[tunel].setText(IdH);}    
     }
 
+
                 
-    
+    public synchronized void mod_text_zona_exterior_humanos(List<Humanos> listaHumanos, int zona) {
+    JTextPane[] panelesHumanos = {null, HumanosZ1, HumanosZ2, HumanosZ3, HumanosZ4};
+    StringBuilder texto = new StringBuilder();
+    for (Humanos h : listaHumanos) {
+        texto.append(h.getIdH()).append("\n");
+    }
+    panelesHumanos[zona].setText(texto.toString());
+    }
+
+    public synchronized void mod_text_zona_exterior_zombies(List<Zombies> listaZombies, int zona) {
+        JTextPane[] panelesZombies = {null, ZombiesZ1, ZombiesZ2, ZombiesZ3, ZombiesZ4};
+        StringBuilder texto = new StringBuilder();
+        for (Zombies z : listaZombies) {
+            texto.append(z.getIdZ()).append("\n");
+        }
+        panelesZombies[zona].setText(texto.toString());
+    }
+
     
     /**
      * @param args the command line arguments
@@ -715,10 +739,10 @@ public class InterfazP1 extends javax.swing.JFrame {
     private javax.swing.JTextPane GrupoSalidaT2;
     private javax.swing.JTextPane GrupoSalidaT3;
     private javax.swing.JTextPane GrupoSalidaT4;
-    private javax.swing.JTextField HumanosZ1;
-    private javax.swing.JTextField HumanosZ2;
-    private javax.swing.JTextField HumanosZ3;
-    private javax.swing.JTextField HumanosZ4;
+    private javax.swing.JTextPane HumanosZ1;
+    private javax.swing.JTextPane HumanosZ2;
+    private javax.swing.JTextPane HumanosZ3;
+    private javax.swing.JTextPane HumanosZ4;
     private javax.swing.JTextPane PasoT1;
     private javax.swing.JTextPane PasoT2;
     private javax.swing.JTextPane PasoT3;
@@ -732,10 +756,10 @@ public class InterfazP1 extends javax.swing.JFrame {
     private javax.swing.JLabel TunelTxt4;
     private javax.swing.JLabel TunelesH;
     private javax.swing.JPanel TunelesPanel;
-    private javax.swing.JTextField ZombiesZ1;
-    private javax.swing.JTextField ZombiesZ2;
-    private javax.swing.JTextField ZombiesZ3;
-    private javax.swing.JTextField ZombiesZ4;
+    private javax.swing.JTextPane ZombiesZ1;
+    private javax.swing.JTextPane ZombiesZ2;
+    private javax.swing.JTextPane ZombiesZ3;
+    private javax.swing.JTextPane ZombiesZ4;
     private javax.swing.JLabel Zona1Txt;
     private javax.swing.JLabel Zona2Txt;
     private javax.swing.JLabel Zona3Txt;
@@ -752,13 +776,21 @@ public class InterfazP1 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane14;
     private javax.swing.JScrollPane jScrollPane15;
+    private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane17;
     private javax.swing.JScrollPane jScrollPane18;
     private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane20;
+    private javax.swing.JScrollPane jScrollPane21;
+    private javax.swing.JScrollPane jScrollPane22;
+    private javax.swing.JScrollPane jScrollPane23;
+    private javax.swing.JScrollPane jScrollPane24;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTextPane jTextPane1;
