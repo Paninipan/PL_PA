@@ -58,7 +58,7 @@ public class InterfazP1 extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         Comedor = new javax.swing.JTextPane();
         jScrollPane4 = new javax.swing.JScrollPane();
-        ZonaDescanso1 = new javax.swing.JTextPane();
+        ZonaDescanso = new javax.swing.JTextPane();
         ExterioirPanel = new javax.swing.JPanel();
         Zona4Txt = new javax.swing.JLabel();
         ExterioirH = new javax.swing.JLabel();
@@ -113,8 +113,6 @@ public class InterfazP1 extends javax.swing.JFrame {
         PasoT4 = new javax.swing.JTextPane();
         jScrollPane20 = new javax.swing.JScrollPane();
         GrupoEntradaT4 = new javax.swing.JTextPane();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
 
         jCheckBox1.setText("jCheckBox1");
 
@@ -135,7 +133,7 @@ public class InterfazP1 extends javax.swing.JFrame {
         ComidaTxt.setText("Comida:");
 
         Comida.setEditable(false);
-        Comida.setText("0");
+        Comida.setMaximumSize(new java.awt.Dimension(64, 22));
         Comida.setOpaque(true);
         Comida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,9 +149,9 @@ public class InterfazP1 extends javax.swing.JFrame {
         Comedor.setPreferredSize(new java.awt.Dimension(201, 109));
         jScrollPane3.setViewportView(Comedor);
 
-        ZonaDescanso1.setEditable(false);
-        ZonaDescanso1.setPreferredSize(new java.awt.Dimension(201, 109));
-        jScrollPane4.setViewportView(ZonaDescanso1);
+        ZonaDescanso.setEditable(false);
+        ZonaDescanso.setPreferredSize(new java.awt.Dimension(201, 109));
+        jScrollPane4.setViewportView(ZonaDescanso);
 
         javax.swing.GroupLayout RefugioPanelLayout = new javax.swing.GroupLayout(RefugioPanel);
         RefugioPanel.setLayout(RefugioPanelLayout);
@@ -175,7 +173,7 @@ public class InterfazP1 extends javax.swing.JFrame {
                                 .addGap(37, 37, 37)
                                 .addComponent(ComidaTxt)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Comida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(Comida, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ZonaDescansoTxt)
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -202,7 +200,7 @@ public class InterfazP1 extends javax.swing.JFrame {
                     .addComponent(Comida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
         ExterioirPanel.setBackground(new java.awt.Color(196, 158, 17));
@@ -312,7 +310,7 @@ public class InterfazP1 extends javax.swing.JFrame {
                 .addGroup(ExterioirPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane23, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
                     .addComponent(jScrollPane24))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         ContBtn.setBackground(new java.awt.Color(51, 255, 51));
@@ -515,9 +513,6 @@ public class InterfazP1 extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTextPane1.setEditable(false);
-        jScrollPane1.setViewportView(jTextPane1);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -534,15 +529,9 @@ public class InterfazP1 extends javax.swing.JFrame {
                         .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(126, 126, 126)
                         .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ExterioirPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(110, 110, 110)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ExterioirPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -551,19 +540,15 @@ public class InterfazP1 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(RefugioPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 532, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(ExterioirPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 488, Short.MAX_VALUE)
-                                .addGap(44, 44, 44)))
-                        .addGap(14, 14, 14)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ExterioirPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(RefugioPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 80, Short.MAX_VALUE))))
         );
 
         pack();
@@ -604,7 +589,7 @@ public class InterfazP1 extends javax.swing.JFrame {
             texto.append(IdH).append("\n");  // Agregamos cada id a la cadena
         }
         // Ahora escribimos todo el texto en el JTextField
-        this.ZonaComun.setText(texto.toString());
+        this.ZonaDescanso.setText(texto.toString());
     }
     
     public synchronized void mod_text_comedor(List<String> listaHumanos){//reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
@@ -766,10 +751,9 @@ public class InterfazP1 extends javax.swing.JFrame {
     private javax.swing.JLabel Zona4Txt;
     private javax.swing.JTextPane ZonaComun;
     private javax.swing.JLabel ZonaComunTxt;
-    private javax.swing.JTextPane ZonaDescanso1;
+    private javax.swing.JTextPane ZonaDescanso;
     private javax.swing.JLabel ZonaDescansoTxt;
     private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
@@ -793,6 +777,5 @@ public class InterfazP1 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
-    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }
