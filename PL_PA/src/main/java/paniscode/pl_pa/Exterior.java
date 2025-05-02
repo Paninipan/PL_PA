@@ -37,12 +37,6 @@ class Exterior {
     private ArrayList<Zombies> zona2_Zombies;
     private ArrayList<Zombies> zona3_Zombies;
     private ArrayList<Zombies> zona4_Zombies;
-
-
-    private Semaphore SM_zona1 = new Semaphore(1);
-    private Semaphore SM_zona2 = new Semaphore(1);
-    private Semaphore SM_zona3 = new Semaphore(1);
-    private Semaphore SM_zona4 = new Semaphore(1);
     
     private final ReentrantLock lockZona1 = new ReentrantLock();
     private final ReentrantLock lockZona2 = new ReentrantLock();
@@ -108,11 +102,8 @@ class Exterior {
         List<Zombies> zombiesZona = zonasZ.get(zona);
         zombiesZona.add(zombie); // El zombie “entra” en la zona
         interfazP1.mod_text_zona_exterior_zombies(zombiesZona, zona);
-
         List<List<Humanos>> zonas = Arrays.asList(null, zona1_Humanos, zona2_Humanos, zona3_Humanos, zona4_Humanos); // índice 1-4
         List<Humanos> humanosZona = zonas.get(zona);
-        
-        
         lock.lock();
         try {
             // Esperar hasta encontrar un humano o que se agote el tiempo
@@ -134,10 +125,7 @@ class Exterior {
                 }
                 interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(zona), zona);
             }
-            
-
         } finally {
-            lock.unlock(); // Liberar el semaforo pase lo que pase
             if (va_atacar){ //hay para atacar
                 ataque(elegido, zombie); // Ejecutar ataque
                 Thread.sleep(1000L * random.nextInt(2, 4)); // Tiempo entre ataques
@@ -145,6 +133,7 @@ class Exterior {
             // Eliminar zombie de la zona tras el ataque
             zombiesZona.remove(zombie);
             interfazP1.mod_text_zona_exterior_zombies(zombiesZona, zona);
+            lock.unlock();
 
         }
     }

@@ -4,6 +4,7 @@
  */
 package paniscode.pl_pa;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 import javax.swing.JTextPane;
@@ -576,7 +577,8 @@ public class InterfazP1 extends javax.swing.JFrame {
     
     public synchronized void mod_text_zonaComun(List<String> listaHumanos){ //reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
         StringBuilder texto = new StringBuilder();  // Usamos StringBuilder para acumular los resultados
-        for (String IdH : listaHumanos) {
+        List<String> copiaLista = new ArrayList<>(listaHumanos);
+        for (String IdH : copiaLista) {
             texto.append(IdH).append("\n");  // Agregamos cada id a la cadena
         }
         // Ahora escribimos todo el texto en el JTextField
@@ -585,7 +587,8 @@ public class InterfazP1 extends javax.swing.JFrame {
     
     public synchronized void mod_text_descanso(List<String> listaHumanos){//reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
         StringBuilder texto = new StringBuilder();  // Usamos StringBuilder para acumular los resultados
-        for (String IdH : listaHumanos) {
+        List<String> copiaLista = new ArrayList<>(listaHumanos);
+        for (String IdH : copiaLista) {
             texto.append(IdH).append("\n");  // Agregamos cada id a la cadena
         }
         // Ahora escribimos todo el texto en el JTextField
@@ -594,7 +597,8 @@ public class InterfazP1 extends javax.swing.JFrame {
     
     public synchronized void mod_text_comedor(List<String> listaHumanos){//reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
         StringBuilder texto = new StringBuilder();  // Usamos StringBuilder para acumular los resultados
-        for (String IdH : listaHumanos) {
+        List<String> copiaLista = new ArrayList<>(listaHumanos);
+        for (String IdH : copiaLista) {
             texto.append(IdH).append("\n");  // Agregamos cada id a la cadena
         }
         // Ahora escribimos todo el texto en el JTextField
@@ -607,11 +611,12 @@ public class InterfazP1 extends javax.swing.JFrame {
     public void mod_text_tuneles_entrada(List<String> listaHumanos, int tunel) {
         Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};
         JTextPane[] paneles = {null,GrupoEntradaT1, GrupoEntradaT2, GrupoEntradaT3, GrupoEntradaT4};
+        List<String> copiaLista = new ArrayList<>(listaHumanos);
         try {
             semaforos[tunel].acquire();
 
             StringBuilder texto = new StringBuilder();
-            for (String IdH : listaHumanos) {
+            for (String IdH : copiaLista) {
                 texto.append(IdH).append("\n");
             }
 
@@ -625,12 +630,13 @@ public class InterfazP1 extends javax.swing.JFrame {
     public void mod_text_tuneles_salida(List<String> listaHumanos, int tunel) {
         Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};
         JTextPane[] paneles = {null,GrupoSalidaT1, GrupoSalidaT2, GrupoSalidaT3, GrupoSalidaT4};
+        List<String> copiaLista = new ArrayList<>(listaHumanos);
 
         try {
             semaforos[tunel].acquire();
 
             StringBuilder texto = new StringBuilder();
-            for (String IdH : listaHumanos) {
+            for (String IdH : copiaLista) {
                 texto.append(IdH).append("\n");
             }
 
@@ -656,12 +662,12 @@ public class InterfazP1 extends javax.swing.JFrame {
     public synchronized void mod_text_zona_exterior_humanos(List<Humanos> listaHumanos, int zona) {
         Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};    
         JTextPane[] panelesHumanos = {null, HumanosZ1, HumanosZ2, HumanosZ3, HumanosZ4};
-
+        List<Humanos> copiaLista = new ArrayList<>(listaHumanos);
         try {
             semaforos[zona].acquire();
 
             StringBuilder texto = new StringBuilder();
-            for (Humanos h : listaHumanos) {
+            for (Humanos h : copiaLista) {
                 texto.append(h.getIdH()).append("\n");
             }
 
@@ -678,13 +684,15 @@ public class InterfazP1 extends javax.swing.JFrame {
     public synchronized void mod_text_zona_exterior_zombies(List<Zombies> listaZombies, int zona) {
         Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};    
         JTextPane[] panelesZombies = {null, ZombiesZ1, ZombiesZ2, ZombiesZ3, ZombiesZ4};
-
+        List<Zombies> copiaLista = new ArrayList<>(listaZombies);
         try {
             semaforos[zona].acquire();
 
             StringBuilder texto = new StringBuilder();
-            for (Zombies z : listaZombies) {
+            for (Zombies z : copiaLista) {
+                if(z != null){
                 texto.append(z.getIdZ()).append("\n");
+                }
             }
 
             panelesZombies[zona].setText(texto.toString());
