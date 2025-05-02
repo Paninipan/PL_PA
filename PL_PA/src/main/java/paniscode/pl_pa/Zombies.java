@@ -36,6 +36,14 @@ public class Zombies extends Thread {
         this.atacarEnZona = false;
     }
 
+    public void setContadorMuertes(int contadorMuertes) {
+        this.contadorMuertes = contadorMuertes;
+    }
+
+    public void setAtacarEnZona(boolean atacarEnZona) {
+        this.atacarEnZona = atacarEnZona;
+    }
+
     @Override
     public void run() {
         try {

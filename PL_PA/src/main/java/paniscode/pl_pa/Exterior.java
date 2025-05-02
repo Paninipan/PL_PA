@@ -142,6 +142,7 @@ class Exterior {
         sleep(100 * random.nextInt(5, 16));
         int probabilidad_exito = random.nextInt(1, 4);
         if (probabilidad_exito == 1) {
+            zombie.setContadorMuertes(zombie.getContadorMuertes()+1);
             elegido.Muerto();
             System.out.println("El zombie " + zombie.getIdZ() + " ha matado al humano " + elegido.getIdH());
             Zombies asesinado = new Zombies("Z" + elegido.getIdH().substring(1), zombie.getExterior());
