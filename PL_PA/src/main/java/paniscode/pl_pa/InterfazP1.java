@@ -654,21 +654,47 @@ public class InterfazP1 extends javax.swing.JFrame {
 
                 
     public synchronized void mod_text_zona_exterior_humanos(List<Humanos> listaHumanos, int zona) {
-    JTextPane[] panelesHumanos = {null, HumanosZ1, HumanosZ2, HumanosZ3, HumanosZ4};
-    StringBuilder texto = new StringBuilder();
-    for (Humanos h : listaHumanos) {
-        texto.append(h.getIdH()).append("\n");
-    }
-    panelesHumanos[zona].setText(texto.toString());
+        Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};    
+        JTextPane[] panelesHumanos = {null, HumanosZ1, HumanosZ2, HumanosZ3, HumanosZ4};
+
+        try {
+            semaforos[zona].acquire();
+
+            StringBuilder texto = new StringBuilder();
+            for (Humanos h : listaHumanos) {
+                texto.append(h.getIdH()).append("\n");
+            }
+
+            panelesHumanos[zona].setText(texto.toString());
+
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt(); // importante
+            e.printStackTrace();
+        } finally {
+            semaforos[zona].release();
+        }
     }
 
     public synchronized void mod_text_zona_exterior_zombies(List<Zombies> listaZombies, int zona) {
+        Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};    
         JTextPane[] panelesZombies = {null, ZombiesZ1, ZombiesZ2, ZombiesZ3, ZombiesZ4};
-        StringBuilder texto = new StringBuilder();
-        for (Zombies z : listaZombies) {
-            texto.append(z.getIdZ()).append("\n");
+
+        try {
+            semaforos[zona].acquire();
+
+            StringBuilder texto = new StringBuilder();
+            for (Zombies z : listaZombies) {
+                texto.append(z.getIdZ()).append("\n");
+            }
+
+            panelesZombies[zona].setText(texto.toString());
+
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt(); // mantener estado de interrupción
+            e.printStackTrace();
+        } finally {
+            semaforos[zona].release();
         }
-        panelesZombies[zona].setText(texto.toString());
     }
 
     
