@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  *
@@ -42,6 +43,11 @@ class Exterior {
     private Semaphore SM_zona2 = new Semaphore(1);
     private Semaphore SM_zona3 = new Semaphore(1);
     private Semaphore SM_zona4 = new Semaphore(1);
+    
+    private final ReentrantLock lockZona1 = new ReentrantLock();
+    private final ReentrantLock lockZona2 = new ReentrantLock();
+    private final ReentrantLock lockZona3 = new ReentrantLock();
+    private final ReentrantLock lockZona4 = new ReentrantLock();
 
     public Exterior(Tunel tunel1, Tunel tunel2, Tunel tunel3, Tunel tunel4, InterfazP1 interfazP1) {
         this.tunel1 = tunel1;
@@ -60,20 +66,17 @@ class Exterior {
 
     }
 
-    void entrar_zona(int tunel, Humanos humano) { //meter al humano en la lista correspondiente tras cruzar el tunel
-        switch (tunel) {
-            case 1 ->
-                zona1_Humanos.add(humano);
-            case 2 ->
-                zona2_Humanos.add(humano);
-            case 3 ->
-                zona3_Humanos.add(humano);
-            case 4 ->
-                zona4_Humanos.add(humano);
+    void entrar_zona(int tunel, Humanos humano) {
+        ReentrantLock lock = getLockZona(tunel);
+        lock.lock();
+        try {
+            getZonaHumanos(tunel).add(humano);
+            interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(tunel), tunel);
+        } finally {
+            lock.unlock();
         }
-        interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(tunel), tunel);
+}
 
-    }
 
     public void aguantar(Humanos humano) { //esperar a que el humano termine de recolectar o sea atacado
         //System.out.println("El humano "+humano.getIdH()+" esta en la zona peligrosa");
@@ -93,12 +96,12 @@ class Exterior {
         Humanos elegido = null;
         boolean va_atacar = false;
         long tiempo = 1000 * random.nextLong(2, 4);
-        Semaphore semaforo = switch (zona) { //segun la zona elegimos el semáforo
-            case 1 -> SM_zona1;
-            case 2 -> SM_zona2;
-            case 3 -> SM_zona3;
-            case 4 -> SM_zona4;
-            default -> throw new IllegalArgumentException("Zona inválida: " + zona);//esto nunco ocurriria
+        ReentrantLock lock = switch (zona) {
+            case 1 -> lockZona1;
+            case 2 -> lockZona2;
+            case 3 -> lockZona3;
+            case 4 -> lockZona4;
+            default -> throw new IllegalArgumentException("Zona inválida: " + zona);
         };
         
         List<List<Zombies>> zonasZ = Arrays.asList(null, zona1_Zombies, zona2_Zombies, zona3_Zombies, zona4_Zombies);
@@ -110,29 +113,31 @@ class Exterior {
         List<Humanos> humanosZona = zonas.get(zona);
         
         
-
+        lock.lock();
         try {
             // Esperar hasta encontrar un humano o que se agote el tiempo
             while (humanosZona.isEmpty() && System.currentTimeMillis() - startTime < tiempo) {
                 Thread.sleep(100);
             }
 
+            
             if (!humanosZona.isEmpty()) { //hay algun humano para atacar
                 elegido = humanosZona.get(random.nextInt(humanosZona.size()));
                 va_atacar = true; //elegido a un humano
 
                 // Eliminarlo de la lista general para evitar duplicaciones
                 switch (zona) {
-                    case 1 ->zona1_Humanos.remove(zona1_Humanos.indexOf(elegido));
-                    case 2 ->zona2_Humanos.remove(zona2_Humanos.indexOf(elegido));
-                    case 3 ->zona3_Humanos.remove(zona3_Humanos.indexOf(elegido));
-                    case 4 ->zona4_Humanos.remove(zona4_Humanos.indexOf(elegido));
+                    case 1 ->zona1_Humanos.remove(elegido);
+                    case 2 ->zona2_Humanos.remove(elegido);
+                    case 3 ->zona3_Humanos.remove(elegido);
+                    case 4 ->zona4_Humanos.remove(elegido);
                 }
                 interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(zona), zona);
             }
+            
 
         } finally {
-            semaforo.release(); // Liberar el semaforo pase lo que pase
+            lock.unlock(); // Liberar el semaforo pase lo que pase
             if (va_atacar){ //hay para atacar
                 ataque(elegido, zombie); // Ejecutar ataque
                 Thread.sleep(1000L * random.nextInt(2, 4)); // Tiempo entre ataques
@@ -171,20 +176,17 @@ class Exterior {
         }
     }
 
-    public void sacar_zona(int tunel, Humanos humano) throws InterruptedException, BrokenBarrierException {
-        //System.out.println("El humano " + humano.getIdH() + " ha salido de la zona " + tunel);
+    public void sacar_zona(int tunel, Humanos humano) {
+        ReentrantLock lock = getLockZona(tunel);
+        lock.lock();
         try {
-            switch (tunel) {
-                case 1 -> zona1_Humanos.remove(humano);
-                case 2 -> zona2_Humanos.remove(humano);
-                case 3 -> zona3_Humanos.remove(humano);
-                case 4 -> zona4_Humanos.remove(humano);
-            }
+            getZonaHumanos(tunel).remove(humano);
             interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(tunel), tunel);
-        } catch (IndexOutOfBoundsException | NullPointerException e) {
-            // Silencioso: puede no estar en la lista (ya eliminado), ignoramos
-        }       
-    }    
+        } finally {
+            lock.unlock();
+        }
+}
+
     private ArrayList<Humanos> getZonaHumanos(int zona) {
         return switch (zona) {
             case 1 -> zona1_Humanos;
@@ -195,7 +197,15 @@ class Exterior {
         };
     }
 
-
+private ReentrantLock getLockZona(int zona) {
+    return switch (zona) {
+        case 1 -> lockZona1;
+        case 2 -> lockZona2;
+        case 3 -> lockZona3;
+        case 4 -> lockZona4;
+        default -> throw new IllegalArgumentException("Zona inválida: " + zona);
+    };
+}
 
 
 }

@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Main {
 
-    private static final int NUM_HUMANOS = 15; // Número de ejemplo de humanos iniciales
+    private static final int NUM_HUMANOS = 100; // Número de ejemplo de humanos iniciales
 
     public static void main(String[] args) {
         Random random = new Random();
