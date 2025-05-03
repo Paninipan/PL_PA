@@ -22,6 +22,8 @@ class Exterior {
     private Random random = new Random();
     
     private InterfazP1 interfazP1;
+    private ClienteGUI cliente;
+    private final Controlador controlador;
     
     private Tunel tunel1;
     private Tunel tunel2;
@@ -43,7 +45,7 @@ class Exterior {
     private final ReentrantLock lockZona3 = new ReentrantLock();
     private final ReentrantLock lockZona4 = new ReentrantLock();
 
-    public Exterior(Tunel tunel1, Tunel tunel2, Tunel tunel3, Tunel tunel4, InterfazP1 interfazP1) {
+    public Exterior(Tunel tunel1, Tunel tunel2, Tunel tunel3, Tunel tunel4, InterfazP1 interfazP1, Controlador controlador) {
         this.tunel1 = tunel1;
         this.tunel2 = tunel2;
         this.tunel3 = tunel3;
@@ -57,14 +59,17 @@ class Exterior {
         this.zona3_Zombies = new ArrayList<>();
         this.zona4_Zombies = new ArrayList<>();
         this.interfazP1 = interfazP1;
+        this.controlador = controlador;
 
     }
 
     void entrar_zona(int tunel, Humanos humano) {
+        controlador.esperarSiPausado();
         ReentrantLock lock = getLockZona(tunel);
         lock.lock();
         try {
             getZonaHumanos(tunel).add(humano);
+            controlador.esperarSiPausado();
             interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(tunel), tunel);
         } finally {
             lock.unlock();
@@ -77,7 +82,9 @@ class Exterior {
         int tiempo_max = random.nextInt(3, 6) * 1000;
         long tiempo_inicio = System.currentTimeMillis();
         boolean fin_recoleccion = false;
+        controlador.esperarSiPausado();
         while (!humano.isAtacado() && !humano.isMuerto() && !fin_recoleccion) {
+            controlador.esperarSiPausado();
             if (System.currentTimeMillis() - tiempo_inicio >= tiempo_max) {
                 fin_recoleccion = true;
             }
@@ -86,10 +93,12 @@ class Exterior {
     }
 
     public void atacar(int zona, Zombies zombie) throws InterruptedException {
+        controlador.esperarSiPausado();
         long startTime = System.currentTimeMillis();
         Humanos elegido = null;
         boolean va_atacar = false;
         long tiempo = 1000 * random.nextLong(2, 4);
+        controlador.esperarSiPausado();
         ReentrantLock lock = switch (zona) {
             case 1 -> lockZona1;
             case 2 -> lockZona2;
@@ -97,17 +106,21 @@ class Exterior {
             case 4 -> lockZona4;
             default -> throw new IllegalArgumentException("Zona inválida: " + zona);
         };
-        
+        controlador.esperarSiPausado();
         List<List<Zombies>> zonasZ = Arrays.asList(null, zona1_Zombies, zona2_Zombies, zona3_Zombies, zona4_Zombies);
         List<Zombies> zombiesZona = zonasZ.get(zona);
-        zombiesZona.add(zombie); // El zombie “entra” en la zona
+        controlador.esperarSiPausado();
+        zombiesZona.add(zombie); // El zombie “entra” en la zona;
+        controlador.esperarSiPausado();
         interfazP1.mod_text_zona_exterior_zombies(zombiesZona, zona);
         List<List<Humanos>> zonas = Arrays.asList(null, zona1_Humanos, zona2_Humanos, zona3_Humanos, zona4_Humanos); // índice 1-4
         List<Humanos> humanosZona = zonas.get(zona);
         lock.lock();
         try {
             // Esperar hasta encontrar un humano o que se agote el tiempo
+            controlador.esperarSiPausado();
             while (humanosZona.isEmpty() && System.currentTimeMillis() - startTime < tiempo) {
+                controlador.esperarSiPausado();
                 Thread.sleep(100);
             }
 
@@ -123,15 +136,19 @@ class Exterior {
                     case 3 ->zona3_Humanos.remove(elegido);
                     case 4 ->zona4_Humanos.remove(elegido);
                 }
+                controlador.esperarSiPausado();
                 interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(zona), zona);
             }
         } finally {
             if (va_atacar){ //hay para atacar
+                controlador.esperarSiPausado();
                 ataque(elegido, zombie); // Ejecutar ataque
+                controlador.esperarSiPausado();
                 Thread.sleep(1000L * random.nextInt(2, 4)); // Tiempo entre ataques
             }
             // Eliminar zombie de la zona tras el ataque
             zombiesZona.remove(zombie);
+            controlador.esperarSiPausado();
             interfazP1.mod_text_zona_exterior_zombies(zombiesZona, zona);
             lock.unlock();
 
@@ -139,21 +156,26 @@ class Exterior {
     }
 
     public void ataque(Humanos elegido, Zombies zombie) throws InterruptedException {
+        controlador.esperarSiPausado();
         sleep(100 * random.nextInt(5, 16));
         int probabilidad_exito = random.nextInt(1, 4);
         if (probabilidad_exito == 1) {
             zombie.setContadorMuertes(zombie.getContadorMuertes()+1);
+            controlador.esperarSiPausado();
             elegido.Muerto();
             System.out.println("El zombie " + zombie.getIdZ() + " ha matado al humano " + elegido.getIdH());
-            Zombies asesinado = new Zombies("Z" + elegido.getIdH().substring(1), zombie.getExterior());
+            controlador.esperarSiPausado();
+            Zombies asesinado = new Zombies("Z" + elegido.getIdH().substring(1), zombie.getExterior(), controlador);
             asesinado.start();
         } else {
+            controlador.esperarSiPausado();
             System.out.println("El zombie " + zombie.getIdZ() + " ha atacado al humano " + elegido.getIdH());
             elegido.Atacado();
         }
     }
 
     public void ir_tunel(int tunel, String IdH) throws InterruptedException, BrokenBarrierException {
+        controlador.esperarSiPausado();
         switch (tunel) {
             case 1 ->
                 tunel1.entrar_refugio(IdH);
@@ -167,10 +189,12 @@ class Exterior {
     }
 
     public void sacar_zona(int tunel, Humanos humano) {
+        controlador.esperarSiPausado();
         ReentrantLock lock = getLockZona(tunel);
         lock.lock();
         try {
             getZonaHumanos(tunel).remove(humano);
+            controlador.esperarSiPausado();
             interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(tunel), tunel);
         } finally {
             lock.unlock();
@@ -178,6 +202,7 @@ class Exterior {
 }
 
     private ArrayList<Humanos> getZonaHumanos(int zona) {
+        controlador.esperarSiPausado();
         return switch (zona) {
             case 1 -> zona1_Humanos;
             case 2 -> zona2_Humanos;
@@ -188,6 +213,7 @@ class Exterior {
     }
 
 private ReentrantLock getLockZona(int zona) {
+    controlador.esperarSiPausado();
     return switch (zona) {
         case 1 -> lockZona1;
         case 2 -> lockZona2;
@@ -196,6 +222,17 @@ private ReentrantLock getLockZona(int zona) {
         default -> throw new IllegalArgumentException("Zona inválida: " + zona);
     };
 }
+
+public int getHZona1() { return zona1_Humanos.size(); }
+public int getHZona2() { return zona2_Humanos.size(); }
+public int getHZona3() { return zona3_Humanos.size(); }
+public int getHZona4() { return zona4_Humanos.size(); }
+
+
+public int getZZona1() { return zona1_Zombies.size(); }
+public int getZZona2() { return zona2_Zombies.size(); }
+public int getZZona3() { return zona3_Zombies.size(); }
+public int getZZona4() { return zona4_Zombies.size(); }
 
 
 }

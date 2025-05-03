@@ -10,6 +10,7 @@ import java.util.logging.Logger;
  * @author alvaro
  */
 public class Humanos extends Thread{
+    private final Controlador controlador;
     private Random random = new Random();
     private String IdH;
     private Refugio refugio;
@@ -26,13 +27,14 @@ public class Humanos extends Thread{
      * @param refugio
      * @param exterior
      */
-    public Humanos(String IdH, Refugio refugio, Exterior exterior) {
+    public Humanos(String IdH, Refugio refugio, Exterior exterior, Controlador controlador) {
         this.IdH = IdH;
         this.refugio = refugio;
         this.exterior = exterior;
         this.comida = 0;
         this.muerto = false;
         this.atacado = false;
+        this.controlador = controlador;
     }
 
     public String getIdH() {
@@ -59,6 +61,7 @@ public class Humanos extends Thread{
         try {
             
             while(!this.muerto){
+                controlador.esperarSiPausado();
                 refugio.ir_zona_común(IdH);
                 //System.out.println("El humano "+this.IdH+" va a zona común");
                 

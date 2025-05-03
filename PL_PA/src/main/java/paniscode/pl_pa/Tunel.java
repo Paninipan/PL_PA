@@ -15,6 +15,7 @@ public class Tunel {
 
     private int tunelId;
     private InterfazP1 interfazP1;
+    private final Controlador controlador;
 
     private Semaphore crear_grupo_salir_refugio = new Semaphore(3); //tres humanos para salir
     private Semaphore crear_grupo_entrar_refugio = new Semaphore(3); //tres humanos para entrar
@@ -33,20 +34,24 @@ public class Tunel {
 
 
 
-    public Tunel(int tunelId,InterfazP1 interfazP1) {
+    public Tunel(int tunelId,InterfazP1 interfazP1, Controlador controlador) {
         this.tunelId = tunelId;
         this.interfazP1 = interfazP1;
+        this. controlador = controlador;
     }
     
     
 
     public void salir_refugio(String IdH) throws InterruptedException, BrokenBarrierException {
+        controlador.esperarSiPausado();
         crear_grupo_salir_refugio.acquire(); //si hay 3 se bloquea
         //System.out.println("Humano " + IdH + " entra al grupo para poder salir");
         
         
         //modificar el texto del grupo de salida para que esten los 3 y se van añadiendo
+        controlador.esperarSiPausado();
         humanos_grupo_salida.add(IdH);
+        controlador.esperarSiPausado();
         this.interfazP1.mod_text_tuneles_salida(humanos_grupo_salida, this.tunelId);
    
  
@@ -66,17 +71,19 @@ public class Tunel {
         }
   
         //modificamos la lista de humanos en el grupo 
+        controlador.esperarSiPausado();
         humanos_grupo_salida.remove(IdH);
+        controlador.esperarSiPausado();
 
         //modificamos el texto grupo salida tunel x
         this.interfazP1.mod_text_tuneles_salida(humanos_grupo_salida, this.tunelId);
-        
+        controlador.esperarSiPausado();
         //modificamos el texto del paso tunel x
         this.interfazP1.mod_text_paso_tunel(IdH, this.tunelId);
-        
+        controlador.esperarSiPausado();
         //System.out.println("Humano " + IdH + " está saliendo del refugio");
         Thread.sleep(1000); // simula paso por el túnel
-        
+        controlador.esperarSiPausado();
         //vaciamos el texto del paso tunel x
         this.interfazP1.mod_text_paso_tunel(null, this.tunelId);
         
@@ -87,43 +94,53 @@ public class Tunel {
     }
 
     public void entrar_refugio(String IdH) throws InterruptedException, BrokenBarrierException {
+        controlador.esperarSiPausado();
         crear_grupo_entrar_refugio.acquire(); //tres humanos por grupo
         //System.out.println("Humano " + IdH + " entra al grupo para entrar");
         
         // modificamos la lista con los humanos del grupo de entrada
+        controlador.esperarSiPausado();
         humanos_grupo_entrada.add(IdH);
+        controlador.esperarSiPausado();
         this.interfazP1.mod_text_tuneles_entrada(humanos_grupo_entrada,this.tunelId);
 
         espera_entrar_refugio.await(); // esperan a formar grupo de entrada
         //la barrera se reinicia esperando a los tres siguientes hilos para entrar al refugio
+        controlador.esperarSiPausado();
         sleep(500);
  
         //modiicamos el texto grupo entrada
         
         synchronized (tunelControl) {
+            controlador.esperarSiPausado();
             grupo_entrando ++; // marca grupo como entrando
+            controlador.esperarSiPausado();
         }
 
         pasar_por_tunel.acquire(); //pasa un humano a la vez
         
         //modificamo la lista y el texto del tunel x
+        controlador.esperarSiPausado();
         humanos_grupo_entrada.remove(IdH);
-        
+        controlador.esperarSiPausado();
         this.interfazP1.mod_text_tuneles_entrada(humanos_grupo_entrada,this.tunelId);
         //cada vez que sale un humano se resetea el texto del grupo, si la lista esta vacia, se vacia el texto del jtext
         
         
         //modificamos el paso del tunel x
+        controlador.esperarSiPausado();
         this.interfazP1.mod_text_paso_tunel(IdH, this.tunelId);
         
         
-        
+        controlador.esperarSiPausado();
         gente_entrado++; //cuanta gente a pasado
+        controlador.esperarSiPausado();
         //System.out.println("Humano " + IdH + " está pasando al refugio");
         Thread.sleep(1000); // simula paso por el túnel
         
         
         //vaciamos el texto del paso del tunel x
+        controlador.esperarSiPausado();
         this.interfazP1.mod_text_paso_tunel(null, this.tunelId);
 
 
@@ -140,4 +157,9 @@ public class Tunel {
 
         crear_grupo_entrar_refugio.release(); //creacion siguiente grupo para entrar al refugio
     }
+    
+    public int getHTunel() { 
+        return humanos_grupo_salida.size() + humanos_grupo_entrada.size(); 
+    }
+
 }

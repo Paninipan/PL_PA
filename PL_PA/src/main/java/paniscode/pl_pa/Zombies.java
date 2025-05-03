@@ -14,6 +14,7 @@ import java.util.List;
  * @author zona
  */
 public class Zombies extends Thread {
+    private final Controlador controlador;
     private Random random = new Random();
     private String IdZ;
     private Exterior exterior;
@@ -28,12 +29,14 @@ public class Zombies extends Thread {
      *
      * @param IdZ
      * @param exterior
+     * @param controlador
      */
-    public Zombies(String IdZ, Exterior exterior) {
+    public Zombies(String IdZ, Exterior exterior, Controlador controlador) {
         this.IdZ = IdZ;
         this.exterior = exterior;
         this.contadorMuertes = 0;
         this.atacarEnZona = false;
+        this.controlador = controlador;
     }
 
     public void setContadorMuertes(int contadorMuertes) {
@@ -48,9 +51,9 @@ public class Zombies extends Thread {
     public void run() {
         try {
             while(true){
+                controlador.esperarSiPausado();
                 int zona = random.nextInt(1,5);
                 System.out.println("El zombie " + IdZ + " se dirige hacia " + zona);
-                
                 exterior.atacar(zona, this);
             }
          

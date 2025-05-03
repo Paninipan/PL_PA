@@ -82,8 +82,6 @@ public class InterfazP1 extends javax.swing.JFrame {
         HumanosZ4 = new javax.swing.JTextPane();
         jScrollPane24 = new javax.swing.JScrollPane();
         ZombiesZ4 = new javax.swing.JTextPane();
-        ContBtn = new javax.swing.JButton();
-        StopBtn = new javax.swing.JButton();
         TunelesPanel = new javax.swing.JPanel();
         TunelesH = new javax.swing.JLabel();
         jScrollPane8 = new javax.swing.JScrollPane();
@@ -314,30 +312,6 @@ public class InterfazP1 extends javax.swing.JFrame {
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
-        ContBtn.setBackground(new java.awt.Color(51, 255, 51));
-        ContBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        ContBtn.setText("CONTINUE");
-        ContBtn.setToolTipText("");
-        ContBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(51, 204, 0), new java.awt.Color(0, 255, 51), new java.awt.Color(51, 153, 0), new java.awt.Color(0, 153, 51)));
-        ContBtn.setPreferredSize(new java.awt.Dimension(83, 45));
-        ContBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ContBtnActionPerformed(evt);
-            }
-        });
-
-        StopBtn.setBackground(new java.awt.Color(255, 51, 51));
-        StopBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        StopBtn.setText("STOP");
-        StopBtn.setToolTipText("");
-        StopBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(255, 0, 51), new java.awt.Color(255, 51, 0), new java.awt.Color(153, 0, 0), new java.awt.Color(153, 51, 0)));
-        StopBtn.setPreferredSize(new java.awt.Dimension(83, 45));
-        StopBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                StopBtnActionPerformed(evt);
-            }
-        });
-
         TunelesPanel.setBackground(new java.awt.Color(255, 255, 102));
         TunelesPanel.setPreferredSize(new java.awt.Dimension(240, 482));
 
@@ -520,16 +494,9 @@ public class InterfazP1 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(RefugioPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(126, 126, 126)
-                        .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(RefugioPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ExterioirPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
@@ -541,15 +508,12 @@ public class InterfazP1 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(TunelesPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(StopBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ContBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(ExterioirPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(RefugioPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 80, Short.MAX_VALUE))))
+                        .addGap(0, 6, Short.MAX_VALUE))))
         );
 
         pack();
@@ -558,18 +522,6 @@ public class InterfazP1 extends javax.swing.JFrame {
     private void ComidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComidaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ComidaActionPerformed
-
-    private void ContBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContBtnActionPerformed
-        // TODO add your handling code here:
-        this.parado = false;
-        this.espera_Control.notifyAll();
-    }//GEN-LAST:event_ContBtnActionPerformed
-
-    private void StopBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StopBtnActionPerformed
-        // TODO add your handling code here:
-        this.parado = true;
-        new SimulacionParada().setVisible(true);
-    }//GEN-LAST:event_StopBtnActionPerformed
     
     public void ha_parado() throws InterruptedException{
         if(parado){this.espera_Control.wait();}
@@ -747,7 +699,6 @@ public class InterfazP1 extends javax.swing.JFrame {
     private javax.swing.JLabel ComedorTxt;
     private javax.swing.JTextField Comida;
     private javax.swing.JLabel ComidaTxt;
-    private javax.swing.JButton ContBtn;
     private javax.swing.JLabel ExterioirH;
     private javax.swing.JPanel ExterioirPanel;
     private javax.swing.JTextPane GrupoEntradaT1;
@@ -768,7 +719,6 @@ public class InterfazP1 extends javax.swing.JFrame {
     private javax.swing.JTextPane PasoT4;
     private javax.swing.JLabel RefugioH;
     private javax.swing.JPanel RefugioPanel;
-    private javax.swing.JButton StopBtn;
     private javax.swing.JLabel TunelTxt1;
     private javax.swing.JLabel TunelTxt2;
     private javax.swing.JLabel TunelTxt3;
