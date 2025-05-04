@@ -1,0 +1,1994 @@
+04-05-2025 15:13:39  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:13:41  El humano H0001 va a zona común
+04-05-2025 15:13:41  El humano H0001 va por el tunel 4
+04-05-2025 15:13:42  El zombie Z0000 se dirige hacia 4
+04-05-2025 15:13:42  El humano H0002 va a zona común
+04-05-2025 15:13:42  El humano H0002 va por el tunel 1
+04-05-2025 15:13:43  El humano H0003 va a zona común
+04-05-2025 15:13:43  El humano H0003 va por el tunel 1
+04-05-2025 15:13:44  El zombie Z0000 se dirige hacia 1
+04-05-2025 15:13:44  El humano H0005 va a zona común
+04-05-2025 15:13:44  El humano H0005 va por el tunel 4
+04-05-2025 15:13:45  El humano H0004 va a zona común
+04-05-2025 15:13:45  El humano H0004 va por el tunel 3
+04-05-2025 15:13:45  El humano H0006 va a zona común
+04-05-2025 15:13:45  El humano H0006 va por el tunel 3
+04-05-2025 15:13:46  El zombie Z0000 se dirige hacia 2
+04-05-2025 15:13:47  El humano H0007 va a zona común
+04-05-2025 15:13:47  El humano H0007 va por el tunel 4
+04-05-2025 15:13:47  El humano H0008 va a zona común
+04-05-2025 15:13:47  El humano H0008 va por el tunel 2
+04-05-2025 15:13:48  El humano H0001 va a la zona 4
+04-05-2025 15:13:48  El humano H0009 va a zona común
+04-05-2025 15:13:48  El humano H0009 va por el tunel 3
+04-05-2025 15:13:49  El zombie Z0000 se dirige hacia 4
+04-05-2025 15:13:49  El humano H0010 va a zona común
+04-05-2025 15:13:49  El humano H0010 va por el tunel 3
+04-05-2025 15:13:50  El zombie Z0000 ha atacado al humano H0001
+04-05-2025 15:13:50  El humano H0009 va a la zona 3
+04-05-2025 15:13:51  El humano H0011 va a zona común
+04-05-2025 15:13:51  El humano H0011 va por el tunel 3
+04-05-2025 15:13:51  El humano H0004 va a la zona 3
+04-05-2025 15:13:52  El humano H0006 va a la zona 3
+04-05-2025 15:13:53  El humano H0012 va a zona común
+04-05-2025 15:13:53  El humano H0012 va por el tunel 1
+04-05-2025 15:13:53  El humano H0013 va a zona común
+04-05-2025 15:13:53  El humano H0013 va por el tunel 1
+04-05-2025 15:13:53  El humano H0005 va a la zona 4
+04-05-2025 15:13:53  El humano H0001 ha sido atacado pero no asesinado
+04-05-2025 15:13:53  El humano H0007 va a la zona 4
+04-05-2025 15:13:53  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:13:54  El humano H0003 va a la zona 1
+04-05-2025 15:13:54  El zombie Z0000 ha atacado al humano H0009
+04-05-2025 15:13:55  El humano H0014 va a zona común
+04-05-2025 15:13:55  El humano H0014 va por el tunel 4
+04-05-2025 15:13:55  El humano H0012 va a la zona 1
+04-05-2025 15:13:56  El humano H0015 va a zona común
+04-05-2025 15:13:56  El humano H0015 va por el tunel 2
+04-05-2025 15:13:56  El humano H0002 va a la zona 1
+04-05-2025 15:13:56  El humano H0009 ha sido atacado pero no asesinado
+04-05-2025 15:13:56  El zombie Z0000 se dirige hacia 4
+04-05-2025 15:13:58  El humano H0016 va a zona común
+04-05-2025 15:13:58  El humano H0016 va por el tunel 1
+04-05-2025 15:13:58  El zombie Z0000 ha atacado al humano H0007
+04-05-2025 15:13:58  El humano H0006 regresa por el tunel3
+04-05-2025 15:13:58  El humano H0006 ha dejado 2 piezas de comida
+04-05-2025 15:13:58  El humano H0006 va a descansar
+04-05-2025 15:13:59  El humano H0017 va a zona común
+04-05-2025 15:13:59  El humano H0017 va por el tunel 4
+04-05-2025 15:13:59  El humano H0009 regresa por el tunel3
+04-05-2025 15:13:59  El humano H0009 ha dejado 0 piezas de comida
+04-05-2025 15:13:59  El humano H0009 va a descansar
+04-05-2025 15:13:59  El humano H0018 va a zona común
+04-05-2025 15:13:59  El humano H0018 va por el tunel 2
+04-05-2025 15:14:00  El humano H0004 regresa por el tunel3
+04-05-2025 15:14:00  El humano H0006 va a comer
+04-05-2025 15:14:00  El humano H0004 ha dejado 2 piezas de comida
+04-05-2025 15:14:00  El humano H0004 va a descansar
+04-05-2025 15:14:01  El zombie Z0000 se dirige hacia 1
+04-05-2025 15:14:01  El humano H0007 ha sido atacado pero no asesinado
+04-05-2025 15:14:01  El humano H0018 va a la zona 2
+04-05-2025 15:14:01  El humano H0009 va a comer
+04-05-2025 15:14:01  El humano H0019 va a zona común
+04-05-2025 15:14:01  El humano H0019 va por el tunel 1
+04-05-2025 15:14:02  El humano H0012 regresa por el tunel1
+04-05-2025 15:14:02  El humano H0008 va a la zona 2
+04-05-2025 15:14:02  El humano H0012 ha dejado 2 piezas de comida
+04-05-2025 15:14:02  El humano H0012 va a descansar
+04-05-2025 15:14:02  El humano H0020 va a zona común
+04-05-2025 15:14:02  El humano H0020 va por el tunel 2
+04-05-2025 15:14:02  El humano H0001 regresa por el tunel4
+04-05-2025 15:14:02  El humano H0001 ha dejado 0 piezas de comida
+04-05-2025 15:14:02  El humano H0001 va a descansar
+04-05-2025 15:14:03  El humano H0003 regresa por el tunel1
+04-05-2025 15:14:03  El zombie Z0000 se dirige hacia 2
+04-05-2025 15:14:03  El humano H0003 ha dejado 2 piezas de comida
+04-05-2025 15:14:03  El humano H0003 va a descansar
+04-05-2025 15:14:03  El humano H0004 va a comer
+04-05-2025 15:14:03  El humano H0007 regresa por el tunel4
+04-05-2025 15:14:03  El humano H0007 ha dejado 0 piezas de comida
+04-05-2025 15:14:03  El humano H0007 va a descansar
+04-05-2025 15:14:03  El zombie Z0000 ha atacado al humano H0008
+04-05-2025 15:14:03  El humano H0021 va a zona común
+04-05-2025 15:14:03  El humano H0021 va por el tunel 3
+04-05-2025 15:14:04  El humano H0002 regresa por el tunel1
+04-05-2025 15:14:04  El humano H0002 ha dejado 2 piezas de comida
+04-05-2025 15:14:04  El humano H0002 va a descansar
+04-05-2025 15:14:04  El humano H0009 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:04  El humano H0005 regresa por el tunel4
+04-05-2025 15:14:05  El humano H0005 ha dejado 2 piezas de comida
+04-05-2025 15:14:05  El humano H0005 va a descansar
+04-05-2025 15:14:05  El humano H0023 va a zona común
+04-05-2025 15:14:05  El humano H0023 va por el tunel 1
+04-05-2025 15:14:05  El humano H0013 va a la zona 1
+04-05-2025 15:14:05  El humano H0010 va a la zona 3
+04-05-2025 15:14:05  El humano H0022 va a zona común
+04-05-2025 15:14:05  El humano H0022 va por el tunel 4
+04-05-2025 15:14:05  El humano H0003 va a comer
+04-05-2025 15:14:05  El humano H0006 va a zona común
+04-05-2025 15:14:05  El humano H0006 va por el tunel 3
+04-05-2025 15:14:05  El humano H0007 va a comer
+04-05-2025 15:14:05  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:14:05  El humano H0015 va a la zona 2
+04-05-2025 15:14:05  El humano H0008 ha sido atacado pero no asesinado
+04-05-2025 15:14:05  El humano H0024 va a zona común
+04-05-2025 15:14:05  El humano H0024 va por el tunel 1
+04-05-2025 15:14:06  El humano H0016 va a la zona 1
+04-05-2025 15:14:06  El humano H0012 va a comer
+04-05-2025 15:14:06  El humano H0001 va a comer
+04-05-2025 15:14:06  El humano H0017 va a la zona 4
+04-05-2025 15:14:07  El humano H0019 va a la zona 1
+04-05-2025 15:14:07  El zombie Z0000 ha atacado al humano H0010
+04-05-2025 15:14:07  El humano H0002 va a comer
+04-05-2025 15:14:07  El humano H0025 va a zona común
+04-05-2025 15:14:07  El humano H0025 va por el tunel 3
+04-05-2025 15:14:07  El humano H0014 va a la zona 4
+04-05-2025 15:14:08  El humano H0005 va a comer
+04-05-2025 15:14:08  El humano H0007 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:08  El humano H0022 va a la zona 4
+04-05-2025 15:14:09  El humano H0011 va a la zona 3
+04-05-2025 15:14:09  El humano H0010 ha sido atacado pero no asesinado
+04-05-2025 15:14:09  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:14:09  El humano H0021 va a la zona 3
+04-05-2025 15:14:09  El humano H0026 va a zona común
+04-05-2025 15:14:09  El humano H0026 va por el tunel 2
+04-05-2025 15:14:09  El humano H0004 va a zona común
+04-05-2025 15:14:09  El humano H0004 va por el tunel 3
+04-05-2025 15:14:10  El humano H0008 regresa por el tunel2
+04-05-2025 15:14:10  El humano H0008 ha dejado 0 piezas de comida
+04-05-2025 15:14:10  El humano H0008 va a descansar
+04-05-2025 15:14:10  El humano H0012 va a zona común
+04-05-2025 15:14:10  El humano H0012 va por el tunel 1
+04-05-2025 15:14:10  El humano H0009 va a zona común
+04-05-2025 15:14:10  El humano H0009 va por el tunel 4
+04-05-2025 15:14:10  El zombie Z0000 ha atacado al humano H0011
+04-05-2025 15:14:11  El humano H0015 regresa por el tunel2
+04-05-2025 15:14:11  El humano H0027 va a zona común
+04-05-2025 15:14:11  El humano H0027 va por el tunel 2
+04-05-2025 15:14:11  El humano H0015 ha dejado 2 piezas de comida
+04-05-2025 15:14:11  El humano H0015 va a descansar
+04-05-2025 15:14:11  El humano H0001 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:11  El humano H0023 va a la zona 1
+04-05-2025 15:14:12  El humano H0028 va a zona común
+04-05-2025 15:14:12  El humano H0028 va por el tunel 3
+04-05-2025 15:14:12  El humano H0018 regresa por el tunel2
+04-05-2025 15:14:12  El humano H0003 va a zona común
+04-05-2025 15:14:12  El humano H0003 va por el tunel 1
+04-05-2025 15:14:12  El humano H0018 ha dejado 2 piezas de comida
+04-05-2025 15:14:12  El humano H0018 va a descansar
+04-05-2025 15:14:12  El zombie Z0000 se dirige hacia 2
+04-05-2025 15:14:12  El humano H0011 ha sido atacado pero no asesinado
+04-05-2025 15:14:12  El humano H0004 va a la zona 3
+04-05-2025 15:14:12  El humano H0006 va a la zona 3
+04-05-2025 15:14:12  El humano H0024 va a la zona 1
+04-05-2025 15:14:13  El humano H0025 va a la zona 3
+04-05-2025 15:14:13  El humano H0002 va a zona común
+04-05-2025 15:14:13  El humano H0002 va por el tunel 3
+04-05-2025 15:14:13  El humano H0019 regresa por el tunel1
+04-05-2025 15:14:14  El humano H0005 va a zona común
+04-05-2025 15:14:14  El humano H0005 va por el tunel 3
+04-05-2025 15:14:14  El humano H0019 ha dejado 2 piezas de comida
+04-05-2025 15:14:14  El humano H0019 va a descansar
+04-05-2025 15:14:14  El humano H0011 regresa por el tunel3
+04-05-2025 15:14:14  El humano H0011 ha dejado 0 piezas de comida
+04-05-2025 15:14:14  El humano H0011 va a descansar
+04-05-2025 15:14:14  El humano H0008 va a comer
+04-05-2025 15:14:14  El humano H0014 regresa por el tunel4
+04-05-2025 15:14:14  El humano H0015 va a comer
+04-05-2025 15:14:14  El humano H0014 ha dejado 2 piezas de comida
+04-05-2025 15:14:14  El humano H0014 va a descansar
+04-05-2025 15:14:14  El humano H0027 va a la zona 2
+04-05-2025 15:14:14  El humano H0020 va a la zona 2
+04-05-2025 15:14:14  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:14:14  El humano H0029 va a zona común
+04-05-2025 15:14:14  El humano H0029 va por el tunel 3
+04-05-2025 15:14:14  El humano H0016 regresa por el tunel1
+04-05-2025 15:14:15  El humano H0016 ha dejado 2 piezas de comida
+04-05-2025 15:14:15  El humano H0016 va a descansar
+04-05-2025 15:14:15  El humano H0010 regresa por el tunel3
+04-05-2025 15:14:15  El humano H0010 ha dejado 0 piezas de comida
+04-05-2025 15:14:15  El humano H0010 va a descansar
+04-05-2025 15:14:15  El humano H0026 va a la zona 2
+04-05-2025 15:14:15  El humano H0022 regresa por el tunel4
+04-05-2025 15:14:15  El humano H0018 va a comer
+04-05-2025 15:14:15  El humano H0022 ha dejado 2 piezas de comida
+04-05-2025 15:14:15  El humano H0022 va a descansar
+04-05-2025 15:14:15  El humano H0007 va a zona común
+04-05-2025 15:14:15  El humano H0007 va por el tunel 2
+04-05-2025 15:14:15  El humano H0030 va a zona común
+04-05-2025 15:14:15  El humano H0030 va por el tunel 2
+04-05-2025 15:14:15  El zombie Z0000 ha matado al humano H0025
+04-05-2025 15:14:15  El zombie Z0025 se dirige hacia 2
+04-05-2025 15:14:15  El humano H0013 regresa por el tunel1
+04-05-2025 15:14:16  El humano H0013 ha dejado 2 piezas de comida
+04-05-2025 15:14:16  El humano H0013 va a descansar
+04-05-2025 15:14:16  El humano H0021 regresa por el tunel3
+04-05-2025 15:14:16  El humano H0017 regresa por el tunel4
+04-05-2025 15:14:16  El humano H0021 ha dejado 2 piezas de comida
+04-05-2025 15:14:16  El humano H0021 va a descansar
+04-05-2025 15:14:16  El humano H0014 va a comer
+04-05-2025 15:14:16  El humano H0031 va a zona común
+04-05-2025 15:14:16  El humano H0031 va por el tunel 3
+04-05-2025 15:14:16  El humano H0017 ha dejado 2 piezas de comida
+04-05-2025 15:14:16  El humano H0017 va a descansar
+04-05-2025 15:14:16  El humano H0012 va a la zona 1
+04-05-2025 15:14:17  El zombie Z0025 ha atacado al humano H0020
+04-05-2025 15:14:17  El humano H0019 va a comer
+04-05-2025 15:14:17  El humano H0011 va a comer
+04-05-2025 15:14:17  El humano H0001 va a zona común
+04-05-2025 15:14:17  El humano H0001 va por el tunel 2
+04-05-2025 15:14:17  El humano H0025 ha muerto
+04-05-2025 15:14:17  El humano H0028 va a la zona 3
+04-05-2025 15:14:17  El zombie Z0000 se dirige hacia 4
+04-05-2025 15:14:18  El humano H0016 va a comer
+04-05-2025 15:14:18  El humano H0010 va a comer
+04-05-2025 15:14:18  El humano H0005 va a la zona 3
+04-05-2025 15:14:18  El humano H0008 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:18  El humano H0021 va a comer
+04-05-2025 15:14:18  El humano H0022 va a comer
+04-05-2025 15:14:18  El humano H0033 va a zona común
+04-05-2025 15:14:18  El humano H0033 va por el tunel 4
+04-05-2025 15:14:18  El humano H0032 va a zona común
+04-05-2025 15:14:18  El humano H0032 va por el tunel 4
+04-05-2025 15:14:19  El humano H0020 ha sido atacado pero no asesinado
+04-05-2025 15:14:19  El zombie Z0025 se dirige hacia 2
+04-05-2025 15:14:19  El humano H0002 va a la zona 3
+04-05-2025 15:14:19  El humano H0034 va a zona común
+04-05-2025 15:14:19  El humano H0034 va por el tunel 2
+04-05-2025 15:14:19  El zombie Z0000 se dirige hacia 2
+04-05-2025 15:14:20  El humano H0013 va a comer
+04-05-2025 15:14:20  El humano H0009 va a la zona 4
+04-05-2025 15:14:20  El humano H0009 ha sido atacado pero no asesinado
+04-05-2025 15:14:20  El humano H0015 va a zona común
+04-05-2025 15:14:20  El humano H0015 va por el tunel 1
+04-05-2025 15:14:20  El humano H0017 va a comer
+04-05-2025 15:14:21  El zombie Z0025 se dirige hacia 3
+04-05-2025 15:14:21  El humano H0001 va a la zona 2
+04-05-2025 15:14:21  El humano H0001 ha sido atacado pero no asesinado
+04-05-2025 15:14:21  El humano H0011 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:21  El humano H0026 regresa por el tunel2
+04-05-2025 15:14:21  El humano H0035 va a zona común
+04-05-2025 15:14:21  El humano H0035 va por el tunel 2
+04-05-2025 15:14:21  El humano H0033 va a la zona 4
+04-05-2025 15:14:21  El humano H0026 ha dejado 2 piezas de comida
+04-05-2025 15:14:21  El humano H0026 va a descansar
+04-05-2025 15:14:21  El humano H0018 va a zona común
+04-05-2025 15:14:21  El humano H0018 va por el tunel 3
+04-05-2025 15:14:21  El humano H0014 va a zona común
+04-05-2025 15:14:21  El humano H0014 va por el tunel 2
+04-05-2025 15:14:22  El humano H0010 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:22  El humano H0020 regresa por el tunel2
+04-05-2025 15:14:22  El humano H0020 ha dejado 0 piezas de comida
+04-05-2025 15:14:22  El humano H0020 va a descansar
+04-05-2025 15:14:22  El zombie Z0025 ha atacado al humano H0002
+04-05-2025 15:14:22  El humano H0032 va a la zona 4
+04-05-2025 15:14:22  El humano H0036 va a zona común
+04-05-2025 15:14:22  El humano H0036 va por el tunel 2
+04-05-2025 15:14:22  El zombie Z0000 se dirige hacia 2
+04-05-2025 15:14:22  El humano H0030 va a la zona 2
+04-05-2025 15:14:23  El humano H0019 va a zona común
+04-05-2025 15:14:23  El humano H0019 va por el tunel 4
+04-05-2025 15:14:23  El humano H0027 regresa por el tunel2
+04-05-2025 15:14:23  El humano H0024 regresa por el tunel1
+04-05-2025 15:14:23  El humano H0021 va a zona común
+04-05-2025 15:14:23  El humano H0021 va por el tunel 1
+04-05-2025 15:14:23  El humano H0027 ha dejado 2 piezas de comida
+04-05-2025 15:14:23  El humano H0027 va a descansar
+04-05-2025 15:14:23  El humano H0024 ha dejado 2 piezas de comida
+04-05-2025 15:14:23  El humano H0024 va a descansar
+04-05-2025 15:14:24  El humano H0008 va a zona común
+04-05-2025 15:14:24  El humano H0008 va por el tunel 1
+04-05-2025 15:14:24  El zombie Z0000 ha atacado al humano H0030
+04-05-2025 15:14:24  El humano H0023 regresa por el tunel1
+04-05-2025 15:14:24  El humano H0037 va a zona común
+04-05-2025 15:14:24  El humano H0037 va por el tunel 2
+04-05-2025 15:14:24  El humano H0023 ha dejado 2 piezas de comida
+04-05-2025 15:14:24  El humano H0023 va a descansar
+04-05-2025 15:14:25  El humano H0013 va a zona común
+04-05-2025 15:14:25  El humano H0013 va por el tunel 4
+04-05-2025 15:14:25  El humano H0016 va a zona común
+04-05-2025 15:14:25  El humano H0016 va por el tunel 2
+04-05-2025 15:14:25  El humano H0011 va a zona común
+04-05-2025 15:14:25  El humano H0011 va por el tunel 3
+04-05-2025 15:14:25  El humano H0038 va a zona común
+04-05-2025 15:14:25  El humano H0038 va por el tunel 4
+04-05-2025 15:14:25  El humano H0002 ha sido atacado pero no asesinado
+04-05-2025 15:14:25  El humano H0029 va a la zona 3
+04-05-2025 15:14:25  El humano H0031 va a la zona 3
+04-05-2025 15:14:25  El humano H0018 va a la zona 3
+04-05-2025 15:14:25  El zombie Z0025 se dirige hacia 1
+04-05-2025 15:14:25  El humano H0012 regresa por el tunel1
+04-05-2025 15:14:25  El humano H0026 va a comer
+04-05-2025 15:14:25  El humano H0027 va a comer
+04-05-2025 15:14:25  El humano H0022 va a zona común
+04-05-2025 15:14:25  El humano H0022 va por el tunel 2
+04-05-2025 15:14:25  El humano H0012 ha dejado 2 piezas de comida
+04-05-2025 15:14:25  El humano H0012 va a descansar
+04-05-2025 15:14:25  El humano H0024 va a comer
+04-05-2025 15:14:26  El humano H0010 va a zona común
+04-05-2025 15:14:26  El humano H0010 va por el tunel 4
+04-05-2025 15:14:26  El humano H0020 va a comer
+04-05-2025 15:14:26  El humano H0007 va a la zona 2
+04-05-2025 15:14:26  El humano H0030 ha sido atacado pero no asesinado
+04-05-2025 15:14:26  El humano H0007 ha sido atacado pero no asesinado
+04-05-2025 15:14:26  El humano H0034 va a la zona 2
+04-05-2025 15:14:26  El zombie Z0000 se dirige hacia 1
+04-05-2025 15:14:26  El humano H0023 va a comer
+04-05-2025 15:14:26  El humano H0038 va a la zona 4
+04-05-2025 15:14:26  El humano H0014 va a la zona 2
+04-05-2025 15:14:26  El humano H0004 regresa por el tunel3
+04-05-2025 15:14:27  El humano H0004 ha dejado 2 piezas de comida
+04-05-2025 15:14:27  El humano H0004 va a descansar
+04-05-2025 15:14:27  El humano H0039 va a zona común
+04-05-2025 15:14:27  El humano H0039 va por el tunel 3
+04-05-2025 15:14:27  El zombie Z0025 se dirige hacia 3
+04-05-2025 15:14:27  El humano H0019 va a la zona 4
+04-05-2025 15:14:27  El humano H0017 va a zona común
+04-05-2025 15:14:27  El humano H0017 va por el tunel 4
+04-05-2025 15:14:27  El humano H0035 va a la zona 2
+04-05-2025 15:14:27  El humano H0006 regresa por el tunel3
+04-05-2025 15:14:28  El humano H0006 ha dejado 2 piezas de comida
+04-05-2025 15:14:28  El humano H0006 va a descansar
+04-05-2025 15:14:28  El humano H0040 va a zona común
+04-05-2025 15:14:28  El humano H0040 va por el tunel 4
+04-05-2025 15:14:28  El zombie Z0025 ha matado al humano H0031
+04-05-2025 15:14:28  El zombie Z0031 se dirige hacia 2
+04-05-2025 15:14:28  El humano H0013 va a la zona 4
+04-05-2025 15:14:28  El humano H0001 regresa por el tunel2
+04-05-2025 15:14:28  El humano H0001 ha dejado 0 piezas de comida
+04-05-2025 15:14:28  El humano H0001 va a descansar
+04-05-2025 15:14:28  El humano H0028 regresa por el tunel3
+04-05-2025 15:14:29  El humano H0028 ha dejado 2 piezas de comida
+04-05-2025 15:14:29  El humano H0028 va a descansar
+04-05-2025 15:14:29  El humano H0004 va a comer
+04-05-2025 15:14:29  El humano H0003 va a la zona 1
+04-05-2025 15:14:29  El humano H0021 va a la zona 1
+04-05-2025 15:14:29  El humano H0015 va a la zona 1
+04-05-2025 15:14:29  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:14:29  El zombie Z0031 ha matado al humano H0034
+04-05-2025 15:14:29  El zombie Z0034 se dirige hacia 1
+04-05-2025 15:14:29  El humano H0012 va a comer
+04-05-2025 15:14:29  El humano H0009 regresa por el tunel4
+04-05-2025 15:14:29  El humano H0009 ha dejado 0 piezas de comida
+04-05-2025 15:14:29  El humano H0009 va a descansar
+04-05-2025 15:14:29  El humano H0007 regresa por el tunel2
+04-05-2025 15:14:29  El humano H0007 ha dejado 0 piezas de comida
+04-05-2025 15:14:29  El humano H0007 va a descansar
+04-05-2025 15:14:30  El zombie Z0034 ha atacado al humano H0003
+04-05-2025 15:14:30  El humano H0042 va a zona común
+04-05-2025 15:14:30  El humano H0042 va por el tunel 3
+04-05-2025 15:14:30  El humano H0041 va a zona común
+04-05-2025 15:14:30  El humano H0041 va por el tunel 3
+04-05-2025 15:14:30  El humano H0020 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:30  El zombie Z0025 se dirige hacia 3
+04-05-2025 15:14:30  El humano H0031 ha muerto
+04-05-2025 15:14:30  El humano H0032 regresa por el tunel4
+04-05-2025 15:14:30  El humano H0030 regresa por el tunel2
+04-05-2025 15:14:30  El humano H0024 va a zona común
+04-05-2025 15:14:30  El humano H0024 va por el tunel 1
+04-05-2025 15:14:31  El humano H0030 ha dejado 0 piezas de comida
+04-05-2025 15:14:31  El humano H0030 va a descansar
+04-05-2025 15:14:31  El humano H0032 ha dejado 2 piezas de comida
+04-05-2025 15:14:31  El humano H0032 va a descansar
+04-05-2025 15:14:31  El humano H0006 va a comer
+04-05-2025 15:14:31  El humano H0044 va a zona común
+04-05-2025 15:14:31  El humano H0044 va por el tunel 1
+04-05-2025 15:14:31  El humano H0009 va a comer
+04-05-2025 15:14:31  El humano H0033 regresa por el tunel4
+04-05-2025 15:14:31  El humano H0001 va a comer
+04-05-2025 15:14:31  El zombie Z0000 ha atacado al humano H0018
+04-05-2025 15:14:31  El humano H0043 va a zona común
+04-05-2025 15:14:31  El humano H0043 va por el tunel 2
+04-05-2025 15:14:32  El humano H0033 ha dejado 2 piezas de comida
+04-05-2025 15:14:32  El humano H0033 va a descansar
+04-05-2025 15:14:32  El humano H0028 va a comer
+04-05-2025 15:14:32  El humano H0034 ha muerto
+04-05-2025 15:14:32  El humano H0016 va a la zona 2
+04-05-2025 15:14:32  El zombie Z0031 se dirige hacia 2
+04-05-2025 15:14:32  El humano H0005 regresa por el tunel3
+04-05-2025 15:14:32  El humano H0027 va a zona común
+04-05-2025 15:14:32  El humano H0027 va por el tunel 2
+04-05-2025 15:14:32  El humano H0026 va a zona común
+04-05-2025 15:14:32  El humano H0026 va por el tunel 2
+04-05-2025 15:14:32  El humano H0023 va a zona común
+04-05-2025 15:14:32  El humano H0023 va por el tunel 1
+04-05-2025 15:14:32  El humano H0010 va a la zona 4
+04-05-2025 15:14:32  El humano H0010 ha sido atacado pero no asesinado
+04-05-2025 15:14:32  El humano H0007 va a comer
+04-05-2025 15:14:32  El humano H0005 ha dejado 2 piezas de comida
+04-05-2025 15:14:32  El humano H0005 va a descansar
+04-05-2025 15:14:33  El humano H0032 va a comer
+04-05-2025 15:14:33  El humano H0003 ha sido atacado pero no asesinado
+04-05-2025 15:14:33  El zombie Z0034 se dirige hacia 3
+04-05-2025 15:14:33  El humano H0044 va a la zona 1
+04-05-2025 15:14:33  El humano H0045 va a zona común
+04-05-2025 15:14:33  El humano H0045 va por el tunel 4
+04-05-2025 15:14:33  El humano H0002 regresa por el tunel3
+04-05-2025 15:14:33  El humano H0002 ha dejado 0 piezas de comida
+04-05-2025 15:14:33  El humano H0002 va a descansar
+04-05-2025 15:14:33  El humano H0012 va a zona común
+04-05-2025 15:14:33  El humano H0012 va por el tunel 3
+04-05-2025 15:14:33  El humano H0040 va a la zona 4
+04-05-2025 15:14:34  El zombie Z0031 ha atacado al humano H0016
+04-05-2025 15:14:34  El humano H0024 va a la zona 1
+04-05-2025 15:14:34  El humano H0020 va a zona común
+04-05-2025 15:14:34  El humano H0020 va por el tunel 3
+04-05-2025 15:14:34  El humano H0029 regresa por el tunel3
+04-05-2025 15:14:34  El humano H0017 va a la zona 4
+04-05-2025 15:14:34  El humano H0018 ha sido atacado pero no asesinado
+04-05-2025 15:14:34  El zombie Z0025 se dirige hacia 4
+04-05-2025 15:14:34  El humano H0039 va a la zona 3
+04-05-2025 15:14:34  El zombie Z0000 se dirige hacia 1
+04-05-2025 15:14:34  El humano H0029 ha dejado 2 piezas de comida
+04-05-2025 15:14:34  El humano H0029 va a descansar
+04-05-2025 15:14:35  El humano H0030 va a comer
+04-05-2025 15:14:35  El humano H0004 va a zona común
+04-05-2025 15:14:35  El humano H0004 va por el tunel 3
+04-05-2025 15:14:35  El humano H0046 va a zona común
+04-05-2025 15:14:35  El humano H0046 va por el tunel 2
+04-05-2025 15:14:35  El zombie Z0000 ha matado al humano H0044
+04-05-2025 15:14:35  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:14:35  El zombie Z0034 ha matado al humano H0039
+04-05-2025 15:14:35  El zombie Z0039 se dirige hacia 2
+04-05-2025 15:14:35  El humano H0009 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:35  El humano H0038 regresa por el tunel4
+04-05-2025 15:14:35  El humano H0005 va a comer
+04-05-2025 15:14:36  El humano H0033 va a comer
+04-05-2025 15:14:36  El humano H0038 ha dejado 2 piezas de comida
+04-05-2025 15:14:36  El humano H0038 va a descansar
+04-05-2025 15:14:36  El humano H0015 regresa por el tunel1
+04-05-2025 15:14:36  El humano H0006 va a zona común
+04-05-2025 15:14:36  El humano H0006 va por el tunel 4
+04-05-2025 15:14:36  El zombie Z0025 ha matado al humano H0040
+04-05-2025 15:14:36  El zombie Z0040 se dirige hacia 1
+04-05-2025 15:14:36  El humano H0015 ha dejado 2 piezas de comida
+04-05-2025 15:14:36  El humano H0015 va a descansar
+04-05-2025 15:14:36  El humano H0002 va a comer
+04-05-2025 15:14:36  El humano H0013 regresa por el tunel4
+04-05-2025 15:14:36  El humano H0007 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:36  El humano H0029 va a comer
+04-05-2025 15:14:37  El zombie Z0031 se dirige hacia 4
+04-05-2025 15:14:37  El humano H0036 va a la zona 2
+04-05-2025 15:14:37  El humano H0037 va a la zona 2
+04-05-2025 15:14:37  El humano H0016 ha sido atacado pero no asesinado
+04-05-2025 15:14:37  El humano H0027 va a la zona 2
+04-05-2025 15:14:37  El humano H0001 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:37  El humano H0032 va a zona común
+04-05-2025 15:14:37  El humano H0032 va por el tunel 1
+04-05-2025 15:14:37  El humano H0013 ha dejado 2 piezas de comida
+04-05-2025 15:14:37  El humano H0013 va a descansar
+04-05-2025 15:14:37  El humano H0028 va a zona común
+04-05-2025 15:14:37  El humano H0028 va por el tunel 4
+04-05-2025 15:14:37  El humano H0021 regresa por el tunel1
+04-05-2025 15:14:37  El humano H0021 ha dejado 2 piezas de comida
+04-05-2025 15:14:37  El humano H0021 va a descansar
+04-05-2025 15:14:37  El humano H0047 va a zona común
+04-05-2025 15:14:37  El humano H0047 va por el tunel 4
+04-05-2025 15:14:37  El zombie Z0039 ha atacado al humano H0036
+04-05-2025 15:14:37  El humano H0019 regresa por el tunel4
+04-05-2025 15:14:38  El humano H0038 va a comer
+04-05-2025 15:14:38  El humano H0019 ha dejado 2 piezas de comida
+04-05-2025 15:14:38  El humano H0019 va a descansar
+04-05-2025 15:14:38  El humano H0003 regresa por el tunel1
+04-05-2025 15:14:38  El humano H0003 ha dejado 0 piezas de comida
+04-05-2025 15:14:38  El humano H0003 va a descansar
+04-05-2025 15:14:38  El humano H0015 va a comer
+04-05-2025 15:14:38  El humano H0014 regresa por el tunel2
+04-05-2025 15:14:38  El humano H0048 va a zona común
+04-05-2025 15:14:38  El humano H0048 va por el tunel 3
+04-05-2025 15:14:38  El humano H0008 va a la zona 1
+04-05-2025 15:14:38  El humano H0044 ha muerto
+04-05-2025 15:14:38  El zombie Z0000 se dirige hacia 1
+04-05-2025 15:14:38  El humano H0039 ha muerto
+04-05-2025 15:14:38  El humano H0011 va a la zona 3
+04-05-2025 15:14:38  El humano H0011 ha sido atacado pero no asesinado
+04-05-2025 15:14:38  El humano H0042 va a la zona 3
+04-05-2025 15:14:38  El humano H0041 va a la zona 3
+04-05-2025 15:14:38  El zombie Z0034 se dirige hacia 3
+04-05-2025 15:14:38  El humano H0014 ha dejado 2 piezas de comida
+04-05-2025 15:14:38  El humano H0014 va a descansar
+04-05-2025 15:14:39  El humano H0013 va a comer
+04-05-2025 15:14:39  El zombie Z0025 se dirige hacia 2
+04-05-2025 15:14:39  El humano H0021 va a comer
+04-05-2025 15:14:39  El humano H0016 regresa por el tunel2
+04-05-2025 15:14:39  El humano H0016 ha dejado 0 piezas de comida
+04-05-2025 15:14:39  El humano H0016 va a descansar
+04-05-2025 15:14:39  El humano H0002 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:39  El zombie Z0044 ha atacado al humano H0017
+04-05-2025 15:14:39  El humano H0022 va a la zona 2
+04-05-2025 15:14:39  El humano H0043 va a la zona 2
+04-05-2025 15:14:39  El humano H0036 ha sido atacado pero no asesinado
+04-05-2025 15:14:39  El zombie Z0039 se dirige hacia 2
+04-05-2025 15:14:39  El zombie Z0040 ha atacado al humano H0008
+04-05-2025 15:14:40  El zombie Z0034 ha atacado al humano H0042
+04-05-2025 15:14:40  El humano H0030 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:40  El humano H0003 va a comer
+04-05-2025 15:14:40  El humano H0035 regresa por el tunel2
+04-05-2025 15:14:40  El humano H0049 va a zona común
+04-05-2025 15:14:40  El humano H0049 va por el tunel 2
+04-05-2025 15:14:40  El humano H0050 va a zona común
+04-05-2025 15:14:40  El humano H0050 va por el tunel 1
+04-05-2025 15:14:40  El zombie Z0025 ha matado al humano H0022
+04-05-2025 15:14:40  El zombie Z0022 se dirige hacia 1
+04-05-2025 15:14:40  El humano H0035 ha dejado 2 piezas de comida
+04-05-2025 15:14:40  El humano H0035 va a descansar
+04-05-2025 15:14:40  El humano H0014 va a comer
+04-05-2025 15:14:41  El humano H0019 va a comer
+04-05-2025 15:14:41  El humano H0005 va a zona común
+04-05-2025 15:14:41  El humano H0005 va por el tunel 3
+04-05-2025 15:14:41  El humano H0051 va a zona común
+04-05-2025 15:14:41  El humano H0051 va por el tunel 3
+04-05-2025 15:14:41  El humano H0009 va a zona común
+04-05-2025 15:14:41  El humano H0009 va por el tunel 3
+04-05-2025 15:14:41  El humano H0008 ha sido atacado pero no asesinado
+04-05-2025 15:14:41  El zombie Z0040 se dirige hacia 1
+04-05-2025 15:14:41  El humano H0007 va a zona común
+04-05-2025 15:14:41  El humano H0007 va por el tunel 2
+04-05-2025 15:14:41  El humano H0052 va a zona común
+04-05-2025 15:14:41  El humano H0052 va por el tunel 2
+04-05-2025 15:14:42  El humano H0033 va a zona común
+04-05-2025 15:14:42  El humano H0033 va por el tunel 3
+04-05-2025 15:14:42  El humano H0029 va a zona común
+04-05-2025 15:14:42  El humano H0029 va por el tunel 2
+04-05-2025 15:14:42  El zombie Z0025 se dirige hacia 3
+04-05-2025 15:14:42  El humano H0040 ha muerto
+04-05-2025 15:14:42  El zombie Z0044 se dirige hacia 2
+04-05-2025 15:14:42  El zombie Z0031 se dirige hacia 2
+04-05-2025 15:14:42  El humano H0028 va a la zona 4
+04-05-2025 15:14:42  El humano H0017 ha sido atacado pero no asesinado
+04-05-2025 15:14:42  El humano H0006 va a la zona 4
+04-05-2025 15:14:42  El humano H0045 va a la zona 4
+04-05-2025 15:14:43  El humano H0012 va a la zona 3
+04-05-2025 15:14:43  El humano H0042 ha sido atacado pero no asesinado
+04-05-2025 15:14:43  El humano H0020 va a la zona 3
+04-05-2025 15:14:43  El humano H0020 ha sido atacado pero no asesinado
+04-05-2025 15:14:43  El humano H0005 va a la zona 3
+04-05-2025 15:14:43  El zombie Z0034 se dirige hacia 4
+04-05-2025 15:14:43  El zombie Z0000 ha atacado al humano H0024
+04-05-2025 15:14:43  El humano H0021 va a zona común
+04-05-2025 15:14:43  El humano H0021 va por el tunel 2
+04-05-2025 15:14:43  El zombie Z0039 ha atacado al humano H0037
+04-05-2025 15:14:43  El humano H0016 va a comer
+04-05-2025 15:14:43  El humano H0035 va a comer
+04-05-2025 15:14:43  El zombie Z0025 ha atacado al humano H0005
+04-05-2025 15:14:44  El humano H0001 va a zona común
+04-05-2025 15:14:44  El humano H0001 va por el tunel 3
+04-05-2025 15:14:44  El humano H0038 va a zona común
+04-05-2025 15:14:44  El humano H0038 va por el tunel 4
+04-05-2025 15:14:44  El zombie Z0034 ha atacado al humano H0028
+04-05-2025 15:14:44  El humano H0003 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:44  El humano H0015 va a zona común
+04-05-2025 15:14:44  El humano H0015 va por el tunel 1
+04-05-2025 15:14:44  El humano H0053 va a zona común
+04-05-2025 15:14:44  El humano H0053 va por el tunel 1
+04-05-2025 15:14:44  El humano H0042 regresa por el tunel3
+04-05-2025 15:14:44  El humano H0042 ha dejado 0 piezas de comida
+04-05-2025 15:14:44  El humano H0042 va a descansar
+04-05-2025 15:14:45  El humano H0013 va a zona común
+04-05-2025 15:14:45  El humano H0013 va por el tunel 1
+04-05-2025 15:14:45  El humano H0024 ha sido atacado pero no asesinado
+04-05-2025 15:14:45  El zombie Z0022 se dirige hacia 3
+04-05-2025 15:14:45  El zombie Z0040 se dirige hacia 3
+04-05-2025 15:14:45  El humano H0032 va a la zona 1
+04-05-2025 15:14:45  El humano H0023 va a la zona 1
+04-05-2025 15:14:45  El humano H0050 va a la zona 1
+04-05-2025 15:14:45  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:14:45  El zombie Z0039 se dirige hacia 3
+04-05-2025 15:14:45  El humano H0022 ha muerto
+04-05-2025 15:14:45  El humano H0037 ha sido atacado pero no asesinado
+04-05-2025 15:14:45  El humano H0049 va a la zona 2
+04-05-2025 15:14:45  El humano H0011 regresa por el tunel3
+04-05-2025 15:14:45  El humano H0011 ha dejado 0 piezas de comida
+04-05-2025 15:14:45  El humano H0011 va a descansar
+04-05-2025 15:14:45  El humano H0002 va a zona común
+04-05-2025 15:14:45  El humano H0002 va por el tunel 2
+04-05-2025 15:14:45  El zombie Z0025 se dirige hacia 4
+04-05-2025 15:14:45  El humano H0004 va a la zona 3
+04-05-2025 15:14:45  El humano H0005 ha sido atacado pero no asesinado
+04-05-2025 15:14:46  El humano H0030 va a zona común
+04-05-2025 15:14:46  El humano H0030 va por el tunel 4
+04-05-2025 15:14:46  El humano H0028 ha sido atacado pero no asesinado
+04-05-2025 15:14:46  El zombie Z0034 se dirige hacia 2
+04-05-2025 15:14:46  El humano H0054 va a zona común
+04-05-2025 15:14:46  El humano H0054 va por el tunel 1
+04-05-2025 15:14:46  El humano H0018 regresa por el tunel3
+04-05-2025 15:14:46  El humano H0018 ha dejado 0 piezas de comida
+04-05-2025 15:14:46  El humano H0018 va a descansar
+04-05-2025 15:14:46  El humano H0015 va a la zona 1
+04-05-2025 15:14:46  El zombie Z0044 ha atacado al humano H0049
+04-05-2025 15:14:47  El humano H0019 va a zona común
+04-05-2025 15:14:47  El humano H0019 va por el tunel 4
+04-05-2025 15:14:47  El zombie Z0022 ha atacado al humano H0004
+04-05-2025 15:14:47  El humano H0027 regresa por el tunel2
+04-05-2025 15:14:47  El humano H0053 va a la zona 1
+04-05-2025 15:14:47  El humano H0014 va a zona común
+04-05-2025 15:14:47  El humano H0014 va por el tunel 3
+04-05-2025 15:14:47  El humano H0027 ha dejado 2 piezas de comida
+04-05-2025 15:14:47  El humano H0027 va a descansar
+04-05-2025 15:14:47  El humano H0047 va a la zona 4
+04-05-2025 15:14:47  El zombie Z0025 se dirige hacia 1
+04-05-2025 15:14:48  El zombie Z0025 ha atacado al humano H0053
+04-05-2025 15:14:48  El humano H0055 va a zona común
+04-05-2025 15:14:48  El humano H0055 va por el tunel 1
+04-05-2025 15:14:48  El humano H0016 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:48  El humano H0010 regresa por el tunel4
+04-05-2025 15:14:48  El humano H0036 regresa por el tunel2
+04-05-2025 15:14:48  El humano H0036 ha dejado 0 piezas de comida
+04-05-2025 15:14:48  El humano H0036 va a descansar
+04-05-2025 15:14:48  El humano H0010 ha dejado 0 piezas de comida
+04-05-2025 15:14:48  El humano H0010 va a descansar
+04-05-2025 15:14:48  El humano H0042 va a comer
+04-05-2025 15:14:48  El humano H0020 regresa por el tunel3
+04-05-2025 15:14:48  El humano H0020 ha dejado 0 piezas de comida
+04-05-2025 15:14:48  El humano H0020 va a descansar
+04-05-2025 15:14:48  El humano H0011 va a comer
+04-05-2025 15:14:48  El zombie Z0044 se dirige hacia 3
+04-05-2025 15:14:49  El humano H0003 va a zona común
+04-05-2025 15:14:49  El humano H0003 va por el tunel 3
+04-05-2025 15:14:49  El zombie Z0031 ha atacado al humano H0043
+04-05-2025 15:14:49  El humano H0037 regresa por el tunel2
+04-05-2025 15:14:49  El humano H0037 ha dejado 0 piezas de comida
+04-05-2025 15:14:49  El humano H0037 va a descansar
+04-05-2025 15:14:49  El humano H0028 regresa por el tunel4
+04-05-2025 15:14:49  El humano H0028 ha dejado 0 piezas de comida
+04-05-2025 15:14:49  El humano H0028 va a descansar
+04-05-2025 15:14:49  El humano H0005 regresa por el tunel3
+04-05-2025 15:14:49  El humano H0005 ha dejado 0 piezas de comida
+04-05-2025 15:14:49  El humano H0005 va a descansar
+04-05-2025 15:14:49  El humano H0018 va a comer
+04-05-2025 15:14:49  El humano H0035 va a zona común
+04-05-2025 15:14:49  El humano H0035 va por el tunel 4
+04-05-2025 15:14:49  El humano H0056 va a zona común
+04-05-2025 15:14:49  El humano H0056 va por el tunel 3
+04-05-2025 15:14:50  El zombie Z0022 se dirige hacia 3
+04-05-2025 15:14:50  El humano H0053 ha sido atacado pero no asesinado
+04-05-2025 15:14:50  El humano H0013 va a la zona 1
+04-05-2025 15:14:50  El zombie Z0025 se dirige hacia 4
+04-05-2025 15:14:50  El humano H0036 va a comer
+04-05-2025 15:14:50  El humano H0041 regresa por el tunel3
+04-05-2025 15:14:50  El humano H0020 va a comer
+04-05-2025 15:14:50  El humano H0027 va a comer
+04-05-2025 15:14:50  El humano H0041 ha dejado 2 piezas de comida
+04-05-2025 15:14:50  El humano H0041 va a descansar
+04-05-2025 15:14:50  El humano H0057 va a zona común
+04-05-2025 15:14:50  El humano H0057 va por el tunel 2
+04-05-2025 15:14:51  El zombie Z0040 ha matado al humano H0012
+04-05-2025 15:14:51  El zombie Z0012 se dirige hacia 3
+04-05-2025 15:14:51  El zombie Z0025 ha atacado al humano H0047
+04-05-2025 15:14:51  El humano H0028 va a comer
+04-05-2025 15:14:51  El humano H0017 regresa por el tunel4
+04-05-2025 15:14:51  El humano H0017 ha dejado 0 piezas de comida
+04-05-2025 15:14:51  El humano H0017 va a descansar
+04-05-2025 15:14:51  El humano H0058 va a zona común
+04-05-2025 15:14:51  El humano H0058 va por el tunel 4
+04-05-2025 15:14:51  El humano H0050 regresa por el tunel1
+04-05-2025 15:14:52  El humano H0050 ha dejado 2 piezas de comida
+04-05-2025 15:14:52  El humano H0050 va a descansar
+04-05-2025 15:14:52  El zombie Z0031 se dirige hacia 4
+04-05-2025 15:14:52  El humano H0026 va a la zona 2
+04-05-2025 15:14:52  El humano H0043 ha sido atacado pero no asesinado
+04-05-2025 15:14:52  El humano H0046 va a la zona 2
+04-05-2025 15:14:52  El humano H0052 va a la zona 2
+04-05-2025 15:14:52  El humano H0037 va a comer
+04-05-2025 15:14:52  El humano H0010 va a comer
+04-05-2025 15:14:52  El humano H0005 va a comer
+04-05-2025 15:14:53  El humano H0008 regresa por el tunel1
+04-05-2025 15:14:53  El humano H0008 ha dejado 0 piezas de comida
+04-05-2025 15:14:53  El humano H0008 va a descansar
+04-05-2025 15:14:53  El humano H0047 ha sido atacado pero no asesinado
+04-05-2025 15:14:53  El humano H0030 va a la zona 4
+04-05-2025 15:14:53  El humano H0030 ha sido atacado pero no asesinado
+04-05-2025 15:14:53  El zombie Z0025 se dirige hacia 1
+04-05-2025 15:14:53  El zombie Z0034 ha atacado al humano H0052
+04-05-2025 15:14:53  El humano H0017 va a comer
+04-05-2025 15:14:53  El humano H0042 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:53  El humano H0018 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:53  El humano H0011 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:53  El humano H0024 regresa por el tunel1
+04-05-2025 15:14:53  El humano H0024 ha dejado 0 piezas de comida
+04-05-2025 15:14:53  El humano H0024 va a descansar
+04-05-2025 15:14:54  El zombie Z0040 se dirige hacia 4
+04-05-2025 15:14:54  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:14:54  El zombie Z0039 se dirige hacia 1
+04-05-2025 15:14:54  El humano H0012 ha muerto
+04-05-2025 15:14:54  El humano H0004 ha sido atacado pero no asesinado
+04-05-2025 15:14:54  El humano H0048 va a la zona 3
+04-05-2025 15:14:54  El humano H0050 va a comer
+04-05-2025 15:14:54  El zombie Z0025 ha atacado al humano H0013
+04-05-2025 15:14:54  El humano H0059 va a zona común
+04-05-2025 15:14:54  El humano H0059 va por el tunel 4
+04-05-2025 15:14:54  El humano H0028 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:54  El humano H0036 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:54  El humano H0020 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:54  El humano H0041 va a comer
+04-05-2025 15:14:54  El zombie Z0044 ha atacado al humano H0048
+04-05-2025 15:14:55  El humano H0047 regresa por el tunel4
+04-05-2025 15:14:55  El humano H0047 ha dejado 0 piezas de comida
+04-05-2025 15:14:55  El humano H0047 va a descansar
+04-05-2025 15:14:55  El humano H0032 regresa por el tunel1
+04-05-2025 15:14:55  El humano H0016 va a zona común
+04-05-2025 15:14:55  El humano H0016 va por el tunel 3
+04-05-2025 15:14:55  El humano H0037 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:55  El humano H0038 va a la zona 4
+04-05-2025 15:14:55  El zombie Z0031 se dirige hacia 2
+04-05-2025 15:14:55  El humano H0010 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:55  El humano H0032 ha dejado 2 piezas de comida
+04-05-2025 15:14:55  El humano H0032 va a descansar
+04-05-2025 15:14:56  El humano H0008 va a comer
+04-05-2025 15:14:56  El humano H0024 va a comer
+04-05-2025 15:14:56  El humano H0045 regresa por el tunel4
+04-05-2025 15:14:56  El humano H0060 va a zona común
+04-05-2025 15:14:56  El humano H0060 va por el tunel 1
+04-05-2025 15:14:56  El humano H0007 va a la zona 2
+04-05-2025 15:14:56  El humano H0049 ha sido atacado pero no asesinado
+04-05-2025 15:14:56  El zombie Z0034 se dirige hacia 1
+04-05-2025 15:14:56  El humano H0007 ha sido atacado pero no asesinado
+04-05-2025 15:14:56  El humano H0029 va a la zona 2
+04-05-2025 15:14:56  El humano H0002 va a la zona 2
+04-05-2025 15:14:56  El humano H0002 ha sido atacado pero no asesinado
+04-05-2025 15:14:56  El humano H0052 ha sido atacado pero no asesinado
+04-05-2025 15:14:56  El humano H0057 va a la zona 2
+04-05-2025 15:14:56  El humano H0021 va a la zona 2
+04-05-2025 15:14:56  El humano H0045 ha dejado 2 piezas de comida
+04-05-2025 15:14:56  El humano H0045 va a descansar
+04-05-2025 15:14:56  El humano H0053 regresa por el tunel1
+04-05-2025 15:14:56  El humano H0053 ha dejado 0 piezas de comida
+04-05-2025 15:14:56  El humano H0053 va a descansar
+04-05-2025 15:14:56  El humano H0017 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:56  El humano H0005 va a recuperarse de las heridas anteriores
+04-05-2025 15:14:56  El zombie Z0040 ha atacado al humano H0038
+04-05-2025 15:14:56  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:14:56  El zombie Z0022 se dirige hacia 3
+04-05-2025 15:14:56  El zombie Z0012 se dirige hacia 2
+04-05-2025 15:14:56  El humano H0009 va a la zona 3
+04-05-2025 15:14:56  El humano H0009 ha sido atacado pero no asesinado
+04-05-2025 15:14:56  El humano H0033 va a la zona 3
+04-05-2025 15:14:56  El humano H0051 va a la zona 3
+04-05-2025 15:14:57  El humano H0006 regresa por el tunel4
+04-05-2025 15:14:57  El zombie Z0039 se dirige hacia 3
+04-05-2025 15:14:57  El humano H0013 ha sido atacado pero no asesinado
+04-05-2025 15:14:57  El zombie Z0025 se dirige hacia 3
+04-05-2025 15:14:57  El zombie Z0031 ha matado al humano H0046
+04-05-2025 15:14:57  El zombie Z0046 se dirige hacia 1
+04-05-2025 15:14:57  El humano H0006 ha dejado 2 piezas de comida
+04-05-2025 15:14:57  El humano H0006 va a descansar
+04-05-2025 15:14:57  El humano H0023 regresa por el tunel1
+04-05-2025 15:14:57  El humano H0042 va a zona común
+04-05-2025 15:14:57  El humano H0042 va por el tunel 2
+04-05-2025 15:14:57  El humano H0023 ha dejado 2 piezas de comida
+04-05-2025 15:14:57  El humano H0023 va a descansar
+04-05-2025 15:14:57  El humano H0061 va a zona común
+04-05-2025 15:14:57  El humano H0061 va por el tunel 3
+04-05-2025 15:14:57  El humano H0007 regresa por el tunel2
+04-05-2025 15:14:57  El humano H0007 ha dejado 0 piezas de comida
+04-05-2025 15:14:57  El humano H0007 va a descansar
+04-05-2025 15:14:57  El humano H0027 va a zona común
+04-05-2025 15:14:57  El humano H0027 va por el tunel 4
+04-05-2025 15:14:58  El humano H0050 va a zona común
+04-05-2025 15:14:58  El humano H0050 va por el tunel 4
+04-05-2025 15:14:58  El zombie Z0000 ha atacado al humano H0051
+04-05-2025 15:14:58  El humano H0053 va a comer
+04-05-2025 15:14:58  El humano H0018 va a zona común
+04-05-2025 15:14:58  El humano H0018 va por el tunel 4
+04-05-2025 15:14:58  El humano H0032 va a comer
+04-05-2025 15:14:58  El humano H0049 regresa por el tunel2
+04-05-2025 15:14:58  El humano H0049 ha dejado 0 piezas de comida
+04-05-2025 15:14:58  El humano H0049 va a descansar
+04-05-2025 15:14:58  El humano H0058 va a la zona 4
+04-05-2025 15:14:58  El humano H0038 ha sido atacado pero no asesinado
+04-05-2025 15:14:58  El zombie Z0040 se dirige hacia 4
+04-05-2025 15:14:59  El humano H0047 va a comer
+04-05-2025 15:14:59  El humano H0062 va a zona común
+04-05-2025 15:14:59  El humano H0062 va por el tunel 3
+04-05-2025 15:14:59  El zombie Z0031 se dirige hacia 4
+04-05-2025 15:14:59  El zombie Z0046 se dirige hacia 2
+04-05-2025 15:14:59  El humano H0054 va a la zona 1
+04-05-2025 15:14:59  El zombie Z0034 se dirige hacia 3
+04-05-2025 15:14:59  El humano H0045 va a comer
+04-05-2025 15:14:59  El humano H0006 va a comer
+04-05-2025 15:14:59  El humano H0060 va a la zona 1
+04-05-2025 15:14:59  El humano H0011 va a zona común
+04-05-2025 15:14:59  El humano H0011 va por el tunel 3
+04-05-2025 15:14:59  El humano H0064 va a zona común
+04-05-2025 15:14:59  El humano H0064 va por el tunel 1
+04-05-2025 15:14:59  El humano H0043 regresa por el tunel2
+04-05-2025 15:14:59  El humano H0043 ha dejado 0 piezas de comida
+04-05-2025 15:14:59  El humano H0043 va a descansar
+04-05-2025 15:15:00  El humano H0024 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:00  El humano H0063 va a zona común
+04-05-2025 15:15:00  El humano H0063 va por el tunel 4
+04-05-2025 15:15:00  El zombie Z0044 ha matado al humano H0058
+04-05-2025 15:15:00  El zombie Z0058 se dirige hacia 2
+04-05-2025 15:15:00  El humano H0055 va a la zona 1
+04-05-2025 15:15:00  El humano H0028 va a zona común
+04-05-2025 15:15:00  El humano H0028 va por el tunel 4
+04-05-2025 15:15:00  El humano H0036 va a zona común
+04-05-2025 15:15:00  El humano H0036 va por el tunel 1
+04-05-2025 15:15:00  El zombie Z0012 ha matado al humano H0057
+04-05-2025 15:15:00  El zombie Z0057 se dirige hacia 2
+04-05-2025 15:15:00  El humano H0023 va a comer
+04-05-2025 15:15:00  El humano H0007 va a comer
+04-05-2025 15:15:00  El humano H0049 va a comer
+04-05-2025 15:15:00  El humano H0020 va a zona común
+04-05-2025 15:15:00  El humano H0020 va por el tunel 2
+04-05-2025 15:15:00  El humano H0041 va a zona común
+04-05-2025 15:15:00  El humano H0041 va por el tunel 2
+04-05-2025 15:15:01  El humano H0008 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:01  El humano H0066 va a zona común
+04-05-2025 15:15:01  El humano H0066 va por el tunel 3
+04-05-2025 15:15:01  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:15:01  El humano H0048 ha sido atacado pero no asesinado
+04-05-2025 15:15:01  El humano H0014 va a la zona 3
+04-05-2025 15:15:01  El humano H0003 va a la zona 3
+04-05-2025 15:15:01  El humano H0003 ha sido atacado pero no asesinado
+04-05-2025 15:15:01  El humano H0002 regresa por el tunel2
+04-05-2025 15:15:01  El humano H0002 ha dejado 0 piezas de comida
+04-05-2025 15:15:01  El humano H0002 va a descansar
+04-05-2025 15:15:01  El humano H0010 va a zona común
+04-05-2025 15:15:01  El humano H0010 va por el tunel 4
+04-05-2025 15:15:01  El humano H0017 va a zona común
+04-05-2025 15:15:01  El humano H0017 va por el tunel 2
+04-05-2025 15:15:01  El humano H0065 va a zona común
+04-05-2025 15:15:01  El humano H0065 va por el tunel 4
+04-05-2025 15:15:01  El humano H0005 va a zona común
+04-05-2025 15:15:01  El humano H0005 va por el tunel 3
+04-05-2025 15:15:02  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:15:02  El humano H0019 va a la zona 4
+04-05-2025 15:15:02  El humano H0026 regresa por el tunel2
+04-05-2025 15:15:02  El humano H0037 va a zona común
+04-05-2025 15:15:02  El humano H0037 va por el tunel 1
+04-05-2025 15:15:02  El humano H0026 ha dejado 2 piezas de comida
+04-05-2025 15:15:02  El humano H0026 va a descansar
+04-05-2025 15:15:02  El zombie Z0022 ha matado al humano H0014
+04-05-2025 15:15:02  El zombie Z0014 se dirige hacia 1
+04-05-2025 15:15:02  El humano H0043 va a comer
+04-05-2025 15:15:03  El humano H0067 va a zona común
+04-05-2025 15:15:03  El humano H0067 va por el tunel 1
+04-05-2025 15:15:03  El zombie Z0040 ha atacado al humano H0019
+04-05-2025 15:15:03  El humano H0052 regresa por el tunel2
+04-05-2025 15:15:03  El humano H0052 ha dejado 0 piezas de comida
+04-05-2025 15:15:03  El humano H0052 va a descansar
+04-05-2025 15:15:03  El zombie Z0014 ha matado al humano H0054
+04-05-2025 15:15:03  El zombie Z0054 se dirige hacia 2
+04-05-2025 15:15:03  El humano H0053 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:03  El zombie Z0012 se dirige hacia 1
+04-05-2025 15:15:03  El humano H0046 ha muerto
+04-05-2025 15:15:03  El humano H0032 va a zona común
+04-05-2025 15:15:03  El humano H0032 va por el tunel 1
+04-05-2025 15:15:03  El humano H0004 regresa por el tunel3
+04-05-2025 15:15:03  El humano H0004 ha dejado 0 piezas de comida
+04-05-2025 15:15:03  El humano H0004 va a descansar
+04-05-2025 15:15:04  El humano H0047 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:04  El zombie Z0046 ha matado al humano H0029
+04-05-2025 15:15:04  El zombie Z0029 se dirige hacia 2
+04-05-2025 15:15:04  El humano H0006 va a zona común
+04-05-2025 15:15:04  El humano H0006 va por el tunel 2
+04-05-2025 15:15:04  El humano H0026 va a comer
+04-05-2025 15:15:04  El humano H0048 regresa por el tunel3
+04-05-2025 15:15:04  El humano H0048 ha dejado 0 piezas de comida
+04-05-2025 15:15:04  El humano H0048 va a descansar
+04-05-2025 15:15:04  El humano H0007 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:05  El humano H0024 va a zona común
+04-05-2025 15:15:05  El humano H0024 va por el tunel 2
+04-05-2025 15:15:05  El humano H0068 va a zona común
+04-05-2025 15:15:05  El humano H0068 va por el tunel 3
+04-05-2025 15:15:05  El humano H0002 va a comer
+04-05-2025 15:15:05  El humano H0045 va a zona común
+04-05-2025 15:15:05  El humano H0045 va por el tunel 4
+04-05-2025 15:15:05  El zombie Z0014 se dirige hacia 3
+04-05-2025 15:15:05  El humano H0054 ha muerto
+04-05-2025 15:15:05  El zombie Z0022 se dirige hacia 2
+04-05-2025 15:15:05  El humano H0001 va a la zona 3
+04-05-2025 15:15:05  El humano H0069 va a zona común
+04-05-2025 15:15:05  El humano H0069 va por el tunel 3
+04-05-2025 15:15:05  El humano H0009 regresa por el tunel3
+04-05-2025 15:15:05  El humano H0009 ha dejado 0 piezas de comida
+04-05-2025 15:15:05  El humano H0009 va a descansar
+04-05-2025 15:15:05  El humano H0049 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:06  El zombie Z0040 se dirige hacia 4
+04-05-2025 15:15:06  El humano H0035 va a la zona 4
+04-05-2025 15:15:06  El humano H0052 va a comer
+04-05-2025 15:15:06  El humano H0070 va a zona común
+04-05-2025 15:15:06  El humano H0070 va por el tunel 4
+04-05-2025 15:15:06  El zombie Z0039 ha matado al humano H0001
+04-05-2025 15:15:06  El zombie Z0012 ha atacado al humano H0055
+04-05-2025 15:15:06  El zombie Z0001 se dirige hacia 3
+04-05-2025 15:15:06  El humano H0023 va a zona común
+04-05-2025 15:15:06  El humano H0023 va por el tunel 1
+04-05-2025 15:15:06  El humano H0048 va a comer
+04-05-2025 15:15:06  El zombie Z0031 ha atacado al humano H0035
+04-05-2025 15:15:06  El humano H0043 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:07  El humano H0060 regresa por el tunel1
+04-05-2025 15:15:07  El zombie Z0046 se dirige hacia 4
+04-05-2025 15:15:07  El humano H0060 ha dejado 2 piezas de comida
+04-05-2025 15:15:07  El humano H0060 va a descansar
+04-05-2025 15:15:07  El humano H0004 va a comer
+04-05-2025 15:15:07  El zombie Z0058 ha atacado al humano H0021
+04-05-2025 15:15:08  El humano H0008 va a zona común
+04-05-2025 15:15:08  El humano H0008 va por el tunel 2
+04-05-2025 15:15:08  El humano H0071 va a zona común
+04-05-2025 15:15:08  El humano H0071 va por el tunel 1
+04-05-2025 15:15:08  El humano H0013 regresa por el tunel1
+04-05-2025 15:15:08  El humano H0013 ha dejado 0 piezas de comida
+04-05-2025 15:15:08  El humano H0013 va a descansar
+04-05-2025 15:15:08  El humano H0002 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:08  El zombie Z0012 se dirige hacia 3
+04-05-2025 15:15:08  El humano H0064 va a la zona 1
+04-05-2025 15:15:08  El humano H0036 va a la zona 1
+04-05-2025 15:15:08  El humano H0055 ha sido atacado pero no asesinado
+04-05-2025 15:15:08  El humano H0037 va a la zona 1
+04-05-2025 15:15:08  El humano H0037 ha sido atacado pero no asesinado
+04-05-2025 15:15:08  El humano H0036 ha sido atacado pero no asesinado
+04-05-2025 15:15:08  El humano H0072 va a zona común
+04-05-2025 15:15:08  El humano H0072 va por el tunel 2
+04-05-2025 15:15:08  El humano H0009 va a comer
+04-05-2025 15:15:09  El humano H0015 regresa por el tunel1
+04-05-2025 15:15:09  El humano H0047 va a zona común
+04-05-2025 15:15:09  El humano H0047 va por el tunel 1
+04-05-2025 15:15:09  El humano H0052 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:09  El humano H0015 ha dejado 2 piezas de comida
+04-05-2025 15:15:09  El humano H0015 va a descansar
+04-05-2025 15:15:09  El zombie Z0039 se dirige hacia 2
+04-05-2025 15:15:09  El humano H0053 va a zona común
+04-05-2025 15:15:09  El humano H0053 va por el tunel 4
+04-05-2025 15:15:09  El humano H0026 va a zona común
+04-05-2025 15:15:09  El humano H0026 va por el tunel 1
+04-05-2025 15:15:09  El humano H0048 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:09  El zombie Z0031 se dirige hacia 2
+04-05-2025 15:15:09  El humano H0058 ha muerto
+04-05-2025 15:15:09  El humano H0059 va a la zona 4
+04-05-2025 15:15:09  El humano H0050 va a la zona 4
+04-05-2025 15:15:09  El zombie Z0058 se dirige hacia 1
+04-05-2025 15:15:09  El humano H0057 ha muerto
+04-05-2025 15:15:09  El zombie Z0057 se dirige hacia 2
+04-05-2025 15:15:09  El humano H0021 ha sido atacado pero no asesinado
+04-05-2025 15:15:09  El humano H0029 ha muerto
+04-05-2025 15:15:09  El zombie Z0054 se dirige hacia 1
+04-05-2025 15:15:09  El zombie Z0029 se dirige hacia 3
+04-05-2025 15:15:09  El humano H0020 va a la zona 2
+04-05-2025 15:15:09  El humano H0020 ha sido atacado pero no asesinado
+04-05-2025 15:15:09  El humano H0041 va a la zona 2
+04-05-2025 15:15:09  El humano H0007 va a zona común
+04-05-2025 15:15:09  El humano H0007 va por el tunel 4
+04-05-2025 15:15:10  El humano H0013 va a comer
+04-05-2025 15:15:10  El humano H0060 va a comer
+04-05-2025 15:15:10  El zombie Z0025 ha atacado al humano H0033
+04-05-2025 15:15:10  El humano H0073 va a zona común
+04-05-2025 15:15:10  El humano H0073 va por el tunel 3
+04-05-2025 15:15:10  El zombie Z0044 ha matado al humano H0050
+04-05-2025 15:15:10  El zombie Z0050 se dirige hacia 4
+04-05-2025 15:15:10  El humano H0049 va a zona común
+04-05-2025 15:15:10  El humano H0049 va por el tunel 3
+04-05-2025 15:15:10  El zombie Z0058 ha atacado al humano H0064
+04-05-2025 15:15:11  El zombie Z0022 ha atacado al humano H0041
+04-05-2025 15:15:11  El humano H0055 regresa por el tunel1
+04-05-2025 15:15:11  El humano H0055 ha dejado 0 piezas de comida
+04-05-2025 15:15:11  El humano H0055 va a descansar
+04-05-2025 15:15:11  El humano H0004 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:12  El humano H0037 regresa por el tunel1
+04-05-2025 15:15:12  El humano H0037 ha dejado 0 piezas de comida
+04-05-2025 15:15:12  El humano H0037 va a descansar
+04-05-2025 15:15:12  El humano H0015 va a comer
+04-05-2025 15:15:12  El humano H0002 va a zona común
+04-05-2025 15:15:12  El humano H0002 va por el tunel 2
+04-05-2025 15:15:13  El humano H0036 regresa por el tunel1
+04-05-2025 15:15:13  El humano H0036 ha dejado 0 piezas de comida
+04-05-2025 15:15:13  El humano H0036 va a descansar
+04-05-2025 15:15:13  El humano H0074 va a zona común
+04-05-2025 15:15:13  El humano H0074 va por el tunel 4
+04-05-2025 15:15:13  El humano H0075 va a zona común
+04-05-2025 15:15:13  El humano H0075 va por el tunel 3
+04-05-2025 15:15:13  El zombie Z0025 se dirige hacia 4
+04-05-2025 15:15:13  El humano H0051 ha sido atacado pero no asesinado
+04-05-2025 15:15:13  El humano H0016 va a la zona 3
+04-05-2025 15:15:13  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:15:13  El humano H0027 va a la zona 4
+04-05-2025 15:15:13  El humano H0019 ha sido atacado pero no asesinado
+04-05-2025 15:15:13  El humano H0018 va a la zona 4
+04-05-2025 15:15:13  El humano H0018 ha sido atacado pero no asesinado
+04-05-2025 15:15:13  El humano H0028 va a la zona 4
+04-05-2025 15:15:13  El humano H0063 va a la zona 4
+04-05-2025 15:15:13  El humano H0009 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:13  El humano H0043 va a zona común
+04-05-2025 15:15:13  El humano H0043 va por el tunel 2
+04-05-2025 15:15:13  El zombie Z0034 ha matado al humano H0016
+04-05-2025 15:15:13  El zombie Z0016 se dirige hacia 2
+04-05-2025 15:15:13  El zombie Z0058 se dirige hacia 2
+04-05-2025 15:15:13  El zombie Z0054 se dirige hacia 4
+04-05-2025 15:15:13  El humano H0023 va a la zona 1
+04-05-2025 15:15:13  El humano H0064 ha sido atacado pero no asesinado
+04-05-2025 15:15:14  El humano H0042 va a la zona 2
+04-05-2025 15:15:14  El humano H0017 va a la zona 2
+04-05-2025 15:15:14  El humano H0024 va a la zona 2
+04-05-2025 15:15:14  El zombie Z0022 se dirige hacia 4
+04-05-2025 15:15:14  El humano H0055 va a comer
+04-05-2025 15:15:14  El humano H0067 va a la zona 1
+04-05-2025 15:15:14  El humano H0013 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:14  El zombie Z0040 ha atacado al humano H0063
+04-05-2025 15:15:14  El humano H0076 va a zona común
+04-05-2025 15:15:14  El humano H0076 va por el tunel 1
+04-05-2025 15:15:15  El humano H0036 va a comer
+04-05-2025 15:15:15  El humano H0038 regresa por el tunel4
+04-05-2025 15:15:15  El humano H0038 ha dejado 0 piezas de comida
+04-05-2025 15:15:15  El humano H0038 va a descansar
+04-05-2025 15:15:15  El humano H0032 va a la zona 1
+04-05-2025 15:15:15  El zombie Z0039 ha atacado al humano H0017
+04-05-2025 15:15:15  El humano H0052 va a zona común
+04-05-2025 15:15:15  El humano H0052 va por el tunel 1
+04-05-2025 15:15:16  El humano H0037 va a comer
+04-05-2025 15:15:16  El humano H0030 regresa por el tunel4
+04-05-2025 15:15:16  El humano H0030 ha dejado 0 piezas de comida
+04-05-2025 15:15:16  El humano H0030 va a descansar
+04-05-2025 15:15:16  El humano H0060 va a zona común
+04-05-2025 15:15:16  El humano H0060 va por el tunel 3
+04-05-2025 15:15:16  El humano H0026 va a la zona 1
+04-05-2025 15:15:16  El humano H0048 va a zona común
+04-05-2025 15:15:16  El humano H0048 va por el tunel 1
+04-05-2025 15:15:16  El humano H0077 va a zona común
+04-05-2025 15:15:16  El humano H0077 va por el tunel 4
+04-05-2025 15:15:16  El zombie Z0034 se dirige hacia 3
+04-05-2025 15:15:16  El humano H0056 va a la zona 3
+04-05-2025 15:15:16  El humano H0033 ha sido atacado pero no asesinado
+04-05-2025 15:15:16  El humano H0061 va a la zona 3
+04-05-2025 15:15:17  El humano H0019 regresa por el tunel4
+04-05-2025 15:15:17  El humano H0019 ha dejado 0 piezas de comida
+04-05-2025 15:15:17  El humano H0019 va a descansar
+04-05-2025 15:15:17  El zombie Z0040 se dirige hacia 1
+04-05-2025 15:15:17  El humano H0035 ha sido atacado pero no asesinado
+04-05-2025 15:15:17  El zombie Z0000 ha atacado al humano H0061
+04-05-2025 15:15:17  El humano H0004 va a zona común
+04-05-2025 15:15:17  El humano H0004 va por el tunel 3
+04-05-2025 15:15:17  El zombie Z0040 ha atacado al humano H0026
+04-05-2025 15:15:18  El zombie Z0039 se dirige hacia 3
+04-05-2025 15:15:18  El humano H0078 va a zona común
+04-05-2025 15:15:18  El humano H0078 va por el tunel 4
+04-05-2025 15:15:18  El humano H0015 va a zona común
+04-05-2025 15:15:18  El humano H0015 va por el tunel 4
+04-05-2025 15:15:18  El humano H0033 regresa por el tunel3
+04-05-2025 15:15:18  El humano H0033 ha dejado 0 piezas de comida
+04-05-2025 15:15:18  El humano H0033 va a descansar
+04-05-2025 15:15:18  El zombie Z0046 ha atacado al humano H0028
+04-05-2025 15:15:18  El humano H0009 va a zona común
+04-05-2025 15:15:18  El humano H0009 va por el tunel 3
+04-05-2025 15:15:19  El humano H0055 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:19  El humano H0036 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:19  El humano H0038 va a comer
+04-05-2025 15:15:19  El humano H0003 regresa por el tunel3
+04-05-2025 15:15:19  El humano H0003 ha dejado 0 piezas de comida
+04-05-2025 15:15:19  El humano H0003 va a descansar
+04-05-2025 15:15:19  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:15:19  El humano H0014 ha muerto
+04-05-2025 15:15:19  El humano H0062 va a la zona 3
+04-05-2025 15:15:19  El zombie Z0031 ha atacado al humano H0042
+04-05-2025 15:15:20  El humano H0037 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:20  El humano H0079 va a zona común
+04-05-2025 15:15:20  El humano H0079 va por el tunel 2
+04-05-2025 15:15:20  El humano H0030 va a comer
+04-05-2025 15:15:20  El humano H0013 va a zona común
+04-05-2025 15:15:20  El humano H0013 va por el tunel 1
+04-05-2025 15:15:20  El zombie Z0000 ha atacado al humano H0056
+04-05-2025 15:15:20  El humano H0080 va a zona común
+04-05-2025 15:15:20  El humano H0080 va por el tunel 4
+04-05-2025 15:15:20  El humano H0051 regresa por el tunel3
+04-05-2025 15:15:20  El humano H0051 ha dejado 0 piezas de comida
+04-05-2025 15:15:20  El humano H0051 va a descansar
+04-05-2025 15:15:20  El zombie Z0046 se dirige hacia 4
+04-05-2025 15:15:20  El humano H0045 va a la zona 4
+04-05-2025 15:15:20  El humano H0010 va a la zona 4
+04-05-2025 15:15:20  El humano H0010 ha sido atacado pero no asesinado
+04-05-2025 15:15:20  El humano H0065 va a la zona 4
+04-05-2025 15:15:20  El humano H0050 ha muerto
+04-05-2025 15:15:20  El zombie Z0040 se dirige hacia 4
+04-05-2025 15:15:20  El humano H0071 va a la zona 1
+04-05-2025 15:15:20  El humano H0026 ha sido atacado pero no asesinado
+04-05-2025 15:15:20  El humano H0047 va a la zona 1
+04-05-2025 15:15:20  El humano H0047 ha sido atacado pero no asesinado
+04-05-2025 15:15:20  El humano H0048 va a la zona 1
+04-05-2025 15:15:20  El humano H0048 ha sido atacado pero no asesinado
+04-05-2025 15:15:20  El humano H0081 va a zona común
+04-05-2025 15:15:20  El humano H0081 va por el tunel 1
+04-05-2025 15:15:21  El humano H0019 va a comer
+04-05-2025 15:15:21  El humano H0052 va a la zona 1
+04-05-2025 15:15:21  El humano H0052 ha sido atacado pero no asesinado
+04-05-2025 15:15:21  El humano H0033 va a comer
+04-05-2025 15:15:21  El zombie Z0031 se dirige hacia 4
+04-05-2025 15:15:21  El zombie Z0050 ha atacado al humano H0059
+04-05-2025 15:15:22  El humano H0076 va a la zona 1
+04-05-2025 15:15:22  El zombie Z0000 se dirige hacia 4
+04-05-2025 15:15:22  El humano H0003 va a comer
+04-05-2025 15:15:22  El humano H0051 va a comer
+04-05-2025 15:15:22  El humano H0082 va a zona común
+04-05-2025 15:15:22  El humano H0082 va por el tunel 4
+04-05-2025 15:15:22  El humano H0010 regresa por el tunel4
+04-05-2025 15:15:22  El humano H0010 ha dejado 0 piezas de comida
+04-05-2025 15:15:22  El humano H0010 va a descansar
+04-05-2025 15:15:23  El humano H0038 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:23  El humano H0064 regresa por el tunel1
+04-05-2025 15:15:23  El humano H0064 ha dejado 0 piezas de comida
+04-05-2025 15:15:23  El humano H0064 va a descansar
+04-05-2025 15:15:23  El zombie Z0057 ha atacado al humano H0024
+04-05-2025 15:15:23  El zombie Z0014 ha matado al humano H0062
+04-05-2025 15:15:23  El zombie Z0062 se dirige hacia 4
+04-05-2025 15:15:23  El zombie Z0050 se dirige hacia 3
+04-05-2025 15:15:23  El humano H0053 va a la zona 4
+04-05-2025 15:15:23  El humano H0053 ha sido atacado pero no asesinado
+04-05-2025 15:15:23  El humano H0070 va a la zona 4
+04-05-2025 15:15:23  El humano H0007 va a la zona 4
+04-05-2025 15:15:23  El humano H0007 ha sido atacado pero no asesinado
+04-05-2025 15:15:23  El humano H0035 regresa por el tunel4
+04-05-2025 15:15:23  El humano H0035 ha dejado 0 piezas de comida
+04-05-2025 15:15:23  El humano H0035 va a descansar
+04-05-2025 15:15:24  El humano H0055 va a zona común
+04-05-2025 15:15:24  El humano H0055 va por el tunel 3
+04-05-2025 15:15:24  El humano H0023 regresa por el tunel1
+04-05-2025 15:15:24  El humano H0023 ha dejado 2 piezas de comida
+04-05-2025 15:15:24  El humano H0023 va a descansar
+04-05-2025 15:15:24  El humano H0033 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:24  El zombie Z0025 ha matado al humano H0065
+04-05-2025 15:15:24  El zombie Z0065 se dirige hacia 1
+04-05-2025 15:15:24  El humano H0018 regresa por el tunel4
+04-05-2025 15:15:24  El humano H0018 ha dejado 0 piezas de comida
+04-05-2025 15:15:24  El humano H0018 va a descansar
+04-05-2025 15:15:24  El humano H0084 va a zona común
+04-05-2025 15:15:24  El humano H0084 va por el tunel 1
+04-05-2025 15:15:25  El humano H0036 va a zona común
+04-05-2025 15:15:25  El humano H0036 va por el tunel 1
+04-05-2025 15:15:25  El humano H0030 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:25  El humano H0026 regresa por el tunel1
+04-05-2025 15:15:25  El humano H0026 ha dejado 0 piezas de comida
+04-05-2025 15:15:25  El humano H0026 va a descansar
+04-05-2025 15:15:25  El humano H0083 va a zona común
+04-05-2025 15:15:25  El humano H0083 va por el tunel 4
+04-05-2025 15:15:25  El zombie Z0057 se dirige hacia 4
+04-05-2025 15:15:25  El humano H0006 va a la zona 2
+04-05-2025 15:15:25  El humano H0041 ha sido atacado pero no asesinado
+04-05-2025 15:15:25  El humano H0002 va a la zona 2
+04-05-2025 15:15:25  El humano H0001 ha muerto
+04-05-2025 15:15:25  El zombie Z0014 se dirige hacia 4
+04-05-2025 15:15:25  El zombie Z0001 se dirige hacia 1
+04-05-2025 15:15:25  El humano H0011 va a la zona 3
+04-05-2025 15:15:25  El humano H0011 ha sido atacado pero no asesinado
+04-05-2025 15:15:25  El humano H0066 va a la zona 3
+04-05-2025 15:15:25  El zombie Z0065 ha atacado al humano H0076
+04-05-2025 15:15:25  El zombie Z0016 ha atacado al humano H0006
+04-05-2025 15:15:25  El humano H0035 va a comer
+04-05-2025 15:15:26  El humano H0019 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:26  El humano H0023 va a comer
+04-05-2025 15:15:26  El zombie Z0025 se dirige hacia 4
+04-05-2025 15:15:26  El humano H0021 regresa por el tunel2
+04-05-2025 15:15:26  El humano H0021 ha dejado 0 piezas de comida
+04-05-2025 15:15:26  El humano H0021 va a descansar
+04-05-2025 15:15:26  El humano H0018 va a comer
+04-05-2025 15:15:26  El zombie Z0012 ha matado al humano H0066
+04-05-2025 15:15:26  El humano H0010 va a comer
+04-05-2025 15:15:26  El zombie Z0066 se dirige hacia 1
+04-05-2025 15:15:27  El humano H0037 va a zona común
+04-05-2025 15:15:27  El humano H0037 va por el tunel 2
+04-05-2025 15:15:27  El humano H0064 va a comer
+04-05-2025 15:15:27  El humano H0026 va a comer
+04-05-2025 15:15:27  El zombie Z0044 ha atacado al humano H0070
+04-05-2025 15:15:33  El zombie Z0044 se dirige hacia 2
+04-05-2025 15:15:33  El humano H0003 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:33  El zombie Z0012 se dirige hacia 1
+04-05-2025 15:15:33  El zombie Z0065 se dirige hacia 1
+04-05-2025 15:15:33  El zombie Z0016 se dirige hacia 1
+04-05-2025 15:15:33  El humano H0035 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:33  El humano H0041 regresa por el tunel2
+04-05-2025 15:15:33  El humano H0041 ha dejado 0 piezas de comida
+04-05-2025 15:15:33  El humano H0041 va a descansar
+04-05-2025 15:15:33  El humano H0086 va a zona común
+04-05-2025 15:15:33  El humano H0086 va por el tunel 2
+04-05-2025 15:15:33  El humano H0067 regresa por el tunel1
+04-05-2025 15:15:33  El humano H0028 ha sido atacado pero no asesinado
+04-05-2025 15:15:33  El humano H0085 va a zona común
+04-05-2025 15:15:33  El humano H0085 va por el tunel 4
+04-05-2025 15:15:33  El humano H0021 va a comer
+04-05-2025 15:15:33  El humano H0069 va a la zona 3
+04-05-2025 15:15:33  El humano H0076 ha sido atacado pero no asesinado
+04-05-2025 15:15:33  El zombie Z0001 se dirige hacia 1
+04-05-2025 15:15:33  El humano H0059 ha sido atacado pero no asesinado
+04-05-2025 15:15:33  El humano H0067 ha dejado 2 piezas de comida
+04-05-2025 15:15:33  El humano H0067 va a descansar
+04-05-2025 15:15:33  El zombie Z0058 ha atacado al humano H0002
+04-05-2025 15:15:34  El humano H0032 regresa por el tunel1
+04-05-2025 15:15:34  El humano H0020 regresa por el tunel2
+04-05-2025 15:15:34  El humano H0030 va a zona común
+04-05-2025 15:15:34  El humano H0030 va por el tunel 2
+04-05-2025 15:15:34  El zombie Z0029 ha matado al humano H0069
+04-05-2025 15:15:34  El zombie Z0069 se dirige hacia 3
+04-05-2025 15:15:34  El humano H0020 ha dejado 0 piezas de comida
+04-05-2025 15:15:34  El humano H0020 va a descansar
+04-05-2025 15:15:34  El humano H0032 ha dejado 2 piezas de comida
+04-05-2025 15:15:34  El humano H0032 va a descansar
+04-05-2025 15:15:34  El humano H0007 regresa por el tunel4
+04-05-2025 15:15:34  El humano H0007 ha dejado 0 piezas de comida
+04-05-2025 15:15:34  El humano H0007 va a descansar
+04-05-2025 15:15:34  El zombie Z0054 ha matado al humano H0027
+04-05-2025 15:15:34  El zombie Z0027 se dirige hacia 3
+04-05-2025 15:15:35  El humano H0041 va a comer
+04-05-2025 15:15:35  El humano H0033 va a zona común
+04-05-2025 15:15:35  El humano H0033 va por el tunel 1
+04-05-2025 15:15:35  El humano H0047 regresa por el tunel1
+04-05-2025 15:15:35  El humano H0047 ha dejado 0 piezas de comida
+04-05-2025 15:15:35  El humano H0047 va a descansar
+04-05-2025 15:15:35  El humano H0019 va a zona común
+04-05-2025 15:15:35  El humano H0019 va por el tunel 4
+04-05-2025 15:15:35  El humano H0087 va a zona común
+04-05-2025 15:15:35  El humano H0087 va por el tunel 2
+04-05-2025 15:15:35  El humano H0038 va a zona común
+04-05-2025 15:15:35  El humano H0038 va por el tunel 4
+04-05-2025 15:15:35  El zombie Z0001 se dirige hacia 4
+04-05-2025 15:15:35  El humano H0013 va a la zona 1
+04-05-2025 15:15:35  El humano H0053 regresa por el tunel4
+04-05-2025 15:15:35  El humano H0053 ha dejado 0 piezas de comida
+04-05-2025 15:15:35  El humano H0053 va a descansar
+04-05-2025 15:15:35  El zombie Z0066 ha atacado al humano H0013
+04-05-2025 15:15:36  El humano H0088 va a zona común
+04-05-2025 15:15:36  El humano H0088 va por el tunel 2
+04-05-2025 15:15:36  El humano H0021 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:36  El humano H0067 va a comer
+04-05-2025 15:15:36  El humano H0028 regresa por el tunel4
+04-05-2025 15:15:36  El humano H0028 ha dejado 0 piezas de comida
+04-05-2025 15:15:36  El humano H0028 va a descansar
+04-05-2025 15:15:36  El zombie Z0054 se dirige hacia 3
+04-05-2025 15:15:36  El humano H0042 ha sido atacado pero no asesinado
+04-05-2025 15:15:36  El humano H0072 va a la zona 2
+04-05-2025 15:15:36  El humano H0017 ha sido atacado pero no asesinado
+04-05-2025 15:15:36  El humano H0008 va a la zona 2
+04-05-2025 15:15:36  El humano H0008 ha sido atacado pero no asesinado
+04-05-2025 15:15:36  El humano H0024 ha sido atacado pero no asesinado
+04-05-2025 15:15:36  El humano H0002 ha sido atacado pero no asesinado
+04-05-2025 15:15:36  El zombie Z0058 se dirige hacia 4
+04-05-2025 15:15:36  El humano H0006 ha sido atacado pero no asesinado
+04-05-2025 15:15:37  El zombie Z0029 se dirige hacia 3
+04-05-2025 15:15:37  El humano H0005 va a la zona 3
+04-05-2025 15:15:37  El humano H0068 va a la zona 3
+04-05-2025 15:15:37  El humano H0016 ha muerto
+04-05-2025 15:15:37  El humano H0073 va a la zona 3
+04-05-2025 15:15:37  El humano H0049 va a la zona 3
+04-05-2025 15:15:37  El humano H0049 ha sido atacado pero no asesinado
+04-05-2025 15:15:37  El humano H0075 va a la zona 3
+04-05-2025 15:15:37  El humano H0032 va a comer
+04-05-2025 15:15:37  El zombie Z0044 ha matado al humano H0072
+04-05-2025 15:15:37  El zombie Z0072 se dirige hacia 4
+04-05-2025 15:15:37  El humano H0089 va a zona común
+04-05-2025 15:15:37  El humano H0089 va por el tunel 2
+04-05-2025 15:15:37  El humano H0007 va a comer
+04-05-2025 15:15:37  El humano H0053 va a comer
+04-05-2025 15:15:37  El zombie Z0016 se dirige hacia 1
+04-05-2025 15:15:37  El zombie Z0066 se dirige hacia 3
+04-05-2025 15:15:38  El humano H0035 va a zona común
+04-05-2025 15:15:38  El humano H0035 va por el tunel 1
+04-05-2025 15:15:38  El humano H0003 va a zona común
+04-05-2025 15:15:38  El humano H0003 va por el tunel 1
+04-05-2025 15:15:38  El humano H0052 regresa por el tunel1
+04-05-2025 15:15:38  El zombie Z0022 ha atacado al humano H0045
+04-05-2025 15:15:38  El humano H0052 ha dejado 0 piezas de comida
+04-05-2025 15:15:38  El humano H0052 va a descansar
+04-05-2025 15:15:38  El humano H0042 regresa por el tunel2
+04-05-2025 15:15:38  El humano H0042 ha dejado 0 piezas de comida
+04-05-2025 15:15:38  El humano H0042 va a descansar
+04-05-2025 15:15:38  El zombie Z0034 ha atacado al humano H0068
+04-05-2025 15:15:38  El humano H0051 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:38  El humano H0020 va a comer
+04-05-2025 15:15:38  El humano H0023 va a zona común
+04-05-2025 15:15:38  El humano H0023 va por el tunel 2
+04-05-2025 15:15:38  El humano H0028 va a comer
+04-05-2025 15:15:39  El humano H0041 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:39  El humano H0047 va a comer
+04-05-2025 15:15:39  El humano H0048 regresa por el tunel1
+04-05-2025 15:15:39  El humano H0048 ha dejado 0 piezas de comida
+04-05-2025 15:15:39  El humano H0048 va a descansar
+04-05-2025 15:15:39  El humano H0090 va a zona común
+04-05-2025 15:15:39  El humano H0090 va por el tunel 2
+04-05-2025 15:15:39  El humano H0008 regresa por el tunel2
+04-05-2025 15:15:39  El humano H0008 ha dejado 0 piezas de comida
+04-05-2025 15:15:39  El humano H0008 va a descansar
+04-05-2025 15:15:39  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:15:39  El humano H0037 va a la zona 2
+04-05-2025 15:15:39  El humano H0037 ha sido atacado pero no asesinado
+04-05-2025 15:15:39  El humano H0043 va a la zona 2
+04-05-2025 15:15:39  El humano H0079 va a la zona 2
+04-05-2025 15:15:39  El humano H0072 ha muerto
+04-05-2025 15:15:39  El humano H0043 ha sido atacado pero no asesinado
+04-05-2025 15:15:39  El zombie Z0016 se dirige hacia 4
+04-05-2025 15:15:39  El zombie Z0065 se dirige hacia 4
+04-05-2025 15:15:39  El zombie Z0012 se dirige hacia 2
+04-05-2025 15:15:39  El humano H0013 ha sido atacado pero no asesinado
+04-05-2025 15:15:39  El humano H0084 va a la zona 1
+04-05-2025 15:15:39  El humano H0081 va a la zona 1
+04-05-2025 15:15:40  El humano H0071 regresa por el tunel1
+04-05-2025 15:15:40  El humano H0063 ha sido atacado pero no asesinado
+04-05-2025 15:15:40  El humano H0027 ha muerto
+04-05-2025 15:15:40  El humano H0077 va a la zona 4
+04-05-2025 15:15:40  El zombie Z0022 se dirige hacia 1
+04-05-2025 15:15:40  El humano H0091 va a zona común
+04-05-2025 15:15:40  El humano H0091 va por el tunel 1
+04-05-2025 15:15:40  El humano H0017 regresa por el tunel2
+04-05-2025 15:15:40  El humano H0061 ha sido atacado pero no asesinado
+04-05-2025 15:15:40  El zombie Z0034 se dirige hacia 3
+04-05-2025 15:15:40  El zombie Z0012 ha matado al humano H0079
+04-05-2025 15:15:40  El humano H0021 va a zona común
+04-05-2025 15:15:40  El humano H0021 va por el tunel 2
+04-05-2025 15:15:40  El zombie Z0079 se dirige hacia 1
+04-05-2025 15:15:40  El humano H0017 ha dejado 0 piezas de comida
+04-05-2025 15:15:40  El humano H0017 va a descansar
+04-05-2025 15:15:40  El humano H0071 ha dejado 2 piezas de comida
+04-05-2025 15:15:40  El humano H0071 va a descansar
+04-05-2025 15:15:41  El humano H0052 va a comer
+04-05-2025 15:15:41  El humano H0048 va a comer
+04-05-2025 15:15:41  El zombie Z0046 ha atacado al humano H0077
+04-05-2025 15:15:41  El humano H0008 va a comer
+04-05-2025 15:15:41  El humano H0042 va a comer
+04-05-2025 15:15:41  El zombie Z0022 ha atacado al humano H0081
+04-05-2025 15:15:41  El zombie Z0039 ha atacado al humano H0073
+04-05-2025 15:15:41  El humano H0061 regresa por el tunel3
+04-05-2025 15:15:41  El humano H0061 ha dejado 0 piezas de comida
+04-05-2025 15:15:41  El humano H0061 va a descansar
+04-05-2025 15:15:42  El humano H0024 regresa por el tunel2
+04-05-2025 15:15:42  El humano H0024 ha dejado 0 piezas de comida
+04-05-2025 15:15:42  El humano H0024 va a descansar
+04-05-2025 15:15:42  El humano H0079 ha muerto
+04-05-2025 15:15:42  El zombie Z0012 se dirige hacia 1
+04-05-2025 15:15:42  El humano H0086 va a la zona 2
+04-05-2025 15:15:42  El humano H0092 va a zona común
+04-05-2025 15:15:42  El humano H0092 va por el tunel 3
+04-05-2025 15:15:48  El zombie Z0039 se dirige hacia 4
+04-05-2025 15:15:48  El zombie Z0022 se dirige hacia 2
+04-05-2025 15:15:48  El humano H0052 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:48  El zombie Z0040 se dirige hacia 3
+04-05-2025 15:15:48  El humano H0017 va a comer
+04-05-2025 15:15:48  El zombie Z0046 se dirige hacia 1
+04-05-2025 15:15:48  El humano H0006 regresa por el tunel2
+04-05-2025 15:15:48  El humano H0006 ha dejado 0 piezas de comida
+04-05-2025 15:15:48  El humano H0006 va a descansar
+04-05-2025 15:15:48  El humano H0074 va a la zona 4
+04-05-2025 15:15:48  El humano H0071 va a comer
+04-05-2025 15:15:48  El humano H0011 regresa por el tunel3
+04-05-2025 15:15:48  El humano H0011 ha dejado 0 piezas de comida
+04-05-2025 15:15:48  El humano H0011 va a descansar
+04-05-2025 15:15:48  El humano H0093 va a zona común
+04-05-2025 15:15:48  El humano H0093 va por el tunel 4
+04-05-2025 15:15:48  El humano H0056 ha sido atacado pero no asesinado
+04-05-2025 15:15:48  El humano H0061 va a comer
+04-05-2025 15:15:48  El humano H0004 va a la zona 3
+04-05-2025 15:15:48  El humano H0004 ha sido atacado pero no asesinado
+04-05-2025 15:15:48  El humano H0060 va a la zona 3
+04-05-2025 15:15:48  El humano H0018 va a recuperarse de las heridas anteriores
+04-05-2025 15:15:48  El humano H0024 va a comer
+04-05-2025 15:15:48  El humano H0051 va a zona común
+04-05-2025 15:15:48  El humano H0051 va por el tunel 3
+04-05-2025 15:15:48  El humano H0062 ha muerto
+04-05-2025 15:15:48  El humano H0009 va a la zona 3
+04-05-2025 15:15:48  El humano H0009 ha sido atacado pero no asesinado
+04-05-2025 15:15:49  El zombie Z0022 ha atacado al humano H0086
+04-05-2025 15:15:49  El humano H0049 regresa por el tunel3
+04-05-2025 15:15:49  El humano H0002 regresa por el tunel2
+04-05-2025 15:15:49  El humano H0041 va a zona común
+04-05-2025 15:15:49  El humano H0041 va por el tunel 4
+04-05-2025 15:15:49  El humano H0002 ha dejado 0 piezas de comida
+04-05-2025 15:15:49  El humano H0002 va a descansar
+04-05-2025 15:15:49  El humano H0049 ha dejado 0 piezas de comida
+04-05-2025 15:15:49  El humano H0049 va a descansar
+04-05-2025 15:15:49  El zombie Z0050 ha atacado al humano H0060
+04-05-2025 15:15:49  El humano H0094 va a zona común
+04-05-2025 15:15:49  El humano H0094 va por el tunel 4
+04-05-2025 15:15:49  El zombie Z0031 ha atacado al humano H0074
+04-05-2025 15:15:50  El zombie Z0079 ha atacado al humano H0084
+04-05-2025 15:15:50  El humano H0095 va a zona común
+04-05-2025 15:15:50  El humano H0095 va por el tunel 4
+04-05-2025 15:15:51  El humano H0006 va a comer
+04-05-2025 15:15:51  El humano H0049 va a comer
+04-05-2025 15:15:51  El zombie Z0050 se dirige hacia 3
+04-05-2025 15:15:51  El humano H0066 ha muerto
+04-05-2025 15:15:51  El humano H0069 ha muerto
+04-05-2025 15:15:51  El humano H0096 va a zona común
+04-05-2025 15:15:51  El humano H0096 va por el tunel 4
+04-05-2025 15:15:52  El zombie Z0079 se dirige hacia 1
+04-05-2025 15:15:52  El humano H0036 va a la zona 1
+04-05-2025 15:15:52  El humano H0081 ha sido atacado pero no asesinado
+04-05-2025 15:15:52  El humano H0033 va a la zona 1
+04-05-2025 15:15:52  El zombie Z0022 se dirige hacia 3
+04-05-2025 15:15:52  El humano H0086 ha sido atacado pero no asesinado
+04-05-2025 15:15:52  El humano H0030 va a la zona 2
+04-05-2025 15:15:52  El humano H0030 ha sido atacado pero no asesinado
+04-05-2025 15:15:52  El humano H0087 va a la zona 2
+04-05-2025 15:15:52  El zombie Z0069 ha atacado al humano H0005
+04-05-2025 15:15:52  El humano H0011 va a comer
+04-05-2025 15:15:52  El zombie Z0031 se dirige hacia 2
+04-05-2025 15:15:52  El humano H0078 va a la zona 4
+04-05-2025 15:15:53  El zombie Z0012 ha atacado al humano H0036
+04-05-2025 15:15:53  El humano H0002 va a comer
+04-05-2025 15:15:53  El humano H0013 regresa por el tunel1
+04-05-2025 15:15:53  El humano H0013 ha dejado 0 piezas de comida
+04-05-2025 15:15:53  El humano H0013 va a descansar
+04-05-2025 15:15:53  El humano H0004 regresa por el tunel3
+04-05-2025 15:15:53  El humano H0004 ha dejado 0 piezas de comida
+04-05-2025 15:15:53  El humano H0004 va a descansar
+04-05-2025 15:15:53  El zombie Z0031 ha atacado al humano H0087
+04-05-2025 15:15:54  El zombie Z0000 ha matado al humano H0078
+04-05-2025 15:15:54  El zombie Z0078 se dirige hacia 1
+04-05-2025 15:15:54  El humano H0043 regresa por el tunel2
+04-05-2025 15:15:54  El humano H0043 ha dejado 0 piezas de comida
+04-05-2025 15:15:54  El humano H0043 va a descansar
+04-05-2025 15:15:54  El zombie Z0069 se dirige hacia 2
+04-05-2025 15:15:54  El humano H0097 va a zona común
+04-05-2025 15:15:54  El humano H0097 va por el tunel 2
+04-05-2025 15:15:54  El humano H0081 regresa por el tunel1
+04-05-2025 15:15:54  El humano H0081 ha dejado 0 piezas de comida
+04-05-2025 15:15:54  El humano H0081 va a descansar
+04-05-2025 15:15:54  El humano H0018 va a zona común
+04-05-2025 15:15:54  El humano H0018 va por el tunel 2
+04-05-2025 15:15:54  El humano H0056 regresa por el tunel3
+04-05-2025 15:15:54  El humano H0056 ha dejado 0 piezas de comida
+04-05-2025 15:15:54  El humano H0056 va a descansar
+04-05-2025 15:15:55  El zombie Z0027 ha atacado al humano H0075
+04-05-2025 15:15:55  El humano H0098 va a zona común
+04-05-2025 15:15:55  El humano H0098 va por el tunel 1
+04-05-2025 15:15:55  El humano H0037 regresa por el tunel2
+04-05-2025 15:15:55  El humano H0037 ha dejado 0 piezas de comida
+04-05-2025 15:15:55  El humano H0037 va a descansar
+04-05-2025 15:15:55  El humano H0052 va a zona común
+04-05-2025 15:15:55  El humano H0052 va por el tunel 1
+04-05-2025 15:15:55  El humano H0076 regresa por el tunel1
+04-05-2025 15:15:55  El humano H0076 ha dejado 0 piezas de comida
+04-05-2025 15:15:55  El humano H0076 va a descansar
+04-05-2025 15:15:55  El humano H0009 regresa por el tunel3
+04-05-2025 15:15:55  El humano H0009 ha dejado 0 piezas de comida
+04-05-2025 15:15:55  El humano H0009 va a descansar
+04-05-2025 15:15:55  El humano H0099 va a zona común
+04-05-2025 15:15:55  El humano H0099 va por el tunel 1
+04-05-2025 15:15:56  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:15:56  El zombie Z0062 se dirige hacia 2
+04-05-2025 15:15:56  El humano H0065 ha muerto
+04-05-2025 15:15:56  El humano H0045 ha sido atacado pero no asesinado
+04-05-2025 15:15:56  El zombie Z0057 se dirige hacia 3
+04-05-2025 15:15:56  El zombie Z0014 se dirige hacia 4
+04-05-2025 15:15:56  El humano H0082 va a la zona 4
+04-05-2025 15:15:56  El humano H0086 regresa por el tunel2
+04-05-2025 15:15:56  El humano H0086 ha dejado 0 piezas de comida
+04-05-2025 15:15:56  El humano H0086 va a descansar
+04-05-2025 15:15:56  El humano H0043 va a comer
+04-05-2025 15:15:56  El zombie Z0012 se dirige hacia 2
+04-05-2025 15:15:56  El humano H0084 ha sido atacado pero no asesinado
+04-05-2025 15:15:56  El humano H0081 va a comer
+04-05-2025 15:15:56  El humano H0013 va a comer
+04-05-2025 15:15:56  El humano H0056 va a comer
+04-05-2025 15:15:56  El zombie Z0031 se dirige hacia 2
+04-05-2025 15:15:56  El humano H0088 va a la zona 2
+04-05-2025 15:15:56  El humano H0087 ha sido atacado pero no asesinado
+04-05-2025 15:15:56  El zombie Z0025 ha matado al humano H0082
+04-05-2025 15:15:56  El zombie Z0082 se dirige hacia 1
+04-05-2025 15:15:57  El zombie Z0031 ha matado al humano H0088
+04-05-2025 15:15:57  El zombie Z0088 se dirige hacia 1
+04-05-2025 15:15:57  El humano H0100 va a zona común
+04-05-2025 15:15:57  El humano H0100 va por el tunel 2
+04-05-2025 15:15:57  El humano H0004 va a comer
+04-05-2025 15:15:57  El humano H0045 regresa por el tunel4
+04-05-2025 15:15:57  El humano H0045 ha dejado 0 piezas de comida
+04-05-2025 15:15:57  El humano H0045 va a descansar
+04-05-2025 15:15:57  El zombie Z0046 ha atacado al humano H0033
+04-05-2025 15:15:58  El zombie Z0027 se dirige hacia 1
+04-05-2025 15:15:58  El zombie Z0054 se dirige hacia 4
+04-05-2025 15:15:58  El humano H0005 ha sido atacado pero no asesinado
+04-05-2025 15:15:58  El zombie Z0029 se dirige hacia 2
+04-05-2025 15:15:58  El zombie Z0066 se dirige hacia 1
+04-05-2025 15:15:58  El humano H0068 ha sido atacado pero no asesinado
+04-05-2025 15:15:58  El zombie Z0034 se dirige hacia 1
+04-05-2025 15:15:58  El humano H0073 ha sido atacado pero no asesinado
+04-05-2025 15:15:58  El humano H0075 ha sido atacado pero no asesinado
+04-05-2025 15:15:58  El zombie Z0040 se dirige hacia 4
+04-05-2025 15:15:58  El humano H0060 ha sido atacado pero no asesinado
+04-05-2025 15:15:58  El humano H0051 va a la zona 3
+04-05-2025 15:15:58  El humano H0051 ha sido atacado pero no asesinado
+04-05-2025 15:15:58  El humano H0092 va a la zona 3
+04-05-2025 15:15:58  El humano H0086 va a comer
+04-05-2025 15:15:58  El humano H0076 va a comer
+04-05-2025 15:15:58  El humano H0059 regresa por el tunel4
+04-05-2025 15:15:58  El humano H0059 ha dejado 0 piezas de comida
+04-05-2025 15:15:58  El humano H0059 va a descansar
+04-05-2025 15:15:59  El humano H0037 va a comer
+04-05-2025 15:15:59  El zombie Z0050 ha atacado al humano H0092
+04-05-2025 15:15:59  El humano H0073 regresa por el tunel3
+04-05-2025 15:15:59  El humano H0073 ha dejado 0 piezas de comida
+04-05-2025 15:15:59  El humano H0073 va a descansar
+04-05-2025 15:15:59  El humano H0009 va a comer
+04-05-2025 15:15:59  El humano H0063 regresa por el tunel4
+04-05-2025 15:15:59  El humano H0063 ha dejado 0 piezas de comida
+04-05-2025 15:15:59  El humano H0063 va a descansar
+04-05-2025 15:15:59  El zombie Z0025 se dirige hacia 3
+04-05-2025 15:15:59  El humano H0070 ha sido atacado pero no asesinado
+04-05-2025 15:15:59  El humano H0015 va a la zona 4
+04-05-2025 15:15:59  El humano H0080 va a la zona 4
+04-05-2025 15:16:00  El zombie Z0001 ha atacado al humano H0080
+04-05-2025 15:16:26  El zombie Z0001 se dirige hacia 3
+04-05-2025 15:16:26  El zombie Z0050 se dirige hacia 3
+04-05-2025 15:16:26  El zombie Z0022 se dirige hacia 4
+04-05-2025 15:16:26  El zombie Z0046 se dirige hacia 3
+04-05-2025 15:16:26  El humano H0005 regresa por el tunel3
+04-05-2025 15:16:26  El humano H0089 va a la zona 2
+04-05-2025 15:16:26  El humano H0055 va a la zona 3
+04-05-2025 15:16:26  El humano H0055 ha sido atacado pero no asesinado
+04-05-2025 15:16:26  El humano H0005 ha dejado 0 piezas de comida
+04-05-2025 15:16:26  El humano H0005 va a descansar
+04-05-2025 15:16:26  El zombie Z0012 se dirige hacia 4
+04-05-2025 15:16:26  El zombie Z0062 se dirige hacia 1
+04-05-2025 15:16:26  El zombie Z0069 se dirige hacia 1
+04-05-2025 15:16:26  El humano H0063 va a comer
+04-05-2025 15:16:26  El zombie Z0000 se dirige hacia 1
+04-05-2025 15:16:26  El zombie Z0031 se dirige hacia 2
+04-05-2025 15:16:26  El humano H0045 va a comer
+04-05-2025 15:16:26  El humano H0059 va a comer
+04-05-2025 15:16:26  El humano H0035 va a la zona 1
+04-05-2025 15:16:26  El humano H0073 va a comer
+04-05-2025 15:16:26  El humano H0035 ha sido atacado pero no asesinado
+04-05-2025 15:16:26  El zombie Z0057 se dirige hacia 3
+04-05-2025 15:16:26  El humano H0088 ha muerto
+04-05-2025 15:16:26  El humano H0092 ha sido atacado pero no asesinado
+04-05-2025 15:16:26  El humano H0036 ha sido atacado pero no asesinado
+04-05-2025 15:16:26  El zombie Z0025 se dirige hacia 3
+04-05-2025 15:16:26  El humano H0033 ha sido atacado pero no asesinado
+04-05-2025 15:16:26  El zombie Z0079 se dirige hacia 1
+04-05-2025 15:16:26  El zombie Z0078 se dirige hacia 2
+04-05-2025 15:16:27  El zombie Z0029 ha matado al humano H0089
+04-05-2025 15:16:27  El zombie Z0058 ha matado al humano H0015
+04-05-2025 15:16:40  El zombie Z0029 se dirige hacia 4
+04-05-2025 15:16:40  El zombie Z0072 se dirige hacia 1
+04-05-2025 15:16:40  El zombie Z0015 se dirige hacia 4
+04-05-2025 15:16:40  El zombie Z0058 se dirige hacia 3
+04-05-2025 15:16:40  El humano H0023 va a la zona 2
+04-05-2025 15:16:40  El zombie Z0089 se dirige hacia 1
+04-05-2025 15:16:40  El humano H0068 regresa por el tunel3
+04-05-2025 15:16:40  El humano H0068 ha dejado 0 piezas de comida
+04-05-2025 15:16:40  El humano H0068 va a descansar
+04-05-2025 15:16:40  El humano H0019 va a la zona 4
+04-05-2025 15:16:40  El humano H0021 va a la zona 2
+04-05-2025 15:16:40  El humano H0005 va a comer
+04-05-2025 15:16:40  El humano H0021 ha sido atacado pero no asesinado
+04-05-2025 15:16:40  El humano H0083 va a la zona 4
+04-05-2025 15:16:40  El humano H0090 va a la zona 2
+04-05-2025 15:16:40  El zombie Z0001 se dirige hacia 1
+04-05-2025 15:16:40  El zombie Z0050 se dirige hacia 3
+04-05-2025 15:16:40  El zombie Z0079 se dirige hacia 3
+04-05-2025 15:16:40  El humano H0098 va a la zona 1
+04-05-2025 15:16:40  El zombie Z0046 se dirige hacia 3
+04-05-2025 15:16:40  El zombie Z0057 se dirige hacia 1
+04-05-2025 15:16:41  El zombie Z0044 ha matado al humano H0019
+04-05-2025 15:16:41  El zombie Z0019 se dirige hacia 2
+04-05-2025 15:16:41  El humano H0036 regresa por el tunel1
+04-05-2025 15:16:41  El humano H0036 ha dejado 0 piezas de comida
+04-05-2025 15:16:41  El humano H0036 va a descansar
+04-05-2025 15:16:41  El zombie Z0082 ha atacado al humano H0098
+04-05-2025 15:16:41  El zombie Z0031 ha atacado al humano H0023
+04-05-2025 15:16:41  El humano H0030 regresa por el tunel2
+04-05-2025 15:16:41  El humano H0030 ha dejado 0 piezas de comida
+04-05-2025 15:16:41  El humano H0030 va a descansar
+04-05-2025 15:16:41  El humano H0055 regresa por el tunel3
+04-05-2025 15:16:41  El humano H0055 ha dejado 0 piezas de comida
+04-05-2025 15:16:41  El humano H0055 va a descansar
+04-05-2025 15:16:42  El humano H0084 regresa por el tunel1
+04-05-2025 15:16:42  El humano H0084 ha dejado 0 piezas de comida
+04-05-2025 15:16:42  El humano H0084 va a descansar
+04-05-2025 15:16:42  El humano H0075 regresa por el tunel3
+04-05-2025 15:16:42  El humano H0075 ha dejado 0 piezas de comida
+04-05-2025 15:16:42  El humano H0075 va a descansar
+04-05-2025 15:16:42  El humano H0087 regresa por el tunel2
+04-05-2025 15:16:42  El humano H0087 ha dejado 0 piezas de comida
+04-05-2025 15:16:42  El humano H0087 va a descansar
+04-05-2025 15:16:43  El humano H0068 va a comer
+04-05-2025 15:16:43  El humano H0035 regresa por el tunel1
+04-05-2025 15:16:43  El humano H0035 ha dejado 0 piezas de comida
+04-05-2025 15:16:43  El humano H0035 va a descansar
+04-05-2025 15:16:43  El zombie Z0082 se dirige hacia 1
+04-05-2025 15:16:43  El zombie Z0088 se dirige hacia 4
+04-05-2025 15:16:43  El humano H0091 va a la zona 1
+04-05-2025 15:16:43  El zombie Z0046 se dirige hacia 2
+04-05-2025 15:16:43  El zombie Z0025 se dirige hacia 4
+04-05-2025 15:16:43  El zombie Z0058 se dirige hacia 4
+04-05-2025 15:16:43  El zombie Z0050 se dirige hacia 2
+04-05-2025 15:16:43  El zombie Z0079 se dirige hacia 4
+04-05-2025 15:16:43  El zombie Z0031 se dirige hacia 4
+04-05-2025 15:16:43  El humano H0060 regresa por el tunel3
+04-05-2025 15:16:43  El humano H0060 ha dejado 0 piezas de comida
+04-05-2025 15:16:43  El humano H0060 va a descansar
+04-05-2025 15:16:43  El humano H0021 regresa por el tunel2
+04-05-2025 15:16:43  El humano H0021 ha dejado 0 piezas de comida
+04-05-2025 15:16:43  El humano H0021 va a descansar
+04-05-2025 15:16:44  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:16:44  El humano H0085 va a la zona 4
+04-05-2025 15:16:44  El zombie Z0078 ha atacado al humano H0090
+04-05-2025 15:16:44  El humano H0084 va a comer
+04-05-2025 15:16:44  El zombie Z0027 ha atacado al humano H0091
+04-05-2025 15:16:44  El humano H0075 va a comer
+04-05-2025 15:16:45  El zombie Z0016 ha matado al humano H0085
+04-05-2025 15:16:45  El humano H0036 va a comer
+04-05-2025 15:16:45  El zombie Z0085 se dirige hacia 2
+04-05-2025 15:16:45  El humano H0030 va a comer
+04-05-2025 15:16:45  El humano H0055 va a comer
+04-05-2025 15:16:46  El humano H0087 va a comer
+04-05-2025 15:16:47  El humano H0089 ha muerto
+04-05-2025 15:16:47  El zombie Z0078 se dirige hacia 2
+04-05-2025 15:16:47  El zombie Z0016 se dirige hacia 4
+04-05-2025 15:16:47  El humano H0035 va a comer
+04-05-2025 15:16:47  El humano H0097 va a la zona 2
+04-05-2025 15:16:47  El zombie Z0027 se dirige hacia 2
+04-05-2025 15:16:47  El zombie Z0066 se dirige hacia 3
+04-05-2025 15:16:47  El zombie Z0034 se dirige hacia 1
+04-05-2025 15:16:47  El humano H0003 va a la zona 1
+04-05-2025 15:16:47  El humano H0021 va a comer
+04-05-2025 15:16:47  El humano H0060 va a comer
+04-05-2025 15:16:48  El zombie Z0062 ha matado al humano H0003
+04-05-2025 15:16:48  El zombie Z0003 se dirige hacia 4
+04-05-2025 15:16:48  El zombie Z0065 ha matado al humano H0083
+04-05-2025 15:16:48  El zombie Z0019 ha matado al humano H0097
+04-05-2025 15:16:48  El zombie Z0097 se dirige hacia 4
+04-05-2025 15:16:48  El zombie Z0083 se dirige hacia 4
+04-05-2025 15:16:50  El zombie Z0066 se dirige hacia 3
+04-05-2025 15:16:50  El zombie Z0019 se dirige hacia 2
+04-05-2025 15:16:50  El zombie Z0065 se dirige hacia 3
+04-05-2025 15:16:50  El humano H0077 ha sido atacado pero no asesinado
+04-05-2025 15:16:50  El humano H0023 ha sido atacado pero no asesinado
+04-05-2025 15:16:50  El zombie Z0039 se dirige hacia 2
+04-05-2025 15:16:50  El zombie Z0046 se dirige hacia 4
+04-05-2025 15:16:50  El humano H0074 ha sido atacado pero no asesinado
+04-05-2025 15:16:50  El zombie Z0050 se dirige hacia 2
+04-05-2025 15:16:50  El humano H0093 va a la zona 4
+04-05-2025 15:16:50  El humano H0090 ha sido atacado pero no asesinado
+04-05-2025 15:16:50  El humano H0038 va a la zona 4
+04-05-2025 15:16:50  El humano H0038 ha sido atacado pero no asesinado
+04-05-2025 15:16:50  El humano H0041 va a la zona 4
+04-05-2025 15:16:50  El zombie Z0085 se dirige hacia 3
+04-05-2025 15:16:50  El humano H0078 ha muerto
+04-05-2025 15:16:50  El zombie Z0078 se dirige hacia 4
+04-05-2025 15:16:50  El humano H0094 va a la zona 4
+04-05-2025 15:16:50  El zombie Z0027 se dirige hacia 3
+04-05-2025 15:16:50  El humano H0096 va a la zona 4
+04-05-2025 15:16:50  El humano H0097 ha muerto
+04-05-2025 15:16:51  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:16:51  El zombie Z0062 se dirige hacia 2
+04-05-2025 15:16:51  El zombie Z0069 se dirige hacia 3
+04-05-2025 15:16:51  El zombie Z0072 se dirige hacia 4
+04-05-2025 15:16:51  El zombie Z0089 se dirige hacia 4
+04-05-2025 15:16:51  El zombie Z0001 se dirige hacia 3
+04-05-2025 15:16:51  El zombie Z0057 se dirige hacia 4
+04-05-2025 15:16:51  El humano H0098 ha sido atacado pero no asesinado
+04-05-2025 15:16:51  El zombie Z0082 se dirige hacia 2
+04-05-2025 15:16:51  El humano H0091 ha sido atacado pero no asesinado
+04-05-2025 15:16:51  El zombie Z0034 se dirige hacia 4
+04-05-2025 15:16:51  El humano H0003 ha muerto
+04-05-2025 15:16:51  El zombie Z0014 ha atacado al humano H0096
+04-05-2025 15:16:52  El humano H0074 regresa por el tunel4
+04-05-2025 15:16:52  El humano H0074 ha dejado 0 piezas de comida
+04-05-2025 15:16:52  El humano H0074 va a descansar
+04-05-2025 15:16:52  El zombie Z0066 se dirige hacia 2
+04-05-2025 15:16:52  El zombie Z0065 se dirige hacia 1
+04-05-2025 15:16:52  El zombie Z0085 se dirige hacia 2
+04-05-2025 15:16:52  El zombie Z0019 se dirige hacia 4
+04-05-2025 15:16:52  El zombie Z0039 se dirige hacia 1
+04-05-2025 15:16:52  El zombie Z0050 se dirige hacia 4
+04-05-2025 15:16:53  El humano H0091 regresa por el tunel1
+04-05-2025 15:16:53  El humano H0091 ha dejado 0 piezas de comida
+04-05-2025 15:16:53  El humano H0091 va a descansar
+04-05-2025 15:16:53  El humano H0070 regresa por el tunel4
+04-05-2025 15:16:53  El humano H0070 ha dejado 0 piezas de comida
+04-05-2025 15:16:53  El humano H0070 va a descansar
+04-05-2025 15:16:53  El zombie Z0027 se dirige hacia 4
+04-05-2025 15:16:54  El humano H0098 regresa por el tunel1
+04-05-2025 15:16:54  El humano H0098 ha dejado 0 piezas de comida
+04-05-2025 15:16:54  El humano H0098 va a descansar
+04-05-2025 15:16:54  El humano H0074 va a comer
+04-05-2025 15:16:54  El humano H0077 regresa por el tunel4
+04-05-2025 15:16:54  El humano H0077 ha dejado 0 piezas de comida
+04-05-2025 15:16:54  El humano H0077 va a descansar
+04-05-2025 15:16:54  El zombie Z0082 se dirige hacia 4
+04-05-2025 15:16:54  El zombie Z0062 se dirige hacia 4
+04-05-2025 15:16:54  El zombie Z0000 se dirige hacia 3
+04-05-2025 15:16:54  El zombie Z0069 se dirige hacia 4
+04-05-2025 15:16:54  El zombie Z0001 se dirige hacia 2
+04-05-2025 15:16:54  El zombie Z0066 se dirige hacia 3
+04-05-2025 15:16:54  El zombie Z0014 se dirige hacia 1
+04-05-2025 15:16:54  El humano H0095 va a la zona 4
+04-05-2025 15:16:54  El humano H0082 ha muerto
+04-05-2025 15:16:54  El zombie Z0065 se dirige hacia 2
+04-05-2025 15:16:55  El humano H0033 regresa por el tunel1
+04-05-2025 15:16:55  El humano H0033 ha dejado 0 piezas de comida
+04-05-2025 15:16:55  El humano H0033 va a descansar
+04-05-2025 15:16:55  El humano H0070 va a comer
+04-05-2025 15:16:55  El zombie Z0054 ha matado al humano H0093
+04-05-2025 15:16:55  El zombie Z0093 se dirige hacia 3
+04-05-2025 15:16:55  El zombie Z0085 se dirige hacia 1
+04-05-2025 15:16:55  El zombie Z0039 se dirige hacia 4
+04-05-2025 15:16:56  El humano H0098 va a comer
+04-05-2025 15:16:56  El zombie Z0001 se dirige hacia 2
+04-05-2025 15:16:56  El zombie Z0000 se dirige hacia 4
+04-05-2025 15:16:56  El zombie Z0066 se dirige hacia 2
+04-05-2025 15:16:56  El zombie Z0014 se dirige hacia 1
+04-05-2025 15:16:56  El zombie Z0065 se dirige hacia 2
+04-05-2025 15:16:57  El humano H0091 va a comer
+04-05-2025 15:16:57  El zombie Z0093 se dirige hacia 2
+04-05-2025 15:16:58  El humano H0033 va a comer
+04-05-2025 15:16:58  El zombie Z0054 se dirige hacia 2
+04-05-2025 15:16:58  El humano H0077 va a comer
+04-05-2025 15:16:58  El zombie Z0001 se dirige hacia 1
+04-05-2025 15:16:58  El zombie Z0066 se dirige hacia 2
+04-05-2025 15:16:58  El zombie Z0085 se dirige hacia 4
+04-05-2025 15:16:59  El zombie Z0065 se dirige hacia 4
+04-05-2025 15:16:59  El zombie Z0040 ha atacado al humano H0094
+04-05-2025 15:16:59  El zombie Z0014 se dirige hacia 3
+04-05-2025 15:17:00  El zombie Z0093 se dirige hacia 3
+04-05-2025 15:17:00  El zombie Z0001 se dirige hacia 4
+04-05-2025 15:17:01  El zombie Z0040 se dirige hacia 2
+04-05-2025 15:17:01  El humano H0080 ha sido atacado pero no asesinado
+04-05-2025 15:17:01  El humano H0015 ha muerto
+04-05-2025 15:17:01  El zombie Z0054 se dirige hacia 3
+04-05-2025 15:17:01  El zombie Z0066 se dirige hacia 2
+04-05-2025 15:17:02  El zombie Z0012 ha matado al humano H0041
+04-05-2025 15:17:02  El zombie Z0041 se dirige hacia 4
+04-05-2025 15:17:02  El zombie Z0014 se dirige hacia 1
+04-05-2025 15:17:03  El zombie Z0093 se dirige hacia 3
+04-05-2025 15:17:04  El zombie Z0012 se dirige hacia 2
+04-05-2025 15:17:04  El zombie Z0040 se dirige hacia 1
+04-05-2025 15:17:04  El zombie Z0066 se dirige hacia 2
+04-05-2025 15:17:04  El zombie Z0054 se dirige hacia 4
+04-05-2025 15:17:04  El zombie Z0022 ha matado al humano H0095
+04-05-2025 15:17:04  El zombie Z0095 se dirige hacia 3
+04-05-2025 15:17:05  El zombie Z0093 se dirige hacia 2
+04-05-2025 15:17:06  El zombie Z0014 se dirige hacia 2
+04-05-2025 15:17:06  El zombie Z0012 se dirige hacia 4
+04-05-2025 15:17:06  El zombie Z0066 se dirige hacia 4
+04-05-2025 15:17:06  El zombie Z0040 se dirige hacia 2
+04-05-2025 15:17:06  El zombie Z0022 se dirige hacia 1
+04-05-2025 15:17:06  El zombie Z0029 se dirige hacia 3
+04-05-2025 15:17:06  El zombie Z0015 se dirige hacia 1
+04-05-2025 15:17:06  El humano H0019 ha muerto
+04-05-2025 15:17:06  El zombie Z0088 se dirige hacia 3
+04-05-2025 15:17:06  El zombie Z0025 se dirige hacia 4
+04-05-2025 15:17:06  El zombie Z0058 se dirige hacia 2
+04-05-2025 15:17:06  El zombie Z0079 se dirige hacia 2
+04-05-2025 15:17:06  El zombie Z0031 se dirige hacia 4
+04-05-2025 15:17:06  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:17:06  El humano H0085 ha muerto
+04-05-2025 15:17:06  El humano H0083 ha muerto
+04-05-2025 15:17:06  El zombie Z0016 se dirige hacia 3
+04-05-2025 15:17:06  El zombie Z0003 se dirige hacia 3
+04-05-2025 15:17:06  El zombie Z0097 se dirige hacia 2
+04-05-2025 15:17:06  El zombie Z0083 se dirige hacia 3
+04-05-2025 15:17:06  El zombie Z0046 se dirige hacia 2
+04-05-2025 15:17:06  El humano H0041 ha muerto
+04-05-2025 15:17:06  El zombie Z0078 se dirige hacia 1
+04-05-2025 15:17:06  El zombie Z0057 se dirige hacia 2
+04-05-2025 15:17:06  El zombie Z0089 se dirige hacia 1
+04-05-2025 15:17:06  El zombie Z0072 se dirige hacia 4
+04-05-2025 15:17:06  El zombie Z0034 se dirige hacia 1
+04-05-2025 15:17:06  El humano H0096 ha sido atacado pero no asesinado
+04-05-2025 15:17:06  El zombie Z0019 se dirige hacia 2
+04-05-2025 15:17:06  El zombie Z0095 se dirige hacia 3
+04-05-2025 15:17:06  El zombie Z0050 se dirige hacia 4
+04-05-2025 15:17:06  El humano H0093 ha muerto
+04-05-2025 15:17:06  El humano H0094 ha sido atacado pero no asesinado
+04-05-2025 15:17:06  El zombie Z0027 se dirige hacia 4
+04-05-2025 15:17:06  El zombie Z0082 se dirige hacia 4
+04-05-2025 15:17:06  El zombie Z0062 se dirige hacia 3
+04-05-2025 15:17:06  El zombie Z0069 se dirige hacia 3
+04-05-2025 15:17:06  El zombie Z0039 se dirige hacia 1
+04-05-2025 15:17:06  El zombie Z0000 se dirige hacia 4
+04-05-2025 15:17:06  El zombie Z0085 se dirige hacia 2
+04-05-2025 15:17:06  El zombie Z0065 se dirige hacia 2
+04-05-2025 15:17:06  El humano H0095 ha muerto
+04-05-2025 15:17:06  El zombie Z0001 se dirige hacia 3
+04-05-2025 15:17:06  El zombie Z0041 se dirige hacia 4
+04-05-2025 15:17:07  El zombie Z0054 se dirige hacia 1
+04-05-2025 15:17:08  El humano H0080 regresa por el tunel4
+04-05-2025 15:17:08  El humano H0080 ha dejado 0 piezas de comida
+04-05-2025 15:17:08  El humano H0080 va a descansar
+04-05-2025 15:17:08  El zombie Z0093 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0014 se dirige hacia 1
+04-05-2025 15:17:09  El zombie Z0040 se dirige hacia 2
+04-05-2025 15:17:09  El humano H0096 regresa por el tunel4
+04-05-2025 15:17:09  El humano H0096 ha dejado 0 piezas de comida
+04-05-2025 15:17:09  El humano H0096 va a descansar
+04-05-2025 15:17:09  El zombie Z0012 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0066 se dirige hacia 1
+04-05-2025 15:17:09  El zombie Z0025 se dirige hacia 4
+04-05-2025 15:17:09  El zombie Z0022 se dirige hacia 1
+04-05-2025 15:17:09  El zombie Z0015 se dirige hacia 1
+04-05-2025 15:17:09  El zombie Z0078 se dirige hacia 1
+04-05-2025 15:17:09  El zombie Z0058 se dirige hacia 3
+04-05-2025 15:17:09  El zombie Z0089 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0034 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0079 se dirige hacia 1
+04-05-2025 15:17:09  El zombie Z0039 se dirige hacia 4
+04-05-2025 15:17:09  El zombie Z0097 se dirige hacia 3
+04-05-2025 15:17:09  El zombie Z0046 se dirige hacia 3
+04-05-2025 15:17:09  El zombie Z0057 se dirige hacia 3
+04-05-2025 15:17:09  El zombie Z0019 se dirige hacia 3
+04-05-2025 15:17:09  El zombie Z0085 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0065 se dirige hacia 4
+04-05-2025 15:17:09  El zombie Z0029 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0088 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0016 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0003 se dirige hacia 3
+04-05-2025 15:17:09  El zombie Z0083 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0095 se dirige hacia 3
+04-05-2025 15:17:09  El zombie Z0062 se dirige hacia 4
+04-05-2025 15:17:09  El zombie Z0069 se dirige hacia 3
+04-05-2025 15:17:09  El zombie Z0001 se dirige hacia 3
+04-05-2025 15:17:09  El zombie Z0031 se dirige hacia 1
+04-05-2025 15:17:09  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:17:09  El zombie Z0072 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0050 se dirige hacia 4
+04-05-2025 15:17:09  El zombie Z0027 se dirige hacia 1
+04-05-2025 15:17:09  El zombie Z0082 se dirige hacia 3
+04-05-2025 15:17:09  El zombie Z0000 se dirige hacia 2
+04-05-2025 15:17:09  El zombie Z0041 se dirige hacia 4
+04-05-2025 15:17:10  El humano H0038 regresa por el tunel4
+04-05-2025 15:17:10  El humano H0038 ha dejado 0 piezas de comida
+04-05-2025 15:17:10  El humano H0038 va a descansar
+04-05-2025 15:17:10  El humano H0080 va a comer
+04-05-2025 15:17:10  El zombie Z0054 se dirige hacia 1
+04-05-2025 15:17:10  El zombie Z0093 se dirige hacia 4
+04-05-2025 15:17:11  El zombie Z0014 se dirige hacia 1
+04-05-2025 15:17:11  El zombie Z0040 se dirige hacia 2
+04-05-2025 15:17:11  El zombie Z0058 se dirige hacia 1
+04-05-2025 15:17:11  El zombie Z0097 se dirige hacia 2
+04-05-2025 15:17:11  El zombie Z0046 se dirige hacia 3
+04-05-2025 15:17:11  El zombie Z0057 se dirige hacia 2
+04-05-2025 15:17:12  El zombie Z0012 se dirige hacia 2
+04-05-2025 15:17:12  El zombie Z0066 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0078 se dirige hacia 3
+04-05-2025 15:17:12  El zombie Z0025 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0039 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0015 se dirige hacia 3
+04-05-2025 15:17:12  El zombie Z0089 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0022 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0079 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0034 se dirige hacia 3
+04-05-2025 15:17:12  El zombie Z0031 se dirige hacia 3
+04-05-2025 15:17:12  El zombie Z0027 se dirige hacia 3
+04-05-2025 15:17:12  El zombie Z0085 se dirige hacia 3
+04-05-2025 15:17:12  El zombie Z0029 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0016 se dirige hacia 4
+04-05-2025 15:17:12  El zombie Z0088 se dirige hacia 4
+04-05-2025 15:17:12  El zombie Z0083 se dirige hacia 2
+04-05-2025 15:17:12  El zombie Z0072 se dirige hacia 4
+04-05-2025 15:17:12  El zombie Z0000 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0019 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0003 se dirige hacia 4
+04-05-2025 15:17:12  El zombie Z0095 se dirige hacia 4
+04-05-2025 15:17:12  El zombie Z0069 se dirige hacia 3
+04-05-2025 15:17:12  El zombie Z0001 se dirige hacia 4
+04-05-2025 15:17:12  El zombie Z0082 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0065 se dirige hacia 1
+04-05-2025 15:17:12  El zombie Z0062 se dirige hacia 3
+04-05-2025 15:17:12  El zombie Z0044 se dirige hacia 3
+04-05-2025 15:17:12  El zombie Z0050 se dirige hacia 3
+04-05-2025 15:17:12  El zombie Z0041 se dirige hacia 3
+04-05-2025 15:17:13  El humano H0096 va a comer
+04-05-2025 15:17:13  El zombie Z0054 se dirige hacia 2
+04-05-2025 15:17:13  El zombie Z0093 se dirige hacia 4
+04-05-2025 15:17:14  El humano H0038 va a comer
+04-05-2025 15:17:14  El zombie Z0014 se dirige hacia 4
+04-05-2025 15:17:14  El zombie Z0040 se dirige hacia 1
+04-05-2025 15:17:14  El zombie Z0057 se dirige hacia 2
+04-05-2025 15:17:14  El zombie Z0097 se dirige hacia 4
+04-05-2025 15:17:14  El zombie Z0012 se dirige hacia 1
+04-05-2025 15:17:14  El zombie Z0058 se dirige hacia 4
+04-05-2025 15:17:14  El zombie Z0066 se dirige hacia 3
+04-05-2025 15:17:14  El zombie Z0046 se dirige hacia 2
+04-05-2025 15:17:14  El zombie Z0016 se dirige hacia 1
+04-05-2025 15:17:15  El zombie Z0025 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0039 se dirige hacia 3
+04-05-2025 15:17:15  El zombie Z0078 se dirige hacia 1
+04-05-2025 15:17:15  El zombie Z0015 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0089 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0083 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0088 se dirige hacia 2
+04-05-2025 15:17:15  El zombie Z0079 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0072 se dirige hacia 2
+04-05-2025 15:17:15  El zombie Z0003 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0022 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0095 se dirige hacia 3
+04-05-2025 15:17:15  El zombie Z0001 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0029 se dirige hacia 3
+04-05-2025 15:17:15  El zombie Z0000 se dirige hacia 1
+04-05-2025 15:17:15  El zombie Z0019 se dirige hacia 1
+04-05-2025 15:17:15  El zombie Z0082 se dirige hacia 3
+04-05-2025 15:17:15  El zombie Z0065 se dirige hacia 2
+04-05-2025 15:17:15  El zombie Z0031 se dirige hacia 3
+04-05-2025 15:17:15  El zombie Z0034 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0027 se dirige hacia 3
+04-05-2025 15:17:15  El zombie Z0085 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0069 se dirige hacia 1
+04-05-2025 15:17:15  El zombie Z0062 se dirige hacia 2
+04-05-2025 15:17:15  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0050 se dirige hacia 4
+04-05-2025 15:17:15  El zombie Z0041 se dirige hacia 2
+04-05-2025 15:17:15  El zombie Z0093 se dirige hacia 2
+04-05-2025 15:17:16  El zombie Z0014 se dirige hacia 4
+04-05-2025 15:17:16  El zombie Z0097 se dirige hacia 3
+04-05-2025 15:17:16  El zombie Z0054 se dirige hacia 2
+04-05-2025 15:17:16  El zombie Z0057 se dirige hacia 1
+04-05-2025 15:17:16  El zombie Z0046 se dirige hacia 3
+04-05-2025 15:17:16  El zombie Z0058 se dirige hacia 2
+04-05-2025 15:17:17  El zombie Z0040 se dirige hacia 4
+04-05-2025 15:17:17  El zombie Z0012 se dirige hacia 3
+04-05-2025 15:17:17  El zombie Z0025 se dirige hacia 4
+04-05-2025 15:17:17  El zombie Z0015 se dirige hacia 4
+04-05-2025 15:17:17  El zombie Z0083 se dirige hacia 2
+04-05-2025 15:17:17  El zombie Z0089 se dirige hacia 3
+04-05-2025 15:17:17  El zombie Z0016 se dirige hacia 2
+04-05-2025 15:17:17  El zombie Z0066 se dirige hacia 1
+04-05-2025 15:17:17  El zombie Z0039 se dirige hacia 3
+04-05-2025 15:17:18  El zombie Z0078 se dirige hacia 3
+04-05-2025 15:17:18  El zombie Z0000 se dirige hacia 4
+04-05-2025 15:17:18  El zombie Z0019 se dirige hacia 4
+04-05-2025 15:17:18  El zombie Z0079 se dirige hacia 4
+04-05-2025 15:17:18  El zombie Z0003 se dirige hacia 3
+04-05-2025 15:17:18  El zombie Z0022 se dirige hacia 3
+04-05-2025 15:17:18  El zombie Z0001 se dirige hacia 1
+04-05-2025 15:17:18  El zombie Z0034 se dirige hacia 3
+04-05-2025 15:17:18  El zombie Z0085 se dirige hacia 3
+04-05-2025 15:17:18  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:17:18  El zombie Z0069 se dirige hacia 3
+04-05-2025 15:17:18  El zombie Z0095 se dirige hacia 1
+04-05-2025 15:17:18  El zombie Z0088 se dirige hacia 1
+04-05-2025 15:17:18  El zombie Z0072 se dirige hacia 2
+04-05-2025 15:17:18  El zombie Z0029 se dirige hacia 2
+04-05-2025 15:17:18  El zombie Z0057 se dirige hacia 2
+04-05-2025 15:17:18  El zombie Z0082 se dirige hacia 3
+04-05-2025 15:17:18  El zombie Z0065 se dirige hacia 3
+04-05-2025 15:17:18  El zombie Z0062 se dirige hacia 4
+04-05-2025 15:17:18  El zombie Z0031 se dirige hacia 4
+04-05-2025 15:17:18  El zombie Z0027 se dirige hacia 2
+04-05-2025 15:17:18  El zombie Z0041 se dirige hacia 4
+04-05-2025 15:17:18  El zombie Z0093 se dirige hacia 4
+04-05-2025 15:17:18  El zombie Z0054 se dirige hacia 4
+04-05-2025 15:17:18  El zombie Z0050 se dirige hacia 4
+04-05-2025 15:17:19  El zombie Z0014 se dirige hacia 3
+04-05-2025 15:17:19  El zombie Z0040 se dirige hacia 4
+04-05-2025 15:17:19  El zombie Z0097 se dirige hacia 3
+04-05-2025 15:17:19  El zombie Z0025 se dirige hacia 3
+04-05-2025 15:17:19  El zombie Z0046 se dirige hacia 3
+04-05-2025 15:17:19  El zombie Z0066 se dirige hacia 4
+04-05-2025 15:17:19  El zombie Z0058 se dirige hacia 1
+04-05-2025 15:17:20  El zombie Z0012 se dirige hacia 1
+04-05-2025 15:17:20  El zombie Z0015 se dirige hacia 2
+04-05-2025 15:17:20  El zombie Z0089 se dirige hacia 3
+04-05-2025 15:17:20  El zombie Z0039 se dirige hacia 1
+04-05-2025 15:17:20  El zombie Z0078 se dirige hacia 2
+04-05-2025 15:17:20  El zombie Z0083 se dirige hacia 1
+04-05-2025 15:17:20  El zombie Z0016 se dirige hacia 1
+04-05-2025 15:17:20  El zombie Z0057 se dirige hacia 2
+04-05-2025 15:17:20  El zombie Z0029 se dirige hacia 3
+04-05-2025 15:17:21  El zombie Z0000 se dirige hacia 2
+04-05-2025 15:17:21  El zombie Z0019 se dirige hacia 4
+04-05-2025 15:17:21  El zombie Z0079 se dirige hacia 3
+04-05-2025 15:17:21  El zombie Z0044 se dirige hacia 4
+04-05-2025 15:17:21  El zombie Z0031 se dirige hacia 4
+04-05-2025 15:17:21  El zombie Z0062 se dirige hacia 1
+04-05-2025 15:17:21  El zombie Z0041 se dirige hacia 3
+04-05-2025 15:17:21  El zombie Z0054 se dirige hacia 3
+04-05-2025 15:17:21  El zombie Z0093 se dirige hacia 4
+04-05-2025 15:17:21  El zombie Z0050 se dirige hacia 3
+04-05-2025 15:17:21  El zombie Z0001 se dirige hacia 3
+04-05-2025 15:17:21  El zombie Z0003 se dirige hacia 1
+04-05-2025 15:17:21  El zombie Z0095 se dirige hacia 4
+04-05-2025 15:17:21  El zombie Z0022 se dirige hacia 2
+04-05-2025 15:17:21  El zombie Z0034 se dirige hacia 4
+04-05-2025 15:17:21  El zombie Z0088 se dirige hacia 4
+04-05-2025 15:17:21  El zombie Z0085 se dirige hacia 4
+04-05-2025 15:17:21  El zombie Z0069 se dirige hacia 3
+04-05-2025 15:17:21  El zombie Z0065 se dirige hacia 4
+04-05-2025 15:17:21  El zombie Z0082 se dirige hacia 3
+04-05-2025 15:17:21  El zombie Z0014 se dirige hacia 2
+04-05-2025 15:17:21  El zombie Z0072 se dirige hacia 4
+04-05-2025 15:17:21  El zombie Z0027 se dirige hacia 2
+04-05-2025 15:17:21  El zombie Z0058 se dirige hacia 4
+04-05-2025 15:17:22  El zombie Z0040 se dirige hacia 1
+04-05-2025 15:17:22  El zombie Z0012 se dirige hacia 1
+04-05-2025 15:17:22  El zombie Z0097 se dirige hacia 3
+04-05-2025 15:17:22  El zombie Z0015 se dirige hacia 3
+04-05-2025 15:17:22  El zombie Z0025 se dirige hacia 3
+04-05-2025 15:17:22  El zombie Z0066 se dirige hacia 4
+04-05-2025 15:17:22  El zombie Z0046 se dirige hacia 3
+04-05-2025 15:17:22  El zombie Z0078 se dirige hacia 4

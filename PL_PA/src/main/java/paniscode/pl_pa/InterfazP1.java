@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package paniscode.pl_pa;
 
 import java.util.ArrayList;
@@ -10,27 +6,32 @@ import java.util.concurrent.Semaphore;
 import javax.swing.JTextPane;
 
 /**
- *
- * @author alvaro
+ * Clase que implementa la interfaz gráfica principal de la simulación.
+ * Gestiona la visualización de todos los elementos y zonas del sistema,
+ * controlando el acceso concurrente a los componentes gráficos mediante
+ * semáforos y sincronización.
  */
 public class InterfazP1 extends javax.swing.JFrame {
 
-    private Boolean parado;
+    private final Boolean parado; // Estado de pausa de la simulación
     
-    private final Object espera_Control = new Object(); //"monitor para esperar si se detiene la ejecucion" 
+    private final Object espera_Control = new Object(); // Monitor para controlar la pausa
     
-    private Semaphore ster1 = new Semaphore(1); //para acceso a los tuneles de entrada al refugio
-    private Semaphore ster2 = new Semaphore(1); //STER(semaforo tunel entrada refugio x)
-    private Semaphore ster3 = new Semaphore(1);
-    private Semaphore ster4 = new Semaphore(1);
+    // Semáforos para controlar acceso a los túneles de entrada
+    private final Semaphore ster1 = new Semaphore(1);
+    private final Semaphore ster2 = new Semaphore(1);
+    private final Semaphore ster3 = new Semaphore(1);
+    private final Semaphore ster4 = new Semaphore(1);
     
-    private Semaphore stsr1 = new Semaphore(1); //para acceso a los tuneles de salida del refugio
-    private Semaphore stsr2 = new Semaphore(1); //STSR(semaforo tunel salida refugio x)
-    private Semaphore stsr3 = new Semaphore(1);
-    private Semaphore stsr4 = new Semaphore(1);
+    // Semáforos para controlar acceso a los túneles de salida
+    private final Semaphore stsr1 = new Semaphore(1);
+    private final Semaphore stsr2 = new Semaphore(1);
+    private final Semaphore stsr3 = new Semaphore(1);
+    private final Semaphore stsr4 = new Semaphore(1);
+
     /**
-     * Creates new form InterfazP1
-     * @param parado
+     * Constructor principal de la interfaz.
+     * Inicializa el estado de pausa y los componentes gráficos.
      */
     public InterfazP1() {
         this.parado = true;
@@ -523,135 +524,166 @@ public class InterfazP1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ComidaActionPerformed
     
-    public void ha_parado() throws InterruptedException{
-        if(parado){this.espera_Control.wait();}
+    /**
+     * Método para pausar la simulación.
+     * Bloquea los hilos usando el monitor de espera.
+     */
+    public void ha_parado() throws InterruptedException {
+        if(parado) {
+            synchronized(espera_Control) {
+                this.espera_Control.wait();
+            }
+        }
     }
     
-    public synchronized void mod_text_zonaComun(List<String> listaHumanos){ //reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
-        StringBuilder texto = new StringBuilder();  // Usamos StringBuilder para acumular los resultados
+    // Métodos sincronizados para actualización de zonas internas
+    
+    /**
+     * Actualiza el texto de la zona común.
+     * @param listaHumanos Lista de humanos en la zona común
+     */
+    public synchronized void mod_text_zonaComun(List<String> listaHumanos) {
+        StringBuilder texto = new StringBuilder();
         List<String> copiaLista = new ArrayList<>(listaHumanos);
         for (String IdH : copiaLista) {
-            texto.append(IdH).append("\n");  // Agregamos cada id a la cadena
+            texto.append(IdH).append("\n");
         }
-        // Ahora escribimos todo el texto en el JTextField
         this.ZonaComun.setText(texto.toString());
     }
     
-    public synchronized void mod_text_descanso(List<String> listaHumanos){//reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
-        StringBuilder texto = new StringBuilder();  // Usamos StringBuilder para acumular los resultados
+    /**
+     * Actualiza el texto de la zona de descanso.
+     * @param listaHumanos Lista de humanos en la zona de descanso
+     */
+    public synchronized void mod_text_descanso(List<String> listaHumanos) {
+        StringBuilder texto = new StringBuilder();
         List<String> copiaLista = new ArrayList<>(listaHumanos);
         for (String IdH : copiaLista) {
-            texto.append(IdH).append("\n");  // Agregamos cada id a la cadena
+            texto.append(IdH).append("\n");
         }
-        // Ahora escribimos todo el texto en el JTextField
         this.ZonaDescanso.setText(texto.toString());
     }
     
-    public synchronized void mod_text_comedor(List<String> listaHumanos){//reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
-        StringBuilder texto = new StringBuilder();  // Usamos StringBuilder para acumular los resultados
+    /**
+     * Actualiza el texto de la zona de comedor.
+     * @param listaHumanos Lista de humanos en el comedor
+     */
+    public synchronized void mod_text_comedor(List<String> listaHumanos) {
+        StringBuilder texto = new StringBuilder();
         List<String> copiaLista = new ArrayList<>(listaHumanos);
         for (String IdH : copiaLista) {
-            texto.append(IdH).append("\n");  // Agregamos cada id a la cadena
+            texto.append(IdH).append("\n");
         }
-        // Ahora escribimos todo el texto en el JTextField
         this.Comedor.setText(texto.toString());
     }
-    public synchronized void  mod_text_comida(int cantidad){//reescribimos la lista. Para evitar condiciones de carrera, solo puede acceder uno a la vez, uso de synchronized
+    
+    /**
+     * Actualiza la cantidad de comida disponible.
+     * @param cantidad Cantidad actual de comida
+     */
+    public synchronized void mod_text_comida(int cantidad) {
         this.Comida.setText(String.valueOf(cantidad));
     }
         
+    /**
+     * Actualiza los grupos de humanos en los túneles de entrada.
+     * @param listaHumanos Lista de humanos en el túnel
+     * @param tunel Número del túnel (1-4)
+     */
     public void mod_text_tuneles_entrada(List<String> listaHumanos, int tunel) {
-        Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};
-        JTextPane[] paneles = {null,GrupoEntradaT1, GrupoEntradaT2, GrupoEntradaT3, GrupoEntradaT4};
-        List<String> copiaLista = new ArrayList<>(listaHumanos);
+        Semaphore[] semaforos = {null, ster1, ster2, ster3, ster4};
+        JTextPane[] paneles = {null, GrupoEntradaT1, GrupoEntradaT2, GrupoEntradaT3, GrupoEntradaT4};
+        
         try {
             semaforos[tunel].acquire();
-
             StringBuilder texto = new StringBuilder();
-            for (String IdH : copiaLista) {
+            for (String IdH : new ArrayList<>(listaHumanos)) {
                 texto.append(IdH).append("\n");
             }
-
             paneles[tunel].setText(texto.toString());
         } catch (InterruptedException e) {
-            e.printStackTrace();
-        } finally {
-            semaforos[tunel].release();
-        }
-    }
-    public void mod_text_tuneles_salida(List<String> listaHumanos, int tunel) {
-        Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};
-        JTextPane[] paneles = {null,GrupoSalidaT1, GrupoSalidaT2, GrupoSalidaT3, GrupoSalidaT4};
-        List<String> copiaLista = new ArrayList<>(listaHumanos);
-
-        try {
-            semaforos[tunel].acquire();
-
-            StringBuilder texto = new StringBuilder();
-            for (String IdH : copiaLista) {
-                texto.append(IdH).append("\n");
-            }
-
-            paneles[tunel].setText(texto.toString());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            Thread.currentThread().interrupt();
         } finally {
             semaforos[tunel].release();
         }
     }
     
-    public void mod_text_paso_tunel(String IdH, int tunel){
-        JTextPane[] paneles = {null,PasoT1, PasoT2, PasoT3, PasoT4};
+    /**
+     * Actualiza los grupos de humanos en los túneles de salida.
+     * @param listaHumanos Lista de humanos en el túnel
+     * @param tunel Número del túnel (1-4)
+     */
+    public void mod_text_tuneles_salida(List<String> listaHumanos, int tunel) {
+        Semaphore[] semaforos = {null, stsr1, stsr2, stsr3, stsr4};
+        JTextPane[] paneles = {null, GrupoSalidaT1, GrupoSalidaT2, GrupoSalidaT3, GrupoSalidaT4};
 
-        if(IdH == null){
-                paneles[tunel].setText("");}
-        else{
-             paneles[tunel].setText(IdH);}    
+        try {
+            semaforos[tunel].acquire();
+            StringBuilder texto = new StringBuilder();
+            for (String IdH : new ArrayList<>(listaHumanos)) {
+                texto.append(IdH).append("\n");
+            }
+            paneles[tunel].setText(texto.toString());
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        } finally {
+            semaforos[tunel].release();
+        }
+    }
+    
+    /**
+     * Actualiza el humano que está pasando por un túnel.
+     * @param IdH Identificador del humano (null para limpiar)
+     * @param tunel Número del túnel (1-4)
+     */
+    public void mod_text_paso_tunel(String IdH, int tunel) {
+        JTextPane[] paneles = {null, PasoT1, PasoT2, PasoT3, PasoT4};
+        paneles[tunel].setText(IdH == null ? "" : IdH);    
     }
 
-
-                
+    /**
+     * Actualiza los humanos en las zonas exteriores.
+     * @param listaHumanos Lista de humanos en la zona
+     * @param zona Número de zona (1-4)
+     */
     public synchronized void mod_text_zona_exterior_humanos(List<Humanos> listaHumanos, int zona) {
-        Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};    
+        Semaphore[] semaforos = {null, stsr1, stsr2, stsr3, stsr4};    
         JTextPane[] panelesHumanos = {null, HumanosZ1, HumanosZ2, HumanosZ3, HumanosZ4};
-        List<Humanos> copiaLista = new ArrayList<>(listaHumanos);
+        
         try {
             semaforos[zona].acquire();
-
             StringBuilder texto = new StringBuilder();
-            for (Humanos h : copiaLista) {
+            for (Humanos h : new ArrayList<>(listaHumanos)) {
                 texto.append(h.getIdH()).append("\n");
             }
-
             panelesHumanos[zona].setText(texto.toString());
-
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt(); // importante
-            e.printStackTrace();
+            Thread.currentThread().interrupt();
         } finally {
             semaforos[zona].release();
         }
     }
 
+    /**
+     * Actualiza los zombies en las zonas exteriores.
+     * @param listaZombies Lista de zombies en la zona
+     * @param zona Número de zona (1-4)
+     */
     public synchronized void mod_text_zona_exterior_zombies(List<Zombies> listaZombies, int zona) {
-        Semaphore[] semaforos = {null,stsr1, stsr2, stsr3, stsr4};    
+        Semaphore[] semaforos = {null, stsr1, stsr2, stsr3, stsr4};    
         JTextPane[] panelesZombies = {null, ZombiesZ1, ZombiesZ2, ZombiesZ3, ZombiesZ4};
-        List<Zombies> copiaLista = new ArrayList<>(listaZombies);
+        
         try {
             semaforos[zona].acquire();
-
             StringBuilder texto = new StringBuilder();
-            for (Zombies z : copiaLista) {
-                if(z != null){
-                texto.append(z.getIdZ()).append("\n");
+            for (Zombies z : new ArrayList<>(listaZombies)) {
+                if(z != null) {
+                    texto.append(z.getIdZ()).append("\n");
                 }
             }
-
             panelesZombies[zona].setText(texto.toString());
-
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt(); // mantener estado de interrupción
-            e.printStackTrace();
+            Thread.currentThread().interrupt();
         } finally {
             semaforos[zona].release();
         }

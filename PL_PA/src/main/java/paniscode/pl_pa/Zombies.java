@@ -1,35 +1,32 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package paniscode.pl_pa;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.List;
 
 /**
- *
- * @author zona
+ * Clase que representa el comportamiento de los zombies en la simulación.
+ * Gestiona el movimiento aleatorio entre zonas y los ataques a humanos,
+ * coordinándose con el exterior y mostrando información de seguimiento.
  */
 public class Zombies extends Thread {
     private final Controlador controlador;
-    private Random random = new Random();
-    private String IdZ;
-    private Exterior exterior;
+    private final Random random = new Random();
+    private final String IdZ;
+    private final Exterior exterior;
+    private final DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
-    private int contadorMuertes;
-    private boolean atacarEnZona;
-    private boolean activo;
-    
-    
+    private int contadorMuertes;  // Registro de humanos eliminados por este zombie
+    private boolean atacarEnZona; // Estado de ataque activo
+    private boolean activo;       // Control de ciclo de vida del zombie
 
     /**
-     *
-     * @param IdZ
-     * @param exterior
-     * @param controlador
+     * Constructor del zombie.
+     * @param IdZ Identificador único del zombie
+     * @param exterior Referencia al área exterior donde actúa
+     * @param controlador Controlador principal para gestión de pausas
      */
     public Zombies(String IdZ, Exterior exterior, Controlador controlador) {
         this.IdZ = IdZ;
@@ -39,6 +36,7 @@ public class Zombies extends Thread {
         this.controlador = controlador;
     }
 
+    // Métodos setters para modificación de estado
     public void setContadorMuertes(int contadorMuertes) {
         this.contadorMuertes = contadorMuertes;
     }
@@ -47,21 +45,33 @@ public class Zombies extends Thread {
         this.atacarEnZona = atacarEnZona;
     }
 
+    public synchronized void incrementarContadorMuertes() {
+        this.contadorMuertes++;
+    }
+    
+    /**
+     * Método principal de ejecución del hilo zombie.
+     * Implementa el comportamiento cíclico de:
+     * 1. Movimiento aleatorio entre zonas
+     * 2. Ataque coordinado con el exterior
+     * 3. Respuesta a controles de pausa
+     */
     @Override
     public void run() {
         try {
             while(true){
                 controlador.esperarSiPausado();
                 int zona = random.nextInt(1,5);
-                System.out.println("El zombie " + IdZ + " se dirige hacia " + zona);
-                exterior.atacar(zona, this);
+                System.out.println(LocalDateTime.now().format(formato) + 
+                                  "  El zombie " + IdZ + " se dirige hacia " + zona);
+                exterior.atacar(zona, this);    // Intento de ataque coordinado
             }
-         
         } catch (InterruptedException ex) {
             Logger.getLogger(Zombies.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
+    // Métodos getters para acceso a estado
     public String getIdZ() {
         return IdZ;
     }

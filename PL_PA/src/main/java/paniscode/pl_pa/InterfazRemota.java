@@ -1,17 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package paniscode.pl_pa;
 
 /**
- *
- * @author javie
+ * Interfaz remota que define los métodos disponibles para el control distribuido de la simulación.
+ * Esta interfaz permite la comunicación entre el cliente remoto y el servidor mediante RMI.
  */
+
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-import java.util.List;
 
+/** 
+ * Definiciones de todos los métodos usados entre el Cliente y el Servidor mediante un 'interface'.
+ */
 public interface InterfazRemota extends Remote {
     void pausarSimulacion() throws RemoteException;
     void reanudarSimulacion() throws RemoteException;
@@ -31,5 +30,5 @@ public interface InterfazRemota extends Remote {
     int getZona3Zom() throws RemoteException;
     int getZona4Zom() throws RemoteException;
 
-
+    String ranking() throws RemoteException;
 }

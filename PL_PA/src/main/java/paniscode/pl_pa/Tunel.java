@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package paniscode.pl_pa;
 
 import static java.lang.Thread.sleep;
@@ -11,155 +7,168 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 
+/**
+ * Clase que modela el comportamiento de un túnel en el sistema de refugio.
+ * Gestiona la entrada/salida de humanos mediante mecanismos de concurrencia avanzados:
+ * - Semáforos para control de grupos
+ * - Barreras cíclicas para sincronización
+ * - Monitores para exclusión mutua
+ * - Coordinación con la interfaz gráfica
+ */
 public class Tunel {
 
-    private int tunelId;
-    private InterfazP1 interfazP1;
+    private final int tunelId;
+    private final InterfazP1 interfazP1;
     private final Controlador controlador;
 
-    private Semaphore crear_grupo_salir_refugio = new Semaphore(3); //tres humanos para salir
-    private Semaphore crear_grupo_entrar_refugio = new Semaphore(3); //tres humanos para entrar
+    // Semáforos para formar grupos de 3 humanos
+    private final Semaphore crear_grupo_salir_refugio = new Semaphore(3);
+    private final Semaphore crear_grupo_entrar_refugio = new Semaphore(3);
 
-    private CyclicBarrier espera_salir_refugio = new CyclicBarrier(3);
-    private CyclicBarrier espera_entrar_refugio = new CyclicBarrier(3);
+    // Barreras para esperar formación de grupos
+    private final CyclicBarrier espera_salir_refugio = new CyclicBarrier(3);
+    private final CyclicBarrier espera_entrar_refugio = new CyclicBarrier(3);
 
-    private Semaphore pasar_por_tunel = new Semaphore(1); //1 a la vez
+    // Semáforo para paso individual por el túnel
+    private final Semaphore pasar_por_tunel = new Semaphore(1);
 
-    private final Object tunelControl = new Object(); //"monitor para esperar si hay gente intentando entrar" 
-    private int grupo_entrando = 0; //gente intentando entrar
-    private int gente_entrado = 0; //gente intentando entrar
-    
-    private List<String> humanos_grupo_salida = new ArrayList<>();
-    private List<String> humanos_grupo_entrada = new ArrayList<>();
+    // Monitor para coordinación entrada/salida
+    private final Object tunelControl = new Object();
+    private int grupo_entrando = 0; // Contador de humanos en proceso de entrada
+    private int gente_entrado = 0;   // Contador de humanos que han completado entrada
 
+    // Listas para gestión de grupos en UI
+    private final List<String> humanos_grupo_salida = new ArrayList<>();
+    private final List<String> humanos_grupo_entrada = new ArrayList<>();
 
-
-    public Tunel(int tunelId,InterfazP1 interfazP1, Controlador controlador) {
+    /**
+     * Constructor del túnel.
+     * @param tunelId Identificador único del túnel
+     * @param interfazP1 Referencia a la interfaz gráfica para actualizaciones
+     * @param controlador Controlador principal para gestión de pausas
+     */
+    public Tunel(int tunelId, InterfazP1 interfazP1, Controlador controlador) {
         this.tunelId = tunelId;
         this.interfazP1 = interfazP1;
-        this. controlador = controlador;
+        this.controlador = controlador;
     }
-    
-    
 
+    /**
+     * Método para que un humano salga del refugio a través del túnel.
+     * Implementa:
+     * 1. Formación de grupos de 3 humanos
+     * 2. Paso secuencial por el túnel
+     * 3. Coordinación con humanos que intentan entrar
+     * @param IdH Identificador del humano
+     */
     public void salir_refugio(String IdH) throws InterruptedException, BrokenBarrierException {
         controlador.esperarSiPausado();
-        crear_grupo_salir_refugio.acquire(); //si hay 3 se bloquea
-        //System.out.println("Humano " + IdH + " entra al grupo para poder salir");
+        crear_grupo_salir_refugio.acquire(); // Bloquea después de 3 humanos
         
-        
-        //modificar el texto del grupo de salida para que esten los 3 y se van añadiendo
+        // Actualización UI
         controlador.esperarSiPausado();
         humanos_grupo_salida.add(IdH);
         controlador.esperarSiPausado();
         this.interfazP1.mod_text_tuneles_salida(humanos_grupo_salida, this.tunelId);
-   
- 
-        espera_salir_refugio.await(); // esperan a formar un grupo de 3
-        //la barrera se reinicia esperando a los tres siguientes hilos para salir del refugio
+
+        espera_salir_refugio.await(); // Sincronización grupo de 3
         sleep(500);
   
-        pasar_por_tunel.acquire(); //vamos a pasar de 1 en 1
-        
-        synchronized (tunelControl) { //accedemos al monitor ordenadamente
-            while (grupo_entrando == 3) { //si hay grupo par entrar esperamos
-                //System.out.println("Humano " + IdH + " espera a que el grupo de entrada cruce");
+        // Sección crítica con monitor
+        pasar_por_tunel.acquire();
+        synchronized (tunelControl) {
+            while (grupo_entrando == 3) { // Espera si hay grupo entrando
                 pasar_por_tunel.release();
-                tunelControl.wait(); //esperamos
+                tunelControl.wait();
                 pasar_por_tunel.acquire();
             }
         }
-  
-        //modificamos la lista de humanos en el grupo 
+
+        // Actualización UI después de pasar
         controlador.esperarSiPausado();
         humanos_grupo_salida.remove(IdH);
         controlador.esperarSiPausado();
-
-        //modificamos el texto grupo salida tunel x
         this.interfazP1.mod_text_tuneles_salida(humanos_grupo_salida, this.tunelId);
+        
+        // Simulación paso por túnel
         controlador.esperarSiPausado();
-        //modificamos el texto del paso tunel x
         this.interfazP1.mod_text_paso_tunel(IdH, this.tunelId);
+        Thread.sleep(1000);
         controlador.esperarSiPausado();
-        //System.out.println("Humano " + IdH + " está saliendo del refugio");
-        Thread.sleep(1000); // simula paso por el túnel
-        controlador.esperarSiPausado();
-        //vaciamos el texto del paso tunel x
         this.interfazP1.mod_text_paso_tunel(null, this.tunelId);
         
-        pasar_por_tunel.release(); //cuando sale pasa el siguiente
-
-        crear_grupo_salir_refugio.release(); //que pase a formarse el siguiente grupo
-       
+        // Liberación recursos
+        pasar_por_tunel.release();
+        crear_grupo_salir_refugio.release();
     }
 
+    /**
+     * Método para que un humano entre al refugio a través del túnel.
+     * Implementa:
+     * 1. Formación de grupos de entrada
+     * 2. Coordinación con salidas
+     * 3. Notificación cuando completo el grupo
+     * @param IdH Identificador del humano
+     */
     public void entrar_refugio(String IdH) throws InterruptedException, BrokenBarrierException {
         controlador.esperarSiPausado();
-        crear_grupo_entrar_refugio.acquire(); //tres humanos por grupo
-        //System.out.println("Humano " + IdH + " entra al grupo para entrar");
+        crear_grupo_entrar_refugio.acquire();
         
-        // modificamos la lista con los humanos del grupo de entrada
+        // Gestión grupo entrada
         controlador.esperarSiPausado();
         humanos_grupo_entrada.add(IdH);
         controlador.esperarSiPausado();
         this.interfazP1.mod_text_tuneles_entrada(humanos_grupo_entrada,this.tunelId);
 
-        espera_entrar_refugio.await(); // esperan a formar grupo de entrada
-        //la barrera se reinicia esperando a los tres siguientes hilos para entrar al refugio
+        espera_entrar_refugio.await(); // Sincronización grupo
         controlador.esperarSiPausado();
         sleep(500);
- 
-        //modiicamos el texto grupo entrada
-        
+
+        // Registro grupo entrante
         synchronized (tunelControl) {
             controlador.esperarSiPausado();
-            grupo_entrando ++; // marca grupo como entrando
+            grupo_entrando++;
             controlador.esperarSiPausado();
         }
 
-        pasar_por_tunel.acquire(); //pasa un humano a la vez
-        
-        //modificamo la lista y el texto del tunel x
+        // Paso por túnel
+        pasar_por_tunel.acquire();
         controlador.esperarSiPausado();
         humanos_grupo_entrada.remove(IdH);
         controlador.esperarSiPausado();
         this.interfazP1.mod_text_tuneles_entrada(humanos_grupo_entrada,this.tunelId);
-        //cada vez que sale un humano se resetea el texto del grupo, si la lista esta vacia, se vacia el texto del jtext
         
-        
-        //modificamos el paso del tunel x
+        // Simulación paso
         controlador.esperarSiPausado();
         this.interfazP1.mod_text_paso_tunel(IdH, this.tunelId);
-        
-        
         controlador.esperarSiPausado();
-        gente_entrado++; //cuanta gente a pasado
-        controlador.esperarSiPausado();
-        //System.out.println("Humano " + IdH + " está pasando al refugio");
-        Thread.sleep(1000); // simula paso por el túnel
-        
-        
-        //vaciamos el texto del paso del tunel x
+        gente_entrado++;
+        Thread.sleep(1000);
         controlador.esperarSiPausado();
         this.interfazP1.mod_text_paso_tunel(null, this.tunelId);
 
-
-        
+        // Liberación recursos y notificación
         pasar_por_tunel.release();
         synchronized (tunelControl) {
-            if (gente_entrado == 3) { //han pasado el grupo al completo
-                grupo_entrando = 0; //el grupo a pasado completo
-                gente_entrado = 0; //reseteo del contador
-                //System.out.println("El grupo para entrar ya ha pasado");
-                tunelControl.notifyAll(); // libera a los que estaban esperando salir
+            if (gente_entrado == 3) { // Grupo completo
+                grupo_entrando = 0;
+                gente_entrado = 0;
+                tunelControl.notifyAll(); // Despierta posibles hilos esperando
             }
         }
 
-        crear_grupo_entrar_refugio.release(); //creacion siguiente grupo para entrar al refugio
+        crear_grupo_entrar_refugio.release();
     }
     
+    /**
+     * Método auxiliar para obtener humanos en tránsito.
+     * @return Total de humanos en proceso de entrada/salida
+     */
     public int getHTunel() { 
-        return humanos_grupo_salida.size() + humanos_grupo_entrada.size(); 
+        int humanos_pasando = 0;
+        if(this.pasar_por_tunel.availablePermits() == 0){
+            humanos_pasando +=1;
+        }
+        return humanos_grupo_salida.size() + humanos_grupo_entrada.size() + humanos_pasando; 
     }
-
 }
