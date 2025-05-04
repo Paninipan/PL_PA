@@ -134,7 +134,9 @@ class Exterior {
         // Añadir zombie a la zona correspondiente
         List<List<Zombies>> zonasZ = Arrays.asList(null, zona1_Zombies, zona2_Zombies, zona3_Zombies, zona4_Zombies);
         List<Zombies> zombiesZona = zonasZ.get(zona);
+        controlador.esperarSiPausado();
         zombiesZona.add(zombie);
+        controlador.esperarSiPausado();
         interfazP1.mod_text_zona_exterior_zombies(zombiesZona, zona);
         
         // Obtener humanos en la zona
@@ -160,14 +162,19 @@ class Exterior {
                     case 3 -> zona3_Humanos.remove(elegido);
                     case 4 -> zona4_Humanos.remove(elegido);
                 }
+                controlador.esperarSiPausado();
                 interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(zona), zona);
             }
         } finally {
             if (va_atacar) {
+                controlador.esperarSiPausado();
                 ataque(elegido, zombie);
+                controlador.esperarSiPausado();
                 Thread.sleep(1000L * random.nextInt(2, 4));
             }
+            controlador.esperarSiPausado();
             zombiesZona.remove(zombie);
+            controlador.esperarSiPausado();
             interfazP1.mod_text_zona_exterior_zombies(zombiesZona, zona);
             lock.unlock();
         }
@@ -185,10 +192,13 @@ class Exterior {
         sleep(100 * random.nextInt(5, 16));
         int probabilidad_exito = random.nextInt(1, 4);
         if (probabilidad_exito == 1) {
+            controlador.esperarSiPausado();
             zombie.incrementarContadorMuertes();
+            controlador.esperarSiPausado();
             elegido.Muerto();
             System.out.println(LocalDateTime.now().format(formato) + "  El zombie " + zombie.getIdZ() + " ha matado al humano " + elegido.getIdH());
             // Crear nuevo zombie a partir del humano muerto
+            controlador.esperarSiPausado();
             Zombies asesinado = new Zombies("Z" + elegido.getIdH().substring(1), zombie.getExterior(), controlador);
             asesinado.start();
         } else {
@@ -225,7 +235,9 @@ class Exterior {
         ReentrantLock lock = getLockZona(tunel);
         lock.lock();
         try {
+            controlador.esperarSiPausado();
             getZonaHumanos(tunel).remove(humano);
+            controlador.esperarSiPausado();
             interfazP1.mod_text_zona_exterior_humanos(getZonaHumanos(tunel), tunel);
         } finally {
             lock.unlock();
