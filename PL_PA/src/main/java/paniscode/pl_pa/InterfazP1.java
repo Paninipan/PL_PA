@@ -13,10 +13,6 @@ import javax.swing.JTextPane;
  */
 public class InterfazP1 extends javax.swing.JFrame {
 
-    private final Boolean parado; // Estado de pausa de la simulación
-    
-    private final Object espera_Control = new Object(); // Monitor para controlar la pausa
-    
     // Semáforos para controlar acceso a los túneles de entrada
     private final Semaphore ster1 = new Semaphore(1);
     private final Semaphore ster2 = new Semaphore(1);
@@ -34,7 +30,7 @@ public class InterfazP1 extends javax.swing.JFrame {
      * Inicializa el estado de pausa y los componentes gráficos.
      */
     public InterfazP1() {
-        this.parado = true;
+  
         initComponents();
     }
 
@@ -524,20 +520,8 @@ public class InterfazP1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ComidaActionPerformed
     
-    /**
-     * Método para pausar la simulación.
-     * Bloquea los hilos usando el monitor de espera.
-     */
-    public void ha_parado() throws InterruptedException {
-        if(parado) {
-            synchronized(espera_Control) {
-                this.espera_Control.wait();
-            }
-        }
-    }
-    
-    // Métodos sincronizados para actualización de zonas internas
-    
+  
+
     /**
      * Actualiza el texto de la zona común.
      * @param listaHumanos Lista de humanos en la zona común

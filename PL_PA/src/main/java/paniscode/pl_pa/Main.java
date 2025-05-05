@@ -14,7 +14,7 @@ import java.util.Random;
 public class Main {
 
     // Constante que define el número inicial de humanos en la simulación
-    private static final int NUM_HUMANOS = 100;
+    private static final int NUM_HUMANOS = 10000;
 
     /**
      * Método principal que inicializa todos los componentes del sistema.
@@ -53,8 +53,8 @@ public class Main {
             pacienteCero.start();
             
             // Configuración del objeto remoto para control distribuido
-            ObjetoRemoto simulacion = new ObjetoRemoto(controlador, refugio, tunel1, tunel2, tunel3, tunel4, exterior);
-            Naming.rebind("//localhost/Simulacion", simulacion);
+            ObjetoRemoto objetoRemoto = new ObjetoRemoto(controlador, refugio, tunel1, tunel2, tunel3, tunel4, exterior);
+            Naming.rebind("//localhost/Simulacion", objetoRemoto);
 
             // Creación e inicio de la población inicial de humanos
             for (int i = 0; i < NUM_HUMANOS; i++) {

@@ -19,8 +19,7 @@ public class Zombies extends Thread {
     private final DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
     private int contadorMuertes;  // Registro de humanos eliminados por este zombie
-    private boolean atacarEnZona; // Estado de ataque activo
-    private boolean activo;       // Control de ciclo de vida del zombie
+
 
     /**
      * Constructor del zombie.
@@ -32,17 +31,12 @@ public class Zombies extends Thread {
         this.IdZ = IdZ;
         this.exterior = exterior;
         this.contadorMuertes = 0;
-        this.atacarEnZona = false;
         this.controlador = controlador;
     }
 
     // Métodos setters para modificación de estado
     public void setContadorMuertes(int contadorMuertes) {
         this.contadorMuertes = contadorMuertes;
-    }
-
-    public void setAtacarEnZona(boolean atacarEnZona) {
-        this.atacarEnZona = atacarEnZona;
     }
 
     public synchronized void incrementarContadorMuertes() {

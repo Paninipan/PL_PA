@@ -97,21 +97,21 @@ public class Refugio {
      * @param comida Cantidad de comida a depositar
      * @throws InterruptedException
      */
-    public void depositar_comida(int comida) throws InterruptedException {
+    public void depositar_comida(int comida_a_depositar) throws InterruptedException {
         controlador.esperarSiPausado();
         try {
             reservas_comida.lock();
-            if(comida > 0) {
-                controlador.esperarSiPausado();
-                cantidad_comida += comida;
-                controlador.esperarSiPausado();
+            if(comida_a_depositar > 0) {
+                this.controlador.esperarSiPausado();
+                this.cantidad_comida += comida_a_depositar;
+                this.controlador.esperarSiPausado();
                 sleep(250); // Simulación del tiempo de descarga
-                controlador.esperarSiPausado();
+                this.controlador.esperarSiPausado();
                 this.interfazP1.mod_text_comida(this.cantidad_comida);
-                reservas_vacias.signal(); // Notificar a posibles hilos esperando
+                this.reservas_vacias.signal(); // Notificar a posibles hilos esperando
             }
         } finally {
-            reservas_comida.unlock();
+            this.reservas_comida.unlock();
         }
     }
 
@@ -148,7 +148,7 @@ public class Refugio {
             this.interfazP1.mod_text_comedor(humanos_comedor);
             
             reservas_comida.lock();
-            if(cantidad_comida == 0) {
+            if(cantidad_comida <= 0) {
                 reservas_vacias.await(); // Esperar si no hay comida            
             }
             controlador.esperarSiPausado();

@@ -298,9 +298,6 @@ class Exterior {
             Zombies z = zombiesOrdenados.get(i);
             sb.append(z.getIdZ()).append(" - ").append(z.getContadorMuertes()).append(" muertes").append("\n");
         }
-
         return sb.toString().trim();
     }
-
-
 }
